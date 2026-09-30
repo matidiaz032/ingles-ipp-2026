@@ -1,0 +1,101 @@
+[
+  {
+    "id": "u1-vg-comp-forms", "format": "verb_gap", "level": "B1", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "Comparatives & superlatives: formas",
+    "instructions": "Escribí la forma correcta del adjetivo/adverbio entre paréntesis (incluí than / the / more / most si hace falta).",
+    "text": "1. Python is [1] (easy) than C++.\n2. This is [2] (big) project we've ever had.\n3. She speaks [3] (softly) than him.\n4. This solution is [4] (good) than the previous one.\n5. That was [5] (bad) error of the week.\n6. This office is [6] (noisy) than the old one.",
+    "items": [
+      {"n": 1, "a": ["easier"], "r": "comp-short-long", "pat": [["^more easy$|^more easier$", "comp-short-long", [["forma", "easy es corto (2 sílabas en -y): el comparativo lleva -er (y → i): easier. more + adjetivo corto no se usa, y more easier sería doble comparativo."]]], ["^easyer$", "comp-spelling", [["forma", "ortografía: los adjetivos en -y cambian la y por i: easy → easier."]]]], "e": "1-2 sílabas: adj + -er (y → i: easier)."},
+      {"n": 2, "a": ["the biggest"], "r": "comp-spelling", "pat": [["^the bigest$|^bigest$|^biggest$", "comp-spelling", [["forma", "big termina en consonante-vocal-consonante: se duplica la consonante (biggest), y el superlativo lleva the: the biggest."]]], ["^the most big$", "comp-short-long", [["forma", "big es corto: el superlativo lleva -est (the biggest). the most + adjetivo es para adjetivos largos."]]]], "e": "Consonante-vocal-consonante → doblar: big → the biggest."},
+      {"n": 3, "a": ["more softly"], "r": "comp-adverbs", "pat": [["^softlier$|^softlyer$", "comp-adverbs", [["forma", "los adverbios de 2 o más sílabas usan more, no -er: more softly."]]], ["^softer$", "comp-adverbs", [["forma", "softer es el comparativo del ADJETIVO soft; para el adverbio softly (cómo habla) se usa more softly."]]]], "e": "Adverbio de 2+ sílabas → more softly (nunca softlier)."},
+      {"n": 4, "a": ["better"], "r": "comp-irregular", "pat": [["^gooder$|^more good$", "comp-irregular", [["forma", "good es irregular: good → better → the best."]]]], "e": "good → better → the best."},
+      {"n": 5, "a": ["the worst"], "r": "comp-irregular", "pat": [["^the baddest$|^the most bad$|^worst$", "comp-irregular", [["forma", "bad es irregular: bad → worse → the worst (y el superlativo lleva the)."]]], ["^worse$", "comp-irregular", [["forma", "worse es el comparativo (dos cosas); 'of the week' compara con todo el grupo → superlativo: the worst."]]]], "e": "bad → worse → the worst (superlativo lleva the)."},
+      {"n": 6, "a": ["noisier"], "r": "comp-spelling", "pat": [["^noisyer$|^more noisy$", "comp-spelling", [["forma", "noisy termina en -y: el comparativo lleva -ier (y → i): noisier."]]], ["^more noisier$", "comp-short-long", [["forma", "doble comparativo: noisier ya es comparativo, no lleva more."]]]], "e": "2 sílabas en -y → -ier (y → i)."}
+    ]
+  },
+  {
+    "id": "u1-vg-comp-structures", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Open cloze (oraciones sueltas)",
+    "title": "as ... as, dobles comparativos, the ... the",
+    "instructions": "Completá cada hueco. Algunos se completan con una o dos palabras.",
+    "text": "1. I'm becoming [1] (good) and [2] (good) at chess.\n2. [3] (much) I learn, [4] (fast) I code.\n3. The later it got, [5] (worried) she became.\n4. The bugs are getting [6] (hard) and [7] (hard) to find.\n5. This framework is just [8] fast [9] the other one.\n6. The black jumper is not as expensive [10] the green one.",
+    "items": [
+      {"n": 1, "a": ["better"], "r": "comp-double", "pat": [["^more good$|^gooder$", "comp-irregular", [["forma", "good es irregular: better and better (cada vez mejor)."]]]], "e": "better and better = cada vez mejor."},
+      {"n": 2, "a": ["better"], "r": "comp-double", "e": "Repetís el mismo comparativo: better and better."},
+      {"n": 3, "a": ["the more"], "r": "comp-double", "pat": [["^more$", "comp-double", [["forma", "en 'the ... the ...' los dos comparativos llevan the: The more I learn, the faster I code."]]]], "e": "The more ..., the faster ... (ambos con the)."},
+      {"n": 4, "a": ["the faster"], "r": "comp-double", "pat": [["^faster$", "comp-double", [["forma", "falta the: The more I learn, THE faster I code."]]]], "e": "The + comparativo."},
+      {"n": 5, "a": ["the more worried"], "r": "comp-double", "pat": [["^more worried$", "comp-double", [["forma", "falta the: The later it got, THE more worried she became."]]], ["^the worrier$", "comp-short-long", [["forma", "worried es largo: se usa more, no -er → the more worried."]]]], "e": "worried es largo → the more worried."},
+      {"n": 6, "a": ["harder"], "r": "comp-double", "e": "harder and harder = cada vez más difíciles."},
+      {"n": 7, "a": ["harder"], "r": "comp-double", "e": "Se repite el comparativo."},
+      {"n": 8, "a": ["as"], "r": "comp-as-as", "pat": [["^than$", "comp-as-as", [["forma", "(just) as + adjetivo + as: la segunda palabra también es as. than es solo para comparativos (-er / more)."]]]], "e": "(just) as + adj + as."},
+      {"n": 9, "a": ["as"], "r": "comp-as-as", "pat": [["^than$", "comp-as-as", [["forma", "(just) as fast AS: la igualdad se cierra con as, no con than."]]]], "e": "as fast AS (no than)."},
+      {"n": 10, "a": ["as"], "r": "comp-as-as", "pat": [["^than$", "comp-as-as", [["forma", "not as expensive AS: la igualdad (también en negativo) se cierra con as."]]]], "e": "not as expensive AS."}
+    ]
+  },
+  {
+    "id": "u1-dc-comp", "format": "discrete_cloze", "level": "B1", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Discrete cloze: comparatives",
+    "instructions": "Elegí la opción correcta.",
+    "items": [
+      {"n": 1, "q": "This task is ___ than the last one.", "o": ["difficult", "more difficult", "difficulter"], "a": "more difficult", "r": "comp-short-long", "e": "Adjetivo largo → more + adj + than.", "fb": {"difficult": [["forma", "falta el comparativo: difficult es largo → more difficult than."]], "difficulter": [["forma", "los adjetivos largos no llevan -er: more difficult."]]}},
+      {"n": 2, "q": "It's ___ exercise in the book.", "o": ["the easiest", "the most easy", "easiest"], "a": "the easiest", "r": "comp-short-long", "e": "Superlativo corto: the + adj-est.", "fb": {"the most easy": [["forma", "easy es corto: el superlativo lleva -est (y → i): the easiest."]], "easiest": [["forma", "falta el artículo: the easiest."]]}},
+      {"n": 3, "q": "She speaks ___ than her brother.", "o": ["more softly", "softlier", "more soft"], "a": "more softly", "r": "comp-adverbs", "e": "Adverbio de 2+ sílabas → more.", "fb": {"softlier": [["forma", "los adverbios de 2+ sílabas no llevan -er: more softly."]], "more soft": [["forma", "soft es adjetivo; para el verbo (speaks) hace falta el adverbio: more softly."]]}},
+      {"n": 4, "q": "He codes ___ better than last year.", "o": ["much", "very", "too"], "a": "much", "r": "comp-degree", "e": "much/far/a lot + comparativo (nunca very).", "fb": {"very": [["forma", "very no se usa con comparativos: much / far / a lot better."]], "too": [["forma", "too = demasiado (negativo); no intensifica un comparativo: much better."]]}},
+      {"n": 5, "q": "The new office is as noisy ___ the old one.", "o": ["as", "than", "that"], "a": "as", "r": "comp-as-as", "e": "as ... as.", "fb": {"than": [["forma", "en la igualdad la segunda palabra es as, no than: as noisy AS."]], "that": [["forma", "la comparación de igualdad se cierra con as."]]}},
+      {"n": 6, "q": "Fruit is ___ than sweets.", "o": ["healthier", "more healthy", "healthyer"], "a": "healthier", "r": "comp-spelling", "wr": {"healthyer": "comp-spelling"}, "e": "healthy → healthier (y → i).", "fb": {"more healthy": [["forma", "healthy termina en -y: comparativo con -ier (y → i): healthier."]], "healthyer": [["forma", "ortografía: la y pasa a i: healthier."]]}},
+      {"n": 7, "q": "This is ___ important file in the repo.", "o": ["the most", "the more", "most"], "a": "the most", "r": "comp-short-long", "e": "Superlativo largo: the most + adj.", "fb": {"the more": [["forma", "important es largo: el superlativo es the most important. the more es comparativo."]], "most": [["forma", "falta el artículo: the most important."]]}},
+      {"n": 8, "q": "Today's bug is ___ than yesterday's. It took me only ten minutes.", "o": ["far easier", "very easier", "more easier"], "a": "far easier", "r": "comp-degree", "wr": {"more easier": "comp-short-long"}, "e": "far/much + comparativo; nunca very ni doble comparativo.", "fb": {"very easier": [["forma", "very no va con comparativos: far / much easier."]], "more easier": [["forma", "doble comparativo: easier ya es comparativo, no lleva more."]]}}
+    ]
+  },
+  {
+    "id": "u1-mcc-comp", "format": "mc_cloze", "level": "B2", "linguaskill": "Multiple choice cloze (4 opciones)",
+    "title": "Multiple choice cloze: choosing a laptop",
+    "instructions": "Elegí la opción correcta para cada hueco.",
+    "text": "Choosing a laptop for programming is [1] than it seems. Gaming models are [2] more powerful, but they are also [3] heavy to carry every day. Ultrabooks are lighter, although they are not [4] fast as desktop computers. In the end, [5] you spend, the better the performance you get.",
+    "items": [
+      {"n": 1, "o": ["harder", "more hard", "the hardest", "hardest"], "a": "harder", "r": "comp-short-long", "wr": {"more hard": "comp-short-long"}, "e": "Comparativo corto + than.", "fb": {"more hard": [["forma", "hard es corto: harder (no more hard)."]], "the hardest": [["forma", "es un superlativo; acá se compara con 'it seems' → comparativo con than: harder."]], "hardest": [["forma", "es un superlativo; acá se compara con 'it seems' → comparativo con than: harder."]]}},
+      {"n": 2, "o": ["very", "much", "the most", "as"], "a": "much", "r": "comp-degree", "e": "Gaming models are much more powerful...", "fb": {"very": [["forma", "very no acompaña a un comparativo (more powerful): much more powerful."]], "the most": [["forma", "the most es superlativo; 'more powerful' ya es comparativo y necesita un intensificador: much."]], "as": [["forma", "as no intensifica comparativos; much sí."]]}},
+      {"n": 3, "o": ["too", "enough", "as", "more"], "a": "too", "r": "too-enough", "e": "too heavy = demasiado pesados (connotación negativa).", "fb": {"enough": [["significado", "too = demasiado (es un problema: pesados para llevar todos los días). enough sería 'lo bastante pesados', que no es un problema."]], "as": [["forma", "too heavy to carry: la estructura 'too + adjetivo + to + verbo' no lleva as."]], "more": [["forma", "more heavy no se usa (heavy es corto: heavier) y 'to carry' pide too."]]}},
+      {"n": 4, "o": ["so", "as", "more", "than"], "a": "as", "r": "comp-as-as", "e": "not as fast as.", "fb": {"so": [["forma", "la estructura es not as fast as: as ... as."]], "more": [["forma", "'not more fast as' no existe: not as fast as."]], "than": [["forma", "'not as fast THAN' no existe: la igualdad usa as ... as."]]}},
+      {"n": 5, "o": ["the more", "more", "the most", "most"], "a": "the more", "r": "comp-double", "e": "The more you spend, the better...", "fb": {"more": [["forma", "en 'the ... the ...' el primer comparativo también lleva the: The more you spend, the better..."]], "the most": [["forma", "the most es superlativo; acá es la estructura the + comparativo, the + comparativo."]], "most": [["forma", "most es superlativo; acá va the more (the + comparativo, the + comparativo)."]]}}
+    ]
+  },
+  {
+    "id": "u1-dc-too", "format": "discrete_cloze", "level": "B1", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Too & enough",
+    "instructions": "Elegí la opción correcta.",
+    "items": [
+      {"n": 1, "q": "This exercise is ___ difficult for me.", "o": ["too", "enough", "so much"], "a": "too", "r": "too-enough", "e": "too + adj = demasiado.", "fb": {"enough": [["significado", "'difficult enough' sería 'suficientemente difícil' (sin problema); acá hay un problema para mí → too."]], "so much": [["forma", "so much no acompaña a un adjetivo (so difficult); para 'demasiado' se usa too."]]}},
+      {"n": 2, "q": "This laptop is fast ___.", "o": ["enough", "too", "very"], "a": "enough", "r": "enough-position", "e": "adj + enough.", "fb": {"too": [["significado", "too fast = demasiado rápida (un problema); acá se dice que alcanza → fast enough."]], "very": [["valida", "'very fast' es gramatical, pero solo dice que es muy rápida; la oración pide que sea suficiente: fast enough."]]}},
+      {"n": 3, "q": "I have ___ time to finish the task.", "o": ["enough", "too", "enoughly"], "a": "enough", "r": "enough-position", "e": "enough + sustantivo.", "fb": {"too": [["significado", "too much time = demasiado tiempo (problema); acá falta tiempo suficiente → enough time."]], "enoughly": [["forma", "enoughly no existe: enough no lleva -ly."]]}},
+      {"n": 4, "q": "He speaks ___ fast. I can't follow him.", "o": ["too", "enough", "not enough"], "a": "too", "r": "too-enough", "e": "Hay un problema → too (negativo).", "fb": {"enough": [["significado", "'fast enough' = suficientemente rápido; acá hay un problema ('no puedo seguirlo') → too fast."]], "not enough": [["valida", "'not fast enough' sería 'no es lo bastante rápido', que dice lo contrario: el problema es el exceso de velocidad → too fast."]]}},
+      {"n": 5, "q": "The water is ___ to dive into.", "o": ["deep enough", "enough deep", "too deep"], "a": "deep enough", "r": "enough-position", "wr": {"enough deep": "enough-position", "too deep": "too-enough"}, "e": "adj + enough (nunca enough + adj).", "fb": {"enough deep": [["forma", "enough va DESPUÉS del adjetivo: deep enough (antes de un sustantivo sí: enough water)."]], "too deep": [["valida", "'too deep' es gramaticalmente válida (demasiado profunda), pero dice lo CONTRARIO de lo que pide la frase: se busca que tenga profundidad SUFICIENTE para tirarse. too = exceso que causa un problema; enough = cantidad suficiente."]]}},
+      {"n": 6, "q": "We don't have ___ information.", "o": ["enough", "too", "enough of"], "a": "enough", "r": "enough-position", "e": "not enough + sustantivo.", "fb": {"too": [["significado", "too = exceso; acá falta cantidad → enough information."]], "enough of": [["forma", "enough of solo se usa con pronombres o determinantes (enough of them); con un sustantivo directo: enough information."]]}}
+    ]
+  },
+  {
+    "id": "u1-vg-too", "format": "verb_gap", "level": "B1", "linguaskill": "Open cloze (oraciones sueltas)",
+    "title": "Too & enough: completá",
+    "instructions": "Escribí una palabra en cada hueco.",
+    "text": "1. The soup is [1] hot to eat.\n2. It isn't cool [2] to eat.\n3. We don't have [3] money.\n4. This question is too difficult [4] me [5] answer.",
+    "items": [
+      {"n": 1, "a": ["too"], "r": "too-enough", "pat": [["^enough$|^very$", "too-enough", [["significado", "'too hot' = demasiado caliente (problema: no se puede comer). enough / very no expresan ese exceso."]]]], "e": "too hot = demasiado caliente."},
+      {"n": 2, "a": ["enough"], "r": "enough-position", "pat": [["^too$", "too-enough", [["forma", "isn't cool ENOUGH: enough va después del adjetivo. 'too cool to eat' cambiaría el sentido."]]]], "e": "isn't cool enough."},
+      {"n": 3, "a": ["enough"], "r": "enough-position", "pat": [["^too$", "too-enough", [["forma", "too se usa con adjetivos/adverbios, no con sustantivos: enough money."]]]], "e": "don't have enough money."},
+      {"n": 4, "a": ["for"], "r": "too-enough", "e": "too difficult FOR me TO answer."},
+      {"n": 5, "a": ["to"], "r": "too-enough", "pat": [["^for$|^that$", "too-enough", [["forma", "too difficult FOR me TO answer: for + persona, luego to + verbo."]]]], "e": "too difficult for me TO answer."}
+    ]
+  },
+  {
+    "id": "u1-oc-mixed", "format": "open_cloze", "level": "B2", "linguaskill": "Open cloze",
+    "title": "Open cloze: a new laptop",
+    "instructions": "Escribí UNA palabra en cada hueco.",
+    "text": "I've [1] looking for a new laptop for two weeks. My old one is [2] slow to compile large projects, and the battery isn't good [3]. This one is much [4] than the last model, and it costs the same [5] the cheaper one.",
+    "items": [
+      {"n": 1, "a": ["been"], "r": "ppc-duration", "e": "have been + -ing + 'for two weeks'."},
+      {"n": 2, "a": ["too"], "r": "too-enough", "pat": [["^very$|^enough$", "too-enough", [["significado", "too slow to compile = demasiado lenta para compilar (problema). very no lleva 'to + verbo' con ese sentido, y enough no expresa exceso."]]]], "e": "too slow to compile = demasiado lenta."},
+      {"n": 3, "a": ["enough"], "r": "enough-position", "pat": [["^too$", "too-enough", [["forma", "isn't good ENOUGH: enough va después del adjetivo."]]]], "e": "isn't good enough."},
+      {"n": 4, "a": ["faster", "better", "lighter", "cheaper", "quicker", "smaller", "bigger", "more powerful"], "r": "comp-short-long", "e": "much + comparativo + than (varias respuestas válidas: faster, better, lighter...)."},
+      {"n": 5, "a": ["as"], "r": "comp-as-as", "pat": [["^than$", "comp-as-as", [["forma", "the same AS: con the same la comparación se cierra con as, no con than."]]]], "e": "the same AS."}
+    ]
+  }
+]

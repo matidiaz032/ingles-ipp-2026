@@ -1,0 +1,664 @@
+{
+ "ps-form": {
+  "name": "Present Simple: forma (-s / verbo base)",
+  "group": "Present Simple",
+  "note": "Unit1/04 Detector Rápido"
+ },
+ "ps-routine": {
+  "name": "Present Simple: rutina / hecho general",
+  "group": "Present Simple",
+  "note": "Unit1/04 Detector Rápido"
+ },
+ "adv-freq-position": {
+  "name": "Adverbios de frecuencia: posición (always/never)",
+  "group": "Present Simple",
+  "note": "No está en tus apuntes: sumada por el error de Test 1 (#3)"
+ },
+ "pc-form": {
+  "name": "Present Continuous: am/is/are + -ing",
+  "group": "Present Continuous",
+  "note": "Unit1/03 Auxiliares"
+ },
+ "pc-now-temporary": {
+  "name": "Present Continuous: ahora / situación temporal",
+  "group": "Present Continuous",
+  "note": "Unit1/04 Detector Rápido"
+ },
+ "ps-vs-pc": {
+  "name": "Simple vs Continuous (rutina vs ahora/temporal)",
+  "group": "Present Continuous",
+  "note": "Unit1/04 Estructuras combinadas"
+ },
+ "pps-form": {
+  "name": "Present Perfect: have/has + participio",
+  "group": "Present Perfect",
+  "note": "Unit1/03 Auxiliares"
+ },
+ "pps-result-keywords": {
+  "name": "Present Perfect Simple: resultado (already/yet/ever/just/so far)",
+  "group": "Present Perfect",
+  "note": "Unit1/04 Detector Rápido"
+ },
+ "ppc-duration": {
+  "name": "Present Perfect Continuous: duración",
+  "group": "Present Perfect",
+  "note": "Unit1/04 Detector Rápido"
+ },
+ "for-vs-since": {
+  "name": "for (período) vs since (punto de inicio)",
+  "group": "Present Perfect",
+  "note": "Unit1/04 Detector Rápido"
+ },
+ "pps-vs-past": {
+  "name": "Present Perfect vs Past Simple: momento CERRADO vs período ABIERTO",
+  "group": "Present Perfect",
+  "note": "Momento cerrado (yesterday, last week, ago, in 2020) → Past Simple. Período abierto hasta ahora (for, since, so far, this week) → Present Perfect. Unit1/04 Errores frecuentes"
+ },
+ "aux-mixing": {
+  "name": "No mezclar auxiliares (do + be / do + have)",
+  "group": "Auxiliares",
+  "note": "Unit1/03 La regla de oro"
+ },
+ "aux-do-base": {
+  "name": "do/does + verbo base (doesn't work, no works)",
+  "group": "Auxiliares",
+  "note": "Unit1/03 Do/Does"
+ },
+ "aux-missing-be": {
+  "name": "Falta el auxiliar be en el Continuous",
+  "group": "Auxiliares",
+  "note": "Referencia-General/00 Errores frecuentes"
+ },
+ "passive-vs-perfect": {
+  "name": "Participio: pasiva (be) vs Perfecto (have)",
+  "group": "Auxiliares",
+  "note": "Referencia-General/00"
+ },
+ "be-forms": {
+  "name": "Verb to be: am / is / are",
+  "group": "Auxiliares",
+  "note": "Unit1/01 Verb to Be"
+ },
+ "state-verb-simple": {
+  "name": "State verbs (know, like, understand, look...) no van en continuo",
+  "group": "State verbs",
+  "note": "Unit1/01 State Verbs (look/seem: extensión, ver Test 1 #13)"
+ },
+ "state-verb-duration": {
+  "name": "State verb + for/since → Present Perfect Simple",
+  "group": "State verbs",
+  "note": "Unit1/01 State Verbs + duración"
+ },
+ "state-verb-exception": {
+  "name": "Excepción: be / have / think en continuo (comportamiento temporal)",
+  "group": "State verbs",
+  "note": "Unit1/01 Excepción"
+ },
+ "imperative-form": {
+  "name": "Imperativos: forma (verbo base / Don't + base)",
+  "group": "Imperatives",
+  "note": "Unit1/02 Imperatives"
+ },
+ "imperative-vs-ps": {
+  "name": "Imperativo vs Present Simple (¿hay sujeto?)",
+  "group": "Imperatives",
+  "note": "Unit1/02 Imperatives"
+ },
+ "comp-short-long": {
+  "name": "Comparativo/superlativo: -er/-est vs more/most",
+  "group": "Comparatives",
+  "note": "Unit1/05"
+ },
+ "comp-spelling": {
+  "name": "Comparativos: ortografía (bigger, happier)",
+  "group": "Comparatives",
+  "note": "Unit1/05 Reglas de ortografía"
+ },
+ "comp-irregular": {
+  "name": "Comparativos irregulares (good/better/best)",
+  "group": "Comparatives",
+  "note": "Unit1/05 Irregulares"
+ },
+ "comp-adverbs": {
+  "name": "Adverbios: more softly, not softlier",
+  "group": "Comparatives",
+  "note": "Unit1/05 Adjectives vs Adverbs"
+ },
+ "comp-as-as": {
+  "name": "as ... as / not as ... as",
+  "group": "Comparatives",
+  "note": "Unit1/05"
+ },
+ "comp-double": {
+  "name": "Dobles comparativos (better and better / the more... the faster)",
+  "group": "Comparatives",
+  "note": "Unit1/05"
+ },
+ "comp-degree": {
+  "name": "much/far/a lot/slightly + comparativo",
+  "group": "Comparatives",
+  "note": "Unit1/05 Adverbios de grado"
+ },
+ "too-enough": {
+  "name": "too vs enough",
+  "group": "Too & Enough",
+  "note": "Unit1/06"
+ },
+ "enough-position": {
+  "name": "enough: posición (adj + enough / enough + noun)",
+  "group": "Too & Enough",
+  "note": "Unit1/06"
+ },
+ "vocab-it": {
+  "name": "Vocabulario IT",
+  "group": "Vocabulario",
+  "note": "Test 1 #26-30"
+ },
+ "reading-detail": {
+  "name": "Comprensión: detalle / inferencia",
+  "group": "Reading",
+  "note": "Linguaskill Reading"
+ },
+ "reading-cohesion": {
+  "name": "Gapped text: cohesión (pronombres, tiempos, conectores)",
+  "group": "Reading",
+  "note": "Linguaskill Gapped Text"
+ },
+ "prep-collocation": {
+  "name": "Preposiciones y palabras gramaticales fijas (as, new to, by, since...)",
+  "group": "Open cloze",
+  "note": "Linguaskill: los huecos del open cloze son palabras gramaticales"
+ },
+ "past-simple-form": {
+  "name": "Past Simple: verbos regulares e irregulares (forgot, went, bought)",
+  "group": "Past Simple",
+  "note": "Unit2/03 Regular vs Irregular",
+  "unit": 2
+ },
+ "past-aux-did": {
+  "name": "did/didn't + verbo base (didn't go, no went)",
+  "group": "Past Simple",
+  "note": "Unit2/02 Auxiliares",
+  "unit": 2
+ },
+ "past-be": {
+  "name": "was / were (verb to be en pasado)",
+  "group": "Past Simple",
+  "note": "Unit2/02 Auxiliares",
+  "unit": 2
+ },
+ "past-cont-form": {
+  "name": "Past Continuous: was/were + -ing",
+  "group": "Past Continuous",
+  "note": "Unit2/02 Auxiliares",
+  "unit": 2
+ },
+ "past-simple-vs-cont": {
+  "name": "Past Simple vs Past Continuous (when / while)",
+  "group": "Past Continuous",
+  "note": "Unit2/01 Tiempos Pasados",
+  "unit": 2
+ },
+ "past-question-order": {
+  "name": "Orden en preguntas: What were you doing? (auxiliar antes del sujeto)",
+  "group": "Past Continuous",
+  "note": "Unit2/02 Auxiliares",
+  "unit": 2
+ },
+ "past-perfect-form": {
+  "name": "Past Perfect: had + participio",
+  "group": "Past Perfect",
+  "note": "Unit2/02 Auxiliares",
+  "unit": 2
+ },
+ "past-perfect-vs-simple": {
+  "name": "Past Perfect vs Past Simple (before / by the time)",
+  "group": "Past Perfect",
+  "note": "Unit2/05 Detector Rápido",
+  "unit": 2
+ },
+ "past-perfect-cont": {
+  "name": "Past Perfect Continuous: duración antes de otro evento pasado",
+  "group": "Past Perfect",
+  "note": "Unit2/05 Detector Rápido",
+  "unit": 2
+ },
+ "irregular-participle": {
+  "name": "Participios irregulares (gone, eaten, seen)",
+  "group": "Past Perfect",
+  "note": "Unit2/03 Regular vs Irregular",
+  "unit": 2
+ },
+ "past-state-verb": {
+  "name": "State verbs en pasado: Past Simple / Past Perfect, no continuo",
+  "group": "Past Perfect",
+  "note": "Unit2/05 Errores frecuentes",
+  "unit": 2
+ },
+ "used-to-form": {
+  "name": "used to + verbo base (didn't use to, Did you use to)",
+  "group": "Used to",
+  "note": "Unit2/04 Used to",
+  "unit": 2
+ },
+ "be-used-to": {
+  "name": "be used to + -ing (ya estoy acostumbrado)",
+  "group": "Used to",
+  "note": "Unit2/04 Be used to",
+  "unit": 2
+ },
+ "get-used-to": {
+  "name": "get used to + -ing (proceso de acostumbrarse)",
+  "group": "Used to",
+  "note": "Unit2/04 Get used to",
+  "unit": 2
+ },
+ "used-to-vs-be-used-to": {
+  "name": "Distinguir used to / be used to / get used to",
+  "group": "Used to",
+  "note": "Unit2/04 Comparación directa",
+  "unit": 2
+ },
+ "used-to-would": {
+  "name": "used to vs would (estados vs hábitos)",
+  "group": "Used to",
+  "note": "Unit2/05 used to vs would",
+  "unit": 2
+ },
+ "rel-pronoun-choice": {
+  "name": "Relative pronouns: who / which / that / where / when / why",
+  "group": "Relative clauses",
+  "note": "Unit2/06 Pronombres relativos",
+  "unit": 2
+ },
+ "rel-whose": {
+  "name": "whose (posesión)",
+  "group": "Relative clauses",
+  "note": "Unit2/06 Pronombres relativos",
+  "unit": 2
+ },
+ "rel-defining-nondefining": {
+  "name": "Defining vs non-defining (comas, that no en non-defining)",
+  "group": "Relative clauses",
+  "note": "Unit2/06 Tipos de relative clauses",
+  "unit": 2
+ },
+ "rel-omit": {
+  "name": "Omitir el pronombre: solo si es objeto",
+  "group": "Relative clauses",
+  "note": "Unit2/06 ¿Cuándo omitir?",
+  "unit": 2
+ },
+ "rel-double-pronoun": {
+  "name": "No repetir sujeto/objeto (who she fixed it)",
+  "group": "Relative clauses",
+  "note": "Unit2/06 Errores frecuentes",
+  "unit": 2
+ },
+ "reduced-relative": {
+  "name": "Reduced relative clauses (people dancing / presents given)",
+  "group": "Relative clauses",
+  "note": "Unit2/06 Reduced Relative Clauses",
+  "unit": 2
+ },
+ "participle-clause": {
+  "name": "Participle clauses (Before buying..., Feeling tired...)",
+  "group": "Relative clauses",
+  "note": "Unit2/06 Participle Clauses",
+  "unit": 2
+ },
+ "will-form": {
+  "name": "will + verbo base (will rain, no will rains)",
+  "group": "Future forms",
+  "note": "Unit3/01 Will",
+  "unit": 3
+ },
+ "future-will-vs-going-to": {
+  "name": "will vs going to (predicción/oferta vs evidencia/intención)",
+  "group": "Future forms",
+  "note": "Unit3/01 Future forms",
+  "unit": 3
+ },
+ "future-going-to-form": {
+  "name": "be going to: am/is/are + going to + base",
+  "group": "Future forms",
+  "note": "Unit3/01 Be going to",
+  "unit": 3
+ },
+ "future-present-continuous": {
+  "name": "Present Continuous para arreglos ya organizados",
+  "group": "Future forms",
+  "note": "Unit3/01 Present Continuous (futuro)",
+  "unit": 3
+ },
+ "future-present-simple": {
+  "name": "Present Simple para horarios fijos",
+  "group": "Future forms",
+  "note": "Unit3/01 Present Simple (futuro)",
+  "unit": 3
+ },
+ "future-cont-form": {
+  "name": "Future Continuous: will + be + -ing",
+  "group": "Future Continuous & Perfect",
+  "note": "Unit3/02 Future Continuous",
+  "unit": 3
+ },
+ "future-perfect-form": {
+  "name": "Future Perfect: will + have + participio",
+  "group": "Future Continuous & Perfect",
+  "note": "Unit3/02 Future Perfect",
+  "unit": 3
+ },
+ "future-cont-vs-perfect": {
+  "name": "Future Continuous vs Perfect (then vs by then)",
+  "group": "Future Continuous & Perfect",
+  "note": "Unit3/04 Misma situación, forma diferente",
+  "unit": 3
+ },
+ "time-clause-no-will": {
+  "name": "Time clauses: nunca will (when I finish)",
+  "group": "Time clauses",
+  "note": "Unit3/05 La regla de oro",
+  "unit": 3
+ },
+ "time-clause-perfect": {
+  "name": "Time clause: Present Simple vs Present Perfect",
+  "group": "Time clauses",
+  "note": "Unit3/05 Simple vs Perfect",
+  "unit": 3
+ },
+ "time-clause-main": {
+  "name": "Cláusula principal: by the time → Future Perfect, while → Future Continuous",
+  "group": "Time clauses",
+  "note": "Unit3/05 Resumen de conjunciones",
+  "unit": 3
+ },
+ "time-conjunction-choice": {
+  "name": "Elegir la conjunción (until, once, as soon as, while, before)",
+  "group": "Time clauses",
+  "note": "Unit3/05 Conjunciones en detalle",
+  "unit": 3
+ },
+ "about-to": {
+  "name": "be about to: inminente",
+  "group": "Future phrases",
+  "note": "Unit3/03 Phrases for the future",
+  "unit": 3
+ },
+ "due-to": {
+  "name": "be due to: programado",
+  "group": "Future phrases",
+  "note": "Unit3/03 Phrases for the future",
+  "unit": 3
+ },
+ "likely-to": {
+  "name": "be likely / unlikely to: probabilidad",
+  "group": "Future phrases",
+  "note": "Unit3/03 Phrases for the future",
+  "unit": 3
+ },
+ "future-phrase-form": {
+  "name": "Frases de futuro + to + infinitivo (no -ing, no falta 'to')",
+  "group": "Future phrases",
+  "note": "Unit3/03 Errores frecuentes",
+  "unit": 3
+ },
+ "cond-type-choice": {
+  "name": "Elegir el tipo de condicional (Zero / First / Second / Third)",
+  "group": "Conditionals",
+  "note": "Unit4/05 Detector Rápido",
+  "unit": 4
+ },
+ "cond-zero-form": {
+  "name": "Zero Conditional: If + Present Simple, Present Simple",
+  "group": "Conditionals",
+  "note": "Unit4/01 Zero",
+  "unit": 4
+ },
+ "cond-first-form": {
+  "name": "First Conditional: nunca will en el if-clause",
+  "group": "Conditionals",
+  "note": "Unit4/01 First",
+  "unit": 4
+ },
+ "cond-second-form": {
+  "name": "Second Conditional: If + Past Simple, would + base (no would en el if, no will)",
+  "group": "Conditionals",
+  "note": "Unit4/01 Second",
+  "unit": 4
+ },
+ "cond-third-form": {
+  "name": "Third Conditional: If + Past Perfect, would have + participio",
+  "group": "Conditionals",
+  "note": "Unit4/01 Third",
+  "unit": 4
+ },
+ "cond-second-vs-third": {
+  "name": "Second vs Third (¿presente o pasado?)",
+  "group": "Conditionals",
+  "note": "Unit4/05 Second vs Third",
+  "unit": 4
+ },
+ "cond-third-modals": {
+  "name": "Third Conditional con might/could have (resultado no seguro)",
+  "group": "Conditionals",
+  "note": "Unit4/01 Third + Modals",
+  "unit": 4
+ },
+ "unless-if-not": {
+  "name": "unless = if not (sin doble negación)",
+  "group": "Alternative forms",
+  "note": "Unit4/02 Unless",
+  "unit": 4
+ },
+ "in-case-form": {
+  "name": "in case + Present Simple (preparación, no condición)",
+  "group": "Alternative forms",
+  "note": "Unit4/02 In case",
+  "unit": 4
+ },
+ "provided-as-long-as": {
+  "name": "provided that / as long as / on condition that",
+  "group": "Alternative forms",
+  "note": "Unit4/02 Provided that",
+  "unit": 4
+ },
+ "when-vs-if": {
+  "name": "when (seguro) vs if (incierto)",
+  "group": "Alternative forms",
+  "note": "Unit4/02 When / If",
+  "unit": 4
+ },
+ "wish-present": {
+  "name": "I wish / If only + Past Simple (presente no deseado)",
+  "group": "Wish / If only",
+  "note": "Unit4/03 Presente",
+  "unit": 4
+ },
+ "wish-could": {
+  "name": "I wish / If only + could (habilidad)",
+  "group": "Wish / If only",
+  "note": "Unit4/03 Habilidad",
+  "unit": 4
+ },
+ "wish-would": {
+  "name": "I wish + would (queja sobre otros, nunca 'I')",
+  "group": "Wish / If only",
+  "note": "Unit4/03 Queja",
+  "unit": 4
+ },
+ "wish-past-perfect": {
+  "name": "I wish / If only + Past Perfect (arrepentimiento)",
+  "group": "Wish / If only",
+  "note": "Unit4/03 Pasado",
+  "unit": 4
+ },
+ "connector-sequence": {
+  "name": "Conectores de secuencia (first, then, finally, lastly...)",
+  "group": "Conectores",
+  "note": "Unit4/04 Secuencia",
+  "unit": 4
+ },
+ "connector-cause-effect": {
+  "name": "Conectores de causa/efecto (due to, therefore, so, since...)",
+  "group": "Conectores",
+  "note": "Unit4/04 Causa-Efecto",
+  "unit": 4
+ },
+ "connector-opinion": {
+  "name": "Conectores de opinión (personally, to be honest...)",
+  "group": "Conectores",
+  "note": "Unit4/04 Opinión",
+  "unit": 4
+ },
+ "modal-form": {
+  "name": "Modal + verbo base (sin to, sin -s)",
+  "group": "Modal verbs",
+  "note": "Unit5/01 Modal Verbs",
+  "unit": 5
+ },
+ "modal-obligation": {
+  "name": "must vs have to (personal vs externa)",
+  "group": "Modal verbs",
+  "note": "Unit5/01 Obligation",
+  "unit": 5
+ },
+ "modal-advice": {
+  "name": "should (consejo) vs must (obligación)",
+  "group": "Modal verbs",
+  "note": "Unit5/01 Advice",
+  "unit": 5
+ },
+ "modal-prohibition": {
+  "name": "mustn't (prohibido) vs don't have to (no necesario)",
+  "group": "Modal verbs",
+  "note": "Unit5/01 Prohibition",
+  "unit": 5
+ },
+ "modal-ability": {
+  "name": "can / could / be able to (habilidad)",
+  "group": "Modal verbs",
+  "note": "Unit5/01 Ability",
+  "unit": 5
+ },
+ "modal-deduction": {
+  "name": "must be / can't be (nunca mustn't be)",
+  "group": "Modal verbs",
+  "note": "Unit5/01 Certainty",
+  "unit": 5
+ },
+ "modal-possibility": {
+  "name": "may / might / could (posibilidad)",
+  "group": "Modal verbs",
+  "note": "Unit5/01 Possibility",
+  "unit": 5
+ },
+ "modal-permission": {
+  "name": "can / could (permiso)",
+  "group": "Modal verbs",
+  "note": "Unit5/01 Permission",
+  "unit": 5
+ },
+ "would-uses": {
+  "name": "would: condicional / cortesía / opinión / hábito pasado",
+  "group": "Modal verbs",
+  "note": "Unit5/01 Would",
+  "unit": 5
+ },
+ "modal-past-vs-present": {
+  "name": "Modal presente vs pasado (should vs should have)",
+  "group": "Modal verbs pasado",
+  "note": "Unit5/02 Modal Verbs (Past)",
+  "unit": 5
+ },
+ "modal-past-form": {
+  "name": "modal + have + participio (should have gone)",
+  "group": "Modal verbs pasado",
+  "note": "Unit5/02 Estructura general",
+  "unit": 5
+ },
+ "modal-past-deduction": {
+  "name": "must have / can't have / might have (deducción pasada)",
+  "group": "Modal verbs pasado",
+  "note": "Unit5/02 Deduction",
+  "unit": 5
+ },
+ "modal-past-criticism": {
+  "name": "should have / shouldn't have (crítica)",
+  "group": "Modal verbs pasado",
+  "note": "Unit5/02 Criticism",
+  "unit": 5
+ },
+ "modal-past-necessity": {
+  "name": "needn't have vs didn't need to",
+  "group": "Modal verbs pasado",
+  "note": "Unit5/02 Necessity",
+  "unit": 5
+ },
+ "semi-modal-to": {
+  "name": "Semi-modales llevan to (have to, need to, ought to)",
+  "group": "Semi-modales",
+  "note": "Unit5/05 Semi-Modal Verbs",
+  "unit": 5
+ },
+ "had-better": {
+  "name": "had better + base (sin to)",
+  "group": "Semi-modales",
+  "note": "Unit5/05 Had better",
+  "unit": 5
+ },
+ "semi-modal-choice": {
+  "name": "Elegir el semi-modal (be supposed to, ought to, be able to...)",
+  "group": "Semi-modales",
+  "note": "Unit5/03 Detector Rápido",
+  "unit": 5
+ },
+ "passive-form": {
+  "name": "Passive: be + participio (no have, no verbo base)",
+  "group": "Passive Voice",
+  "note": "Unit5/04 Passive Voice",
+  "unit": 5
+ },
+ "passive-tense": {
+  "name": "Passive en cada tiempo (am/is/are, was/were, will be...)",
+  "group": "Passive Voice",
+  "note": "Unit5/04 Todos los tiempos",
+  "unit": 5
+ },
+ "passive-perfect": {
+  "name": "Passive perfecto: have/has/had been + participio",
+  "group": "Passive Voice",
+  "note": "Unit5/04 Perfect passive",
+  "unit": 5
+ },
+ "passive-continuous": {
+  "name": "Passive continuo: am/is/are/was/were being + participio",
+  "group": "Passive Voice",
+  "note": "Unit5/04 Continuous passive",
+  "unit": 5
+ },
+ "passive-modal": {
+  "name": "Modal + be + participio / modal + have been + participio",
+  "group": "Passive Voice",
+  "note": "Unit5/04 Modal + Passive",
+  "unit": 5
+ },
+ "passive-objects": {
+  "name": "Objeto directo/indirecto en pasiva",
+  "group": "Passive Voice",
+  "note": "Unit5/04 Objeto directo e indirecto",
+  "unit": 5
+ },
+ "passive-vs-active": {
+  "name": "Activa vs pasiva (¿el sujeto hace o recibe?)",
+  "group": "Passive Voice",
+  "note": "Referencia-General/00",
+  "unit": 5
+ },
+ "passive-impersonal": {
+  "name": "It is reported/hoped that... (pasiva impersonal)",
+  "group": "Passive Voice",
+  "note": "Unit5/04 It is + participio",
+  "unit": 5
+ }
+}

@@ -1,0 +1,151 @@
+[
+  {
+    "id": "u5-dc-semimodals", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Semi-modales: have to / ought to / need to / had better / be supposed to",
+    "instructions": "Elegí la opción correcta. Recordá: los semi-modales llevan to (excepto had better).",
+    "items": [
+      {"n": 1, "q": "She ___ submit the report by Friday. It's a company rule.", "o": ["has to", "must to", "have to", "has"], "a": "has to", "r": "semi-modal-to", "wr": {"must to": "modal-form", "have to": "semi-modal-to", "has": "semi-modal-to"}, "e": "she → has to + base."},
+      {"n": 2, "q": "You ___ see a doctor.", "o": ["ought to", "ought", "oughts to", "are ought to"], "a": "ought to", "r": "semi-modal-to", "wr": {"ought": "semi-modal-to", "oughts to": "semi-modal-to"}, "e": "ought to + base (nunca -s)."},
+      {"n": 3, "q": "I ___ fix this bug before the demo.", "o": ["need to", "need", "needs to", "must to"], "a": "need to", "r": "semi-modal-to", "wr": {"need": "semi-modal-to", "must to": "modal-form"}, "e": "need TO + base."},
+      {"n": 4, "q": "You ___ back up the database before running that migration, or you'll have problems.", "o": ["had better", "had better to", "have better", "had best to"], "a": "had better", "r": "had-better", "wr": {"had better to": "had-better"}, "e": "had better + base, sin to."},
+      {"n": 5, "q": "The deployment ___ happen at midnight, according to the plan.", "o": ["is supposed to", "supposes to", "is suppose to", "supposed to"], "a": "is supposed to", "r": "semi-modal-choice", "e": "be supposed to = se supone que."},
+      {"n": 6, "q": "Will you ___ attend the meeting tomorrow?", "o": ["be able to", "can", "be able", "could to"], "a": "be able to", "r": "modal-ability", "wr": {"can": "modal-ability", "be able": "semi-modal-to"}, "e": "will + be able to (can no se combina con will)."},
+      {"n": 7, "q": "She ___ fix the bug yet.", "o": ["hasn't been able to", "can't been able to", "isn't able", "hasn't able to"], "a": "hasn't been able to", "r": "modal-ability", "e": "Present Perfect de be able to."},
+      {"n": 8, "q": "You ___ worry about the deadline.", "o": ["don't need to", "needn't to", "don't need", "mustn't"], "a": "don't need to", "r": "semi-modal-to", "wr": {"mustn't": "modal-prohibition", "needn't to": "modal-form"}, "e": "don't need TO (o needn't sin to)."},
+      {"n": 9, "q": "I ___ code in jQuery. Now I use React.", "o": ["used to", "am used to", "would", "use to"], "a": "used to", "r": "used-to-form", "wr": {"am used to": "used-to-vs-be-used-to", "use to": "used-to-form"}, "e": "Hábito pasado que ya no existe."},
+      {"n": 10, "q": "He ___ be here today. It's his day off.", "o": ["isn't supposed to", "doesn't suppose to", "isn't suppose to", "hadn't better to"], "a": "isn't supposed to", "r": "semi-modal-choice", "e": "be supposed to (negativo)."}
+    ]
+  },
+  {
+    "id": "u5-sc-semimodal-errors", "format": "sentence_choice", "level": "B1-B2", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (semi-modales)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["She has go.", "She has to go.", "She have to go."], "a": "She has to go.", "r": "semi-modal-to", "e": "Falta el to."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["I need finish this.", "I need to finish this.", "I needs to finish this."], "a": "I need to finish this.", "r": "semi-modal-to", "e": "need TO."},
+      {"n": 3, "q": "Elegí la correcta:", "o": ["You had better to leave.", "You had better leave.", "You had better leaving."], "a": "You had better leave.", "r": "had-better", "e": "had better sin to."},
+      {"n": 4, "q": "Elegí la correcta:", "o": ["She oughts to go.", "She ought to go.", "She ought going."], "a": "She ought to go.", "r": "semi-modal-to", "e": "ought to nunca lleva -s."},
+      {"n": 5, "q": "Elegí la correcta:", "o": ["You musts have to go.", "You have to go.", "You must to have go."], "a": "You have to go.", "r": "modal-form", "e": "No combines dos modales."},
+      {"n": 6, "q": "Elegí la correcta:", "o": ["She doesn't have to come.", "She doesn't has to come.", "She hasn't to come."], "a": "She doesn't have to come.", "r": "semi-modal-to", "e": "have to conjuga con do/does/did."}
+    ]
+  },
+  {
+    "id": "u5-dc-passive-present", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Passive Voice: presente y futuro",
+    "instructions": "Elegí la forma pasiva correcta. Fórmula: auxiliar del tiempo + be/been/being + participio.",
+    "items": [
+      {"n": 1, "q": "User passwords ___ in an encrypted database.", "o": ["are stored", "store", "have stored", "are storing"], "a": "are stored", "r": "passive-form", "wr": {"store": "passive-vs-active", "have stored": "passive-form", "are storing": "passive-vs-active"}, "e": "Las contraseñas RECIBEN la acción → pasiva: are + participio."},
+      {"n": 2, "q": "A new version of the software ___ next week.", "o": ["will be released", "will release", "is released", "will be release"], "a": "will be released", "r": "passive-tense", "wr": {"will release": "passive-vs-active", "will be release": "passive-form"}, "e": "Futuro pasivo: will be + participio."},
+      {"n": 3, "q": "The database ___ automatically every night.", "o": ["is backed up", "backs up", "is backing up", "has backed up"], "a": "is backed up", "r": "passive-tense", "wr": {"backs up": "passive-vs-active", "is backing up": "passive-vs-active"}, "e": "Rutina + la base de datos recibe la acción → is backed up."},
+      {"n": 4, "q": "The project ___ at the moment because the requirements are being reviewed.", "o": ["is being delayed", "is delayed", "was delayed", "has delayed"], "a": "is being delayed", "r": "passive-continuous", "wr": {"is delayed": "passive-continuous", "has delayed": "passive-vs-active"}, "e": "'at the moment' → Continuous pasivo: is being + participio."},
+      {"n": 5, "q": "All important files must ___ before the computer is repaired.", "o": ["be backed up", "back up", "been backed up", "being backed up"], "a": "be backed up", "r": "passive-modal", "wr": {"back up": "passive-vs-active", "been backed up": "passive-modal", "being backed up": "passive-modal"}, "e": "Modal + be + participio."},
+      {"n": 6, "q": "A new algorithm ___ by the research team at the moment.", "o": ["is being developed", "is developing", "is developed", "has developed"], "a": "is being developed", "r": "passive-continuous", "wr": {"is developing": "passive-vs-active", "is developed": "passive-continuous"}, "e": "Continuous pasivo."},
+      {"n": 7, "q": "The problem should ___ as soon as possible.", "o": ["be solved", "solve", "been solved", "being solved"], "a": "be solved", "r": "passive-modal", "wr": {"solve": "passive-vs-active", "been solved": "passive-modal"}, "e": "should + be + participio."},
+      {"n": 8, "q": "This programming language ___ by developers all over the world.", "o": ["is used", "uses", "has used", "is using"], "a": "is used", "r": "passive-form", "wr": {"uses": "passive-vs-active", "is using": "passive-vs-active"}, "e": "Presente simple pasivo."}
+    ]
+  },
+  {
+    "id": "u5-dc-passive-past", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Passive Voice: pasado y perfecto",
+    "instructions": "Elegí la forma pasiva correcta.",
+    "items": [
+      {"n": 1, "q": "The new application ___ by our development team last month.", "o": ["was developed", "is developed", "developed", "has developed"], "a": "was developed", "r": "passive-tense", "wr": {"is developed": "passive-tense", "developed": "passive-vs-active", "has developed": "passive-vs-active"}, "e": "last month → Past Simple pasivo: was + participio."},
+      {"n": 2, "q": "The bug ___ yet.", "o": ["hasn't been fixed", "hasn't fixed", "isn't fixed", "wasn't fixing"], "a": "hasn't been fixed", "r": "passive-perfect", "wr": {"hasn't fixed": "passive-perfect", "isn't fixed": "passive-perfect"}, "e": "'yet' → Present Perfect pasivo: hasn't been + participio. (Tu Test 5 #27: 'hasn't fixed' no lleva been.)"},
+      {"n": 3, "q": "The problem ___ during the testing process yesterday.", "o": ["was discovered", "discovered", "is discovered", "has discovered"], "a": "was discovered", "r": "passive-tense", "wr": {"discovered": "passive-vs-active"}, "e": "yesterday + recibe la acción."},
+      {"n": 4, "q": "More than 500 users ___ by the technical support team so far.", "o": ["have been helped", "have helped", "were helped", "are helped"], "a": "have been helped", "r": "passive-perfect", "wr": {"have helped": "passive-vs-active", "were helped": "passive-perfect"}, "e": "'so far' → Present Perfect pasivo."},
+      {"n": 5, "q": "Several improvements ___ to the application since January.", "o": ["have been made", "have made", "were made", "are made"], "a": "have been made", "r": "passive-perfect", "wr": {"have made": "passive-vs-active"}, "e": "since January → Perfect pasivo."},
+      {"n": 6, "q": "The computer ___ before the technician arrived.", "o": ["had been repaired", "was repaired", "has been repaired", "had repaired"], "a": "had been repaired", "r": "passive-perfect", "wr": {"was repaired": "passive-tense", "has been repaired": "passive-perfect", "had repaired": "passive-vs-active"}, "e": "Antes de otro evento pasado → Past Perfect pasivo."},
+      {"n": 7, "q": "The final report ___ by Friday.", "o": ["will have been completed", "will complete", "will be completing", "has completed"], "a": "will have been completed", "r": "passive-perfect", "wr": {"will complete": "passive-vs-active"}, "e": "by Friday → Future Perfect pasivo."},
+      {"n": 8, "q": "The data ___ from the old system to the new one yesterday.", "o": ["was transferred", "transferred", "is transferred", "has transferred"], "a": "was transferred", "r": "passive-tense", "wr": {"transferred": "passive-vs-active"}, "e": "Past Simple pasivo."}
+    ]
+  },
+  {
+    "id": "u5-vg-passive-tenses", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "Passive Voice: un verbo, todos los tiempos",
+    "instructions": "Escribí la forma pasiva de take / finish / send en el tiempo que indica cada oración.",
+    "text": "1. The photos [1] (take) every day.\n2. The photos [2] (take) right now.\n3. The photos [3] (take) already.\n4. The photos [4] (take) yesterday.\n5. The photos [5] (take) when the phone rang.\n6. The photos [6] (take) before anyone noticed.\n7. The photos [7] (take) tomorrow.\n8. The photos [8] (take) by Friday.\n9. The report [9] (finish) yesterday.\n10. Emails [10] (send) every morning.",
+    "items": [
+      {"n": 1, "a": ["are taken"], "r": "passive-tense", "pat": [["^take$|^are take$", "passive-form"], ["^have taken$", "passive-vs-active"]], "e": "Presente simple pasivo: are + participio."},
+      {"n": 2, "a": ["are being taken"], "r": "passive-continuous", "pat": [["^are taken$", "passive-continuous"], ["^are taking$", "passive-vs-active"], ["^are been taken$", "passive-continuous"]], "e": "am/is/are + being + participio."},
+      {"n": 3, "a": ["have been taken"], "r": "passive-perfect", "pat": [["^have taken$", "passive-vs-active"], ["^are taken$", "passive-perfect"], ["^have been take$", "passive-form"]], "e": "have/has + been + participio."},
+      {"n": 4, "a": ["were taken"], "r": "passive-tense", "pat": [["^was taken$", "passive-tense"], ["^were took$|^were take$", "passive-form"], ["^took$", "passive-vs-active"]], "e": "were + participio (take → took → taken)."},
+      {"n": 5, "a": ["were being taken"], "r": "passive-continuous", "pat": [["^were taken$", "passive-continuous"], ["^were taking$", "passive-vs-active"]], "e": "was/were + being + participio."},
+      {"n": 6, "a": ["had been taken"], "r": "passive-perfect", "pat": [["^were taken$", "passive-perfect"], ["^had taken$", "passive-vs-active"]], "e": "had + been + participio."},
+      {"n": 7, "a": ["will be taken"], "r": "passive-tense", "pat": [["^will take$", "passive-vs-active"], ["^will be take$|^will been taken$", "passive-form"]], "e": "will + be + participio."},
+      {"n": 8, "a": ["will have been taken"], "r": "passive-perfect", "pat": [["^will be taken$", "passive-perfect"], ["^will have taken$", "passive-vs-active"]], "e": "will + have + been + participio."},
+      {"n": 9, "a": ["was finished"], "r": "passive-tense", "pat": [["^were finished$", "passive-tense"], ["^was finish$", "passive-form"], ["^finished$", "passive-vs-active"]], "e": "The report → was finished."},
+      {"n": 10, "a": ["are sent"], "r": "passive-tense", "pat": [["^are send$|^are sended$", "passive-form"], ["^send$", "passive-vs-active"]], "e": "send → sent → sent."}
+    ]
+  },
+  {
+    "id": "u5-vg-active-to-passive", "format": "verb_gap", "level": "B2", "linguaskill": "Práctica propia (activa → pasiva)",
+    "title": "De activa a pasiva",
+    "instructions": "Pasá cada oración a pasiva completando el hueco (el sujeto de la pasiva es el objeto de la activa).",
+    "text": "1. The team is testing the new feature. → The new feature [1] by the team.\n2. Someone has deleted the file. → The file [2].\n3. They will launch the app on Monday. → The app [3] on Monday.\n4. They had repaired the server before I arrived. → The server [4] before I arrived.\n5. The developers must fix the bug today. → The bug [5] today.\n6. Someone should have told him the truth. → He [6] the truth.\n7. They were fixing the bug when I called. → The bug [7] when I called.\n8. Steve Jobs created Apple. → Apple [8] by Steve Jobs.",
+    "items": [
+      {"n": 1, "a": ["is being tested"], "r": "passive-continuous", "pat": [["^is tested$", "passive-continuous"], ["^is testing$", "passive-vs-active"]], "e": "is testing → is being tested."},
+      {"n": 2, "a": ["has been deleted"], "r": "passive-perfect", "pat": [["^has deleted$", "passive-vs-active"], ["^was deleted$", "passive-perfect"], ["^has delete$|^has been delete$", "passive-form"]], "e": "has deleted → has been deleted."},
+      {"n": 3, "a": ["will be launched"], "r": "passive-tense", "pat": [["^will launch$", "passive-vs-active"], ["^will launched$|^will be launch$", "passive-form"]], "e": "will launch → will be launched."},
+      {"n": 4, "a": ["had been repaired"], "r": "passive-perfect", "pat": [["^was repaired$", "passive-perfect"], ["^had repaired$", "passive-vs-active"]], "e": "had repaired → had been repaired."},
+      {"n": 5, "a": ["must be fixed"], "r": "passive-modal", "pat": [["^must fix$", "passive-vs-active"], ["^must fixed$|^must be fix$", "passive-modal"], ["^must have been fixed$", "passive-modal"]], "e": "modal + be + participio."},
+      {"n": 6, "a": ["should have been told"], "r": "passive-modal", "pat": [["^should be told$", "passive-modal"], ["^should have told$", "passive-vs-active"], ["^should have been tell$", "passive-form"]], "e": "Tu apunte: modal + have been + participio (He should have been told the truth)."},
+      {"n": 7, "a": ["was being fixed"], "r": "passive-continuous", "pat": [["^was fixed$", "passive-continuous"], ["^were being fixed$", "passive-continuous"], ["^was fixing$", "passive-vs-active"]], "e": "was/were + being + participio."},
+      {"n": 8, "a": ["was created"], "r": "passive-tense", "pat": [["^created$", "passive-vs-active"], ["^were created$", "passive-tense"], ["^was create$", "passive-form"]], "e": "Tu apunte: Apple was created by Steve Jobs."}
+    ]
+  },
+  {
+    "id": "u5-tense-id-passive", "format": "tense_id", "level": "B1-B2", "linguaskill": "Práctica propia (identificar el tiempo pasivo)",
+    "title": "¿Qué tiempo pasivo es?",
+    "instructions": "Elegí el tiempo verbal (en voz pasiva) de la parte en negrita.",
+    "options": ["Present Simple passive", "Present Continuous passive", "Present Perfect passive", "Past Simple passive", "Past Perfect passive", "Future passive"],
+    "items": [
+      {"n": 1, "q": "The photos **are taken** every day.", "a": "Present Simple passive", "r": "passive-tense", "e": "are + participio."},
+      {"n": 2, "q": "The photos **are being taken** now.", "a": "Present Continuous passive", "r": "passive-continuous", "e": "are + being + participio."},
+      {"n": 3, "q": "The photos **have been taken**.", "a": "Present Perfect passive", "r": "passive-perfect", "e": "have + been + participio."},
+      {"n": 4, "q": "The photos **were taken** yesterday.", "a": "Past Simple passive", "r": "passive-tense", "e": "were + participio."},
+      {"n": 5, "q": "The photos **had been taken** before we arrived.", "a": "Past Perfect passive", "r": "passive-perfect", "e": "had + been + participio."},
+      {"n": 6, "q": "The photos **will be taken** tomorrow.", "a": "Future passive", "r": "passive-tense", "e": "will + be + participio."},
+      {"n": 7, "q": "The cake **was made** by my mom.", "a": "Past Simple passive", "r": "passive-tense", "e": "Ejemplo de tus apuntes."},
+      {"n": 8, "q": "The TV **is being watched** by my brother.", "a": "Present Continuous passive", "r": "passive-continuous", "e": "Ejemplo de tus apuntes."},
+      {"n": 9, "q": "Everyone **has been told** to stay inside.", "a": "Present Perfect passive", "r": "passive-perfect", "e": "Ejemplo de tus apuntes."}
+    ]
+  },
+  {
+    "id": "u5-dc-passive-objects", "format": "discrete_cloze", "level": "B2", "linguaskill": "Práctica propia (objeto directo / indirecto)",
+    "title": "Passive con dos objetos",
+    "instructions": "Elegí la pasiva que empieza por el objeto pedido. (Para el examen: probablemente pidan empezar por el objeto directo.)",
+    "items": [
+      {"n": 1, "q": "My teacher gave us homework. Pasiva que empieza por el objeto DIRECTO (homework):", "o": ["Homework was given to us.", "We were given homework.", "Us were given homework.", "Homework gave us."], "a": "Homework was given to us.", "r": "passive-objects", "wr": {"We were given homework.": "passive-objects"}, "e": "Objeto directo como sujeto → Homework was given to us."},
+      {"n": 2, "q": "My teacher gave us homework. Pasiva que empieza por el objeto INDIRECTO (us):", "o": ["We were given homework.", "Homework was given to us.", "Us were given homework.", "We were gave homework."], "a": "We were given homework.", "r": "passive-objects", "wr": {"Homework was given to us.": "passive-objects"}, "e": "Objeto indirecto como sujeto → We were given homework."},
+      {"n": 3, "q": "The company sent the clients an invoice. Pasiva que empieza por el objeto directo:", "o": ["An invoice was sent to the clients.", "The clients were sent an invoice.", "The clients sent an invoice.", "An invoice sent the clients."], "a": "An invoice was sent to the clients.", "r": "passive-objects", "wr": {"The clients were sent an invoice.": "passive-objects"}, "e": "An invoice (objeto directo) + was sent to..."},
+      {"n": 4, "q": "They offered her a new job. Pasiva que empieza por 'She':", "o": ["She was offered a new job.", "A new job offered her.", "She offered a new job.", "She was offering a new job."], "a": "She was offered a new job.", "r": "passive-objects", "e": "Objeto indirecto como sujeto → She was offered a new job."}
+    ]
+  },
+  {
+    "id": "u5-sc-passive-errors", "format": "sentence_choice", "level": "B1-B2", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (Passive Voice)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["The windows have cleaned every week.", "The windows are cleaned every week.", "The windows cleaned every week."], "a": "The windows are cleaned every week.", "r": "passive-vs-active", "wr": {"The windows have cleaned every week.": "passive-form"}, "e": "La pasiva usa be, no have."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["The report is finish.", "The report is finished.", "The report finished is."], "a": "The report is finished.", "r": "passive-form", "e": "be + participio (no verbo base)."},
+      {"n": 3, "q": "Elegí la correcta:", "o": ["The emails are sent yesterday.", "The emails were sent yesterday.", "The emails was sent yesterday."], "a": "The emails were sent yesterday.", "r": "passive-tense", "e": "yesterday → were (plural)."},
+      {"n": 4, "q": "Elegí la correcta:", "o": ["The photos have been being taken.", "The photos have been taken.", "The photos have being taken."], "a": "The photos have been taken.", "r": "passive-perfect", "e": "El Perfect Continuous no tiene pasiva natural: reformulá con Present Perfect."},
+      {"n": 5, "q": "Elegí la pasiva correcta (they = los invitados):", "o": ["Were they invited to the wedding?", "Did they invited to the wedding?", "Was they invited to the wedding?"], "a": "Were they invited to the wedding?", "r": "passive-form", "e": "Cualquier sujeto puede recibir la acción, también they."},
+      {"n": 6, "q": "Elegí la correcta:", "o": ["The server is being monitored at the moment.", "The server is monitoring at the moment.", "The server is been monitored at the moment."], "a": "The server is being monitored at the moment.", "r": "passive-continuous", "e": "is + being + participio."}
+    ]
+  },
+  {
+    "id": "u5-dc-passive-modal", "format": "discrete_cloze", "level": "B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Passive con modales y voz impersonal",
+    "instructions": "Elegí la opción correcta.",
+    "items": [
+      {"n": 1, "q": "They ___ there for observation.", "o": ["will be kept", "will keep", "will been kept", "will be keeping"], "a": "will be kept", "r": "passive-modal", "wr": {"will keep": "passive-vs-active", "will been kept": "passive-modal"}, "e": "Tu apunte: They will be kept there for observation."},
+      {"n": 2, "q": "He ___ asked to leave, I think. Nobody saw him after the meeting.", "o": ["must have been", "must be", "must have", "must been"], "a": "must have been", "r": "passive-modal", "wr": {"must be": "modal-past-form", "must have": "passive-modal"}, "e": "Deducción sobre el pasado + pasiva → must have been + participio."},
+      {"n": 3, "q": "These files ___ before the update.", "o": ["must be backed up", "must back up", "must be back up", "must to be backed up"], "a": "must be backed up", "r": "passive-modal", "wr": {"must back up": "passive-vs-active"}, "e": "modal + be + participio."},
+      {"n": 4, "q": "The manager should ___ told about the delay yesterday.", "o": ["have been", "be", "been", "have"], "a": "have been", "r": "passive-modal", "wr": {"be": "modal-past-form"}, "e": "should have been told (crítica pasada + pasiva)."},
+      {"n": 5, "q": "By next week, the whole system ___.", "o": ["will have been migrated", "will be migrating", "will have migrated", "has been migrated"], "a": "will have been migrated", "r": "passive-perfect", "wr": {"will have migrated": "passive-vs-active"}, "e": "By + tiempo futuro → Future Perfect pasivo."},
+      {"n": 6, "q": "It ___ that new investment will generate employment.", "o": ["is hoped", "hopes", "is hoping", "has hope"], "a": "is hoped", "r": "passive-impersonal", "wr": {"hopes": "passive-impersonal"}, "e": "Tu apunte: It is hoped that..."},
+      {"n": 7, "q": "It ___ that procedures be reviewed.", "o": ["is recommended", "recommends", "is recommending", "recommended it"], "a": "is recommended", "r": "passive-impersonal", "e": "Tu apunte: It is recommended that..."}
+    ]
+  }
+]

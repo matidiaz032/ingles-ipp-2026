@@ -1,0 +1,15 @@
+data/progress.sqlite
+__pycache__/
+
+mobile/
+*.pre-sync-backup.sqlite
+data/hf_token.txt
+data/sync.json
+
+# material de terceros y personal (no se publica)
+source-material/booklet/
+source-material/tests/
+obsidian-notes/
+data/history-seed.json
+data/glosario-pendiente.md
+*.sqlite

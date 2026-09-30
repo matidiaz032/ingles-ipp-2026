@@ -1,0 +1,118 @@
+[
+  {
+    "id": "u3-oc-conference", "format": "open_cloze", "level": "B1", "linguaskill": "Open cloze",
+    "title": "Open cloze: the conference",
+    "instructions": "Escribí UNA palabra gramatical en cada hueco.",
+    "text": "Next week our company [1] going to organise a conference for two hundred developers. The event is [2] to start on Friday at nine. I think it [3] be a great success. By the time the first speaker arrives, we [4] have finished all the preparations. Please don't call me between 10 [5] noon on Thursday, because I will be giving interviews.",
+    "items": [
+      {"n": 1, "a": ["is"], "alt": ["'s"], "r": "future-going-to-form", "pat": [["^are$|^am$", "future-going-to-form"], ["^will be$", "future-going-to-form"]], "e": "company = it → is going to."},
+      {"n": 2, "a": ["due"], "r": "due-to", "pat": [["^about$", "about-to"], ["^likely$", "likely-to"]], "e": "Horario fijo (Friday at nine) → is due to start."},
+      {"n": 3, "a": ["will"], "alt": ["'ll"], "r": "will-form", "pat": [["^is$|^does$", "will-form"]], "e": "'I think' → will + base."},
+      {"n": 4, "a": ["will"], "alt": ["'ll"], "r": "time-clause-main", "pat": [["^would$|^are$", "time-clause-main"]], "e": "By the time (arrives) → cláusula principal en Future Perfect: will have finished."},
+      {"n": 5, "a": ["and"], "r": "prep-collocation", "pat": [["^to$|^until$", "prep-collocation"]], "e": "between 10 AND noon."}
+    ]
+  },
+  {
+    "id": "u3-oc-move", "format": "open_cloze", "level": "B2", "linguaskill": "Open cloze",
+    "title": "Open cloze: a new city",
+    "instructions": "Escribí UNA palabra gramatical en cada hueco.",
+    "text": "This time next month, I [1] be working in a new city. I am moving on the first of the month, so I will send you my address as soon as I [2] settled in. The company is [3] to open a second office there next year, and it is [4] to be very successful. By the end of the year, I [5] have met all my new colleagues.",
+    "items": [
+      {"n": 1, "a": ["will"], "alt": ["'ll"], "r": "future-cont-form", "pat": [["^am$|^is$", "future-cont-form"]], "e": "'This time next month' → will be working."},
+      {"n": 2, "a": ["have"], "alt": ["'ve"], "r": "time-clause-perfect", "pat": [["^will$|^will have$", "time-clause-no-will"], ["^has$", "time-clause-perfect"]], "e": "as soon as + Present Perfect (I have settled in), nunca will."},
+      {"n": 3, "a": ["due"], "r": "due-to", "pat": [["^about$", "about-to"], ["^likely$", "likely-to"]], "e": "Plan programado para el año próximo → is due to open."},
+      {"n": 4, "a": ["likely"], "r": "likely-to", "pat": [["^due$|^about$", "likely-to"]], "e": "Probabilidad → is likely to be successful."},
+      {"n": 5, "a": ["will"], "alt": ["'ll"], "r": "future-perfect-form", "pat": [["^am$|^would$", "future-perfect-form"]], "e": "By the end of the year → Future Perfect: will have met."}
+    ]
+  },
+  {
+    "id": "u3-mcc-holiday", "format": "mc_cloze", "level": "B1", "linguaskill": "Multiple choice cloze (3 opciones)",
+    "title": "Multiple choice cloze: a trip to Japan",
+    "instructions": "Elegí la opción correcta para cada hueco.",
+    "text": "Sam [1] to Japan next month: he has already booked everything. His plane [2] at 6 a.m. on Monday. He is sure that the trip [3] amazing. As soon as he [4] in Tokyo, he will call his parents. By this time next week, he [5] on the beach.",
+    "items": [
+      {"n": 1, "o": ["is flying", "flies", "will fly"], "a": "is flying", "r": "future-present-continuous", "wr": {"flies": "future-present-continuous", "will fly": "future-present-continuous"}, "e": "Ya reservado → arreglo organizado."},
+      {"n": 2, "o": ["leaves", "will leave", "leave"], "a": "leaves", "r": "future-present-simple", "wr": {"will leave": "future-present-simple", "leave": "future-present-simple"}, "e": "Horario de vuelo → Present Simple."},
+      {"n": 3, "o": ["will be", "is being", "is"], "a": "will be", "r": "will-form", "wr": {"is being": "future-will-vs-going-to", "is": "future-will-vs-going-to"}, "e": "'He is sure' → predicción → will."},
+      {"n": 4, "o": ["arrives", "will arrive", "is arriving"], "a": "arrives", "r": "time-clause-no-will", "wr": {"will arrive": "time-clause-no-will", "is arriving": "time-clause-no-will"}, "e": "as soon as + Present Simple."},
+      {"n": 5, "o": ["will be lying", "will lie", "will have lain"], "a": "will be lying", "r": "future-cont-form", "wr": {"will lie": "future-cont-form", "will have lain": "future-cont-vs-perfect"}, "e": "'This time next week' → en progreso."}
+    ]
+  },
+  {
+    "id": "u3-mcc-deploy", "format": "mc_cloze", "level": "B2", "linguaskill": "Multiple choice cloze (4 opciones)",
+    "title": "Multiple choice cloze: release night",
+    "instructions": "Elegí la opción correcta para cada hueco.",
+    "text": "By the time the client [1] tomorrow, the team [2] the last bug. We [3] the new version at midnight, so please don't call us then. It [4] to take about two hours, and we will not leave the office until everything [5] correctly.",
+    "items": [
+      {"n": 1, "o": ["calls", "will call", "is going to call", "called"], "a": "calls", "r": "time-clause-no-will", "wr": {"will call": "time-clause-no-will", "is going to call": "time-clause-no-will"}, "e": "By the time + Present Simple."},
+      {"n": 2, "o": ["will have fixed", "will fix", "will be fixing", "fixes"], "a": "will have fixed", "r": "time-clause-main", "wr": {"will fix": "time-clause-main", "will be fixing": "future-cont-vs-perfect"}, "e": "By the time → Future Perfect."},
+      {"n": 3, "o": ["will be deploying", "will deploy", "will have deployed", "deploy"], "a": "will be deploying", "r": "future-cont-vs-perfect", "wr": {"will have deployed": "future-cont-vs-perfect", "will deploy": "future-cont-form"}, "e": "'at midnight ... don't call us then' → en progreso."},
+      {"n": 4, "o": ["is likely", "is due", "is about", "is unlikely"], "a": "is likely", "r": "likely-to", "wr": {"is due": "due-to", "is about": "about-to"}, "e": "Estimación ('about two hours') → probable."},
+      {"n": 5, "o": ["works", "will work", "is working", "worked"], "a": "works", "r": "time-clause-no-will", "wr": {"will work": "time-clause-no-will"}, "e": "until + Present Simple."}
+    ]
+  },
+  {
+    "id": "u3-gs-launch", "format": "gapped_sentences", "level": "B2", "linguaskill": "Gapped text, sentences",
+    "title": "Gapped text: the launch plan",
+    "instructions": "Cinco oraciones fueron eliminadas del texto. Elegí de la lista (A-H) la que encaja en cada hueco. Hay TRES oraciones que sobran.",
+    "text": "Our team is preparing the launch of a new mobile app. [1] The developers are finishing the last features this week, and the testers start on Monday. [2] By the time the testing phase ends, the developers will have fixed all the reported bugs. Next month, the marketing team is meeting several journalists. [3] They will be presenting the app during a live event on 15 June. As soon as the event finishes, the app will be available in all stores. [4] The company is likely to reach its first thousand users in a week. Nobody knows for sure, though. [5] Whatever happens, the team will be watching the numbers carefully.",
+    "bank": [
+      "The launch is due to take place in June.",
+      "The testing phase will be very demanding.",
+      "They have prepared a short video to show the main features.",
+      "Everyone hopes the reaction of the users will be positive.",
+      "Predictions are always difficult with a new product.",
+      "The old version was launched three years ago and was a great success.",
+      "The company was founded by two engineers in 2015.",
+      "The journalists decided to cancel the interview yesterday."
+    ],
+    "items": [
+      {"n": 1, "a": ["The launch is due to take place in June."], "r": "reading-cohesion", "e": "Introduce la fecha del lanzamiento; luego se detalla el trabajo previo."},
+      {"n": 2, "a": ["The testing phase will be very demanding."], "r": "reading-cohesion", "e": "Retoma 'the testers start on Monday' y anticipa 'the testing phase ends'."},
+      {"n": 3, "a": ["They have prepared a short video to show the main features."], "r": "reading-cohesion", "e": "'They' = marketing team; el siguiente 'They will be presenting' continúa con el mismo sujeto."},
+      {"n": 4, "a": ["Everyone hopes the reaction of the users will be positive."], "r": "reading-cohesion", "e": "Prepara la predicción sobre los primeros usuarios."},
+      {"n": 5, "a": ["Predictions are always difficult with a new product."], "r": "reading-cohesion", "e": "Continúa 'Nobody knows for sure, though'."}
+    ]
+  },
+  {
+    "id": "u3-rd-it", "format": "reading_discrete", "level": "B1", "linguaskill": "Reading discrete con soporte visual",
+    "title": "Aviso de IT",
+    "instructions": "Leé el mensaje y elegí la respuesta correcta.",
+    "text": "To: All staff\nSubject: Server maintenance\nThe servers will be down for maintenance on Saturday from 11 p.m. until 2 a.m. While the work is being done, you will not be able to open the shared drive. Please save your files before you leave on Friday. — IT Team",
+    "items": [
+      {"n": 1, "q": "What should staff do?", "o": ["Save their files before leaving on Friday", "Come to the office on Saturday night", "Call IT at 11 p.m."], "a": "Save their files before leaving on Friday", "r": "reading-detail", "e": "'Please save your files before you leave on Friday'."}
+    ]
+  },
+  {
+    "id": "u3-rd-chat", "format": "reading_discrete", "level": "B1", "linguaskill": "Reading discrete con soporte visual",
+    "title": "Mensaje de chat",
+    "instructions": "Leé el mensaje y elegí la respuesta correcta.",
+    "text": "Chat · Leo → Mia\nHi Mia, I'm meeting the client at 3, so I'll be presenting during the team call. Can you take notes for me? I'll send you the slides as soon as I finish them. Thanks!",
+    "items": [
+      {"n": 1, "q": "What does Leo ask Mia to do?", "o": ["Take notes during the team call", "Present the slides", "Meet the client at 3"], "a": "Take notes during the team call", "r": "reading-detail", "e": "'Can you take notes for me?'."}
+    ]
+  },
+  {
+    "id": "u3-comp-launch", "format": "comprehension", "level": "B1", "linguaskill": "Comprehension task (5 items)",
+    "title": "The big day",
+    "instructions": "Leé el texto y elegí la respuesta correcta para cada pregunta.",
+    "text": "Tomorrow is the big day for Lucía's team. After eight months of work, they are launching their app at 10 a.m. Lucía has been worrying about it all week. \"I'm sure everything will go well,\" she says, \"but I can't stop thinking about what could go wrong.\"\nThe schedule for tomorrow is tight. The servers will be switched on at 9:30, and the team will be checking every system until the launch. If there are no problems, the marketing team will send the announcement to two thousand subscribers at exactly 10 o'clock. By noon, the team hopes to have reached its first five hundred downloads.\nLucía's manager has told the team not to work late tonight. \"You will need all your energy tomorrow,\" he said. \"Once the app is live, there will be plenty to do. When you get home, turn off your phones and get a good night's sleep.\"\nLucía isn't going to follow the advice completely. She is meeting her best friend for dinner at eight, and she will try to relax. But she knows that, by the time she goes to bed, she will have checked the servers at least three times.",
+    "items": [
+      {"n": 1, "q": "What time is the launch?", "o": ["9:30", "10:00", "Noon"], "a": "10:00", "r": "reading-detail", "e": "'launching their app at 10 a.m.'."},
+      {"n": 2, "q": "What will the team be doing until the launch?", "o": ["Checking every system", "Waiting for subscribers", "Sleeping"], "a": "Checking every system", "r": "reading-detail", "e": "'will be checking every system until the launch'."},
+      {"n": 3, "q": "What does the team hope to have achieved by noon?", "o": ["Five hundred downloads", "Two thousand subscribers", "A new office"], "a": "Five hundred downloads", "r": "reading-detail", "e": "'By noon, the team hopes to have reached its first five hundred downloads'."},
+      {"n": 4, "q": "What advice did the manager give?", "o": ["Work late to prepare", "Rest and turn off phones tonight", "Meet friends for dinner"], "a": "Rest and turn off phones tonight", "r": "reading-detail", "e": "'turn off your phones and get a good night's sleep'."},
+      {"n": 5, "q": "What does the text suggest about Lucía?", "o": ["She isn't worried at all", "She will probably check the servers several times before sleeping", "She will cancel her dinner"], "a": "She will probably check the servers several times before sleeping", "r": "reading-detail", "e": "'by the time she goes to bed, she will have checked the servers at least three times'."}
+    ]
+  },
+  {
+    "id": "u3-comp-work", "format": "comprehension", "level": "B2", "linguaskill": "Comprehension task (2 items)",
+    "title": "The future of office work",
+    "instructions": "Leé el texto y elegí la respuesta correcta.",
+    "text": "Experts believe that by 2035 computers will have taken over many routine office tasks, but that does not mean that most people will be unemployed. History suggests otherwise: when factories introduced machines, new professions appeared that nobody had imagined. However, workers who are unlikely to adapt quickly may find the transition difficult. That is why some companies are already offering training courses, which are due to begin next year. Analysts warn that those who wait until the changes have arrived will find it much harder to catch up, and they recommend that employees start learning new skills now, while there is still time to prepare.",
+    "items": [
+      {"n": 1, "q": "According to the text, what does history suggest?", "o": ["Most people will lose their jobs", "New professions will appear as technology changes", "Machines never replace workers", "Companies avoid training"], "a": "New professions will appear as technology changes", "r": "reading-detail", "e": "'when factories introduced machines, new professions appeared'."},
+      {"n": 2, "q": "What do analysts warn about?", "o": ["People who wait for the changes to arrive will find it harder to catch up", "Training courses will be cancelled", "Machines will stop working", "Nobody will need offices"], "a": "People who wait for the changes to arrive will find it harder to catch up", "r": "reading-detail", "e": "'those who wait until the changes have arrived will find it much harder to catch up'."}
+    ]
+  }
+]

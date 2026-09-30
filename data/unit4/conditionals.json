@@ -1,0 +1,99 @@
+[
+  {
+    "id": "u4-dc-cond-mixed", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Conditionals: elegí la forma correcta",
+    "instructions": "Elegí la opción correcta. Primero decidí el tipo: ¿siempre verdadero, posible, hipotético o imaginario del pasado?",
+    "items": [
+      {"n": 1, "q": "If a program ___ an invalid input, it usually returns an error message.", "o": ["receives", "will receive", "received", "would receive"], "a": "receives", "r": "cond-zero-form", "wr": {"will receive": "cond-zero-form", "received": "cond-type-choice", "would receive": "cond-type-choice"}, "e": "'usually' → hecho general → Zero: If + Present Simple, Present Simple."},
+      {"n": 2, "q": "If the development team finishes the tests today, they ___ the new version tomorrow.", "o": ["will deploy", "deploy", "would deploy", "would have deployed"], "a": "will deploy", "r": "cond-first-form", "wr": {"would deploy": "cond-type-choice", "would have deployed": "cond-type-choice"}, "e": "Situación posible en el futuro → First: will + base."},
+      {"n": 3, "q": "If I ___ more experience with Python, I would apply for that position.", "o": ["had", "have", "would have", "had had"], "a": "had", "r": "cond-second-form", "wr": {"have": "cond-second-form", "would have": "cond-second-form", "had had": "cond-second-vs-third"}, "e": "Hipotético en el presente → Second: If + Past Simple."},
+      {"n": 4, "q": "If we had backed up the database, we ___ all that data.", "o": ["wouldn't have lost", "wouldn't lose", "won't lose", "didn't lose"], "a": "wouldn't have lost", "r": "cond-third-form", "wr": {"wouldn't lose": "cond-second-vs-third", "won't lose": "cond-type-choice", "didn't lose": "cond-third-form"}, "e": "If + Past Perfect → Third: would have + participio."},
+      {"n": 5, "q": "If the server ___ down, users cannot access the application.", "o": ["goes", "will go", "went", "would go"], "a": "goes", "r": "cond-zero-form", "wr": {"will go": "cond-zero-form"}, "e": "Hecho siempre verdadero → Zero."},
+      {"n": 6, "q": "If I were the project manager, I ___ the deadline.", "o": ["would change", "will change", "changed", "would have changed"], "a": "would change", "r": "cond-second-form", "wr": {"will change": "cond-second-form", "would have changed": "cond-second-vs-third", "changed": "cond-second-form"}, "e": "If I were → Second: would + base (no will)."},
+      {"n": 7, "q": "If they had tested the application properly, they ___ so many bugs after the release.", "o": ["wouldn't have found", "wouldn't find", "won't find", "hadn't found"], "a": "wouldn't have found", "r": "cond-third-form", "wr": {"wouldn't find": "cond-second-vs-third"}, "e": "Pasado imaginario → Third."},
+      {"n": 8, "q": "If the client ___ the design, we will start development next week.", "o": ["approves", "will approve", "approved", "would approve"], "a": "approves", "r": "cond-first-form", "wr": {"will approve": "cond-first-form"}, "e": "First Conditional: el if-clause va en Present Simple, nunca will."},
+      {"n": 9, "q": "If developers don't use version control, they often ___ track of changes.", "o": ["lose", "will lose", "would lose", "lost"], "a": "lose", "r": "cond-zero-form", "wr": {"will lose": "cond-zero-form"}, "e": "'often' → Zero."},
+      {"n": 10, "q": "If I ___ the lottery, I would travel a lot.", "o": ["won", "win", "had won", "would win"], "a": "won", "r": "cond-second-form", "wr": {"would win": "cond-second-form", "had won": "cond-second-vs-third"}, "e": "Poco probable → Second: If + Past Simple (won). Se traduce 'si ganara'."}
+    ]
+  },
+  {
+    "id": "u4-vg-cond-forms", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "Conditionals: escribí la forma del verbo",
+    "instructions": "Completá con la forma correcta del verbo entre paréntesis.",
+    "text": "1. If the code contains a syntax error, the compiler usually [1] (display) an error message.\n2. If we finish the testing phase this week, we [2] (release) the application next Monday.\n3. If I were more familiar with JavaScript, I [3] (understand) this code more easily.\n4. If we [4] (know) about the server problem earlier, we would have been able to fix it before the presentation.\n5. If I had had more time yesterday, I [5] (write) better documentation.\n6. If it [6] (rain) tomorrow, we will cancel the trip.\n7. If I [7] (win) the lottery, I would travel a lot.\n8. If you [8] (heat) ice, it melts.\n9. If you had studied, you [9] (pass) the exam.\n10. If she [10] (be) here, she would help us.",
+    "items": [
+      {"n": 1, "a": ["displays"], "r": "cond-zero-form", "pat": [["^will display$", "cond-zero-form"], ["^display$", "ps-form"]], "e": "Zero: Present Simple en ambas partes; the compiler → displays."},
+      {"n": 2, "a": ["will release"], "alt": ["'ll release"], "r": "cond-first-form", "pat": [["^would release$", "cond-type-choice"], ["^release$", "cond-first-form"]], "e": "First: posible → will + base."},
+      {"n": 3, "a": ["would understand"], "r": "cond-second-form", "pat": [["^will understand$", "cond-second-form"], ["^understood$", "cond-second-form"]], "e": "If I were → Second: would + base."},
+      {"n": 4, "a": ["had known"], "r": "cond-third-form", "pat": [["^knew$", "cond-second-vs-third"], ["^would have known$", "cond-third-form"]], "e": "Pasado imaginario → If + Past Perfect."},
+      {"n": 5, "a": ["would have written"], "r": "cond-third-form", "pat": [["^would have wrote$|^would have write$", "irregular-participle"], ["^would write$", "cond-second-vs-third"]], "e": "Third: would have + participio (write → wrote → written)."},
+      {"n": 6, "a": ["rains"], "r": "cond-first-form", "pat": [["^will rain$", "cond-first-form"], ["^rain$", "ps-form"]], "e": "El if-clause nunca lleva will."},
+      {"n": 7, "a": ["won"], "r": "cond-second-form", "pat": [["^would win$", "cond-second-form"], ["^win$", "cond-type-choice"]], "e": "Second: If + Past Simple, no would."},
+      {"n": 8, "a": ["heat"], "r": "cond-zero-form", "pat": [["^will heat$", "cond-zero-form"], ["^heats$", "ps-form"]], "e": "Verdad general: If you heat ice, it melts."},
+      {"n": 9, "a": ["would have passed"], "r": "cond-third-form", "pat": [["^would pass$", "cond-second-vs-third"], ["^would have pass$", "cond-third-form"]], "e": "If you had studied → would have passed."},
+      {"n": 10, "a": ["were", "was"], "r": "cond-second-form", "pat": [["^is$|^be$|^would be$", "cond-second-form"]], "e": "Second: If she were here (forma habitual de to be)."}
+    ]
+  },
+  {
+    "id": "u4-tense-id-cond", "format": "tense_id", "level": "B1", "linguaskill": "Práctica propia (identificación del tipo)",
+    "title": "¿Qué tipo de condicional es?",
+    "instructions": "Identificá el tipo de condicional.",
+    "options": ["Zero Conditional", "First Conditional", "Second Conditional", "Third Conditional"],
+    "items": [
+      {"n": 1, "q": "If the database connection fails, the application displays an error.", "a": "Zero Conditional", "r": "cond-type-choice", "e": "Hecho general."},
+      {"n": 2, "q": "If the client approves the design, we will start development next week.", "a": "First Conditional", "r": "cond-type-choice", "e": "Posible en el futuro."},
+      {"n": 3, "q": "If I were the project manager, I would change the deadline.", "a": "Second Conditional", "r": "cond-type-choice", "e": "Hipotético: 'si yo fuera'."},
+      {"n": 4, "q": "If they had tested the application properly, they wouldn't have found so many bugs after the release.", "a": "Third Conditional", "r": "cond-type-choice", "e": "Pasado imaginario (Past Perfect)."},
+      {"n": 5, "q": "If developers don't use version control, they often lose track of changes.", "a": "Zero Conditional", "r": "cond-type-choice", "e": "'often' → hecho general."},
+      {"n": 6, "q": "If it rains, we'll cancel the trip.", "a": "First Conditional", "r": "cond-type-choice", "e": "Present Simple + will."},
+      {"n": 7, "q": "If I won the lottery, I would travel a lot.", "a": "Second Conditional", "r": "cond-type-choice", "e": "'si ganara' → subjuntivo → Second."},
+      {"n": 8, "q": "If I hadn't been sick, I would have gone to your party.", "a": "Third Conditional", "r": "cond-type-choice", "e": "'si no hubiera estado enfermo' → Third."},
+      {"n": 9, "q": "If you heat ice, it melts.", "a": "Zero Conditional", "r": "cond-type-choice", "e": "Verdad científica."}
+    ]
+  },
+  {
+    "id": "u4-sc-cond-errors", "format": "sentence_choice", "level": "B1-B2", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (errores de condicionales)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["If it will rain, we'll cancel the trip.", "If it rains, we'll cancel the trip.", "If it rain, we'll cancel the trip."], "a": "If it rains, we'll cancel the trip.", "r": "cond-first-form", "e": "First: if-clause en Present Simple."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["If I would win the lottery, I would travel.", "If I won the lottery, I would travel.", "If I win the lottery, I would travel."], "a": "If I won the lottery, I would travel.", "r": "cond-second-form", "e": "Second: if-clause en Past Simple, no would."},
+      {"n": 3, "q": "Elegí la correcta:", "o": ["If you studied, you would have passed.", "If you had studied, you would have passed.", "If you would have studied, you would have passed."], "a": "If you had studied, you would have passed.", "r": "cond-third-form", "e": "Third: if-clause en Past Perfect."},
+      {"n": 4, "q": "Elegí la correcta:", "o": ["If I had more money, I will travel.", "If I had more money, I would travel.", "If I had more money, I would to travel."], "a": "If I had more money, I would travel.", "r": "cond-second-form", "e": "Second: resultado con would, no will."},
+      {"n": 5, "q": "Elegí la correcta:", "o": ["If the tests will pass, we'll deploy.", "If the tests pass, we'll deploy.", "If the tests passed, we'll deploy."], "a": "If the tests pass, we'll deploy.", "r": "cond-first-form", "e": "First: Present Simple + will."},
+      {"n": 6, "q": "Elegí la correcta:", "o": ["If we tested the code, we wouldn't have deployed that bug.", "If we had tested the code, we wouldn't have deployed that bug.", "If we would have tested the code, we wouldn't have deployed that bug."], "a": "If we had tested the code, we wouldn't have deployed that bug.", "r": "cond-third-form", "wr": {"If we tested the code, we wouldn't have deployed that bug.": "cond-second-vs-third"}, "e": "Third: had + participio en el if-clause."},
+      {"n": 7, "q": "Elegí la correcta:", "o": ["If she were here, she would help us.", "If she would be here, she would help us.", "If she is here, she would help us."], "a": "If she were here, she would help us.", "r": "cond-second-form", "e": "Second: If + were/Past Simple, would + base."}
+    ]
+  },
+  {
+    "id": "u4-dc-cond-modals", "format": "discrete_cloze", "level": "B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Third Conditional con modales (might / could have)",
+    "instructions": "Elegí la opción correcta. would have = seguro; might/could have = posible.",
+    "items": [
+      {"n": 1, "q": "If it had snowed, it ___ terrible traffic problems.", "o": ["might have caused", "would cause", "might cause", "might had caused"], "a": "might have caused", "r": "cond-third-modals", "wr": {"might cause": "cond-second-vs-third", "would cause": "cond-second-vs-third", "might had caused": "cond-third-modals"}, "e": "Tu apunte: If it had snowed, it might have caused..."},
+      {"n": 2, "q": "If she had studied more, she ___ a better grade.", "o": ["could have gotten", "could get", "can have gotten", "could had gotten"], "a": "could have gotten", "r": "cond-third-modals", "wr": {"could get": "cond-second-vs-third", "could had gotten": "cond-third-modals"}, "e": "could + have + participio."},
+      {"n": 3, "q": "If you had been paying attention, you ___ the red traffic light.", "o": ["would have seen", "would see", "would have saw", "had seen"], "a": "would have seen", "r": "cond-third-form", "wr": {"would have saw": "irregular-participle", "would see": "cond-second-vs-third"}, "e": "Forma continua en el if-clause + would have + participio (see → saw → seen)."},
+      {"n": 4, "q": "The result is 100% certain: if we had practised more, we ___ won the match.", "o": ["would have", "might have", "could have", "should have"], "a": "would have", "r": "cond-third-modals", "wr": {"might have": "cond-third-modals", "could have": "cond-third-modals"}, "e": "would have = certeza; might/could have = solo posible."},
+      {"n": 5, "q": "If it ___ snowed, the roads would have been closed.", "o": ["had", "has", "would have", "did"], "a": "had", "r": "cond-third-form", "wr": {"would have": "cond-third-form", "did": "cond-third-form"}, "e": "If + had + participio."},
+      {"n": 6, "q": "If the team ___ the bug earlier, the release could have been on time.", "o": ["had found", "found", "would find", "has found"], "a": "had found", "r": "cond-third-form", "wr": {"found": "cond-second-vs-third", "would find": "cond-third-form"}, "e": "Pasado imaginario → Past Perfect en el if-clause."}
+    ]
+  },
+  {
+    "id": "u4-vg-cond-translate", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Práctica propia (traducir y completar)",
+    "title": "Del español al inglés: si pasa / si pasara / si hubiera pasado",
+    "instructions": "Traducí mentalmente y completá. Recordá: el subjuntivo español ('si ganara', 'si hubieras estudiado') se dice con Past Simple / Past Perfect en inglés.",
+    "text": "1. Si ganara la lotería, viajaría mucho: If I [1] (win) the lottery, I [2] (travel) a lot.\n2. Si estudiaras, aprobarías el examen: If you [3] (study), you [4] (pass) the exam.\n3. Si hubieras estudiado, habrías aprobado: If you [5] (study), you [6] (pass) the exam.\n4. Si hubiera testeado el código, no habríamos hecho deploy de ese bug: If we [7] (test) the code, we [8] (not / deploy) that bug.\n5. Si los tests pasan, hacemos el deploy: If the tests [9] (pass), we [10] (deploy).",
+    "items": [
+      {"n": 1, "a": ["won"], "r": "cond-second-form", "pat": [["^would win$|^win$", "cond-second-form"], ["^had won$", "cond-second-vs-third"]], "e": "'si ganara' → Past Simple."},
+      {"n": 2, "a": ["would travel"], "r": "cond-second-form", "pat": [["^will travel$", "cond-second-form"], ["^would have travelled$|^would have traveled$", "cond-second-vs-third"]], "e": "'viajaría' → would + base."},
+      {"n": 3, "a": ["studied"], "r": "cond-second-form", "pat": [["^would study$", "cond-second-form"], ["^had studied$", "cond-second-vs-third"]], "e": "'si estudiaras' → Past Simple."},
+      {"n": 4, "a": ["would pass"], "r": "cond-second-form", "pat": [["^would have passed$", "cond-second-vs-third"], ["^will pass$", "cond-second-form"]], "e": "'aprobarías' → would + base."},
+      {"n": 5, "a": ["had studied"], "r": "cond-third-form", "pat": [["^studied$", "cond-second-vs-third"], ["^would have studied$", "cond-third-form"]], "e": "'si hubieras estudiado' → Past Perfect."},
+      {"n": 6, "a": ["would have passed"], "r": "cond-third-form", "pat": [["^would pass$", "cond-second-vs-third"], ["^would have pass$", "cond-third-form"]], "e": "'habrías aprobado' → would have + participio."},
+      {"n": 7, "a": ["had tested"], "r": "cond-third-form", "pat": [["^tested$", "cond-second-vs-third"]], "e": "'si hubiera testeado' → had + participio."},
+      {"n": 8, "a": ["wouldn't have deployed"], "r": "cond-third-form", "pat": [["^wouldn't deploy$", "cond-second-vs-third"], ["^wouldn't have deploy$", "cond-third-form"]], "e": "'no habríamos hecho deploy' → wouldn't have + participio."},
+      {"n": 9, "a": ["pass"], "r": "cond-first-form", "pat": [["^will pass$", "cond-first-form"], ["^passed$", "cond-first-form"]], "e": "'si pasan' (posible) → Present Simple."},
+      {"n": 10, "a": ["will deploy"], "alt": ["'ll deploy"], "r": "cond-first-form", "pat": [["^would deploy$", "cond-type-choice"], ["^deploy$", "cond-first-form"]], "e": "'hacemos' (resultado probable) → will + base."}
+    ]
+  }
+]

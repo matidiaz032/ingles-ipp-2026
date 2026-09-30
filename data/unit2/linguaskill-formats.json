@@ -1,0 +1,118 @@
+[
+  {
+    "id": "u2-oc-outage", "format": "open_cloze", "level": "B2", "linguaskill": "Open cloze",
+    "title": "Open cloze: the outage",
+    "instructions": "Escribí UNA palabra gramatical en cada hueco.",
+    "text": "Last night our website [1] down for almost two hours. I was having dinner when my phone rang. My colleague Ana [2] been working on the problem for an hour, but she had not found the cause [3]. By the time I got to the office, she [4] already fixed it. It was a bug [5] had been introduced in the last update.",
+    "items": [
+      {"n": 1, "a": ["was", "went"], "r": "past-be", "pat": [["^were$", "past-be"], ["^is$|^has$", "past-simple-form"]], "e": "Estado en el pasado: the website WAS down."},
+      {"n": 2, "a": ["had"], "r": "past-perfect-cont", "pat": [["^has$|^have$", "past-perfect-cont"], ["^was$", "past-perfect-cont"]], "e": "had + been + -ing: duración antes de otro evento pasado."},
+      {"n": 3, "a": ["yet"], "r": "prep-collocation", "e": "En negativo, 'yet' va al final: had not found the cause yet."},
+      {"n": 4, "a": ["had"], "r": "past-perfect-vs-simple", "pat": [["^has$|^have$", "past-perfect-form"], ["^was$|^did$", "past-perfect-vs-simple"]], "e": "'By the time I got there' → ya lo había arreglado: had + participio."},
+      {"n": 5, "a": ["that", "which"], "r": "rel-pronoun-choice", "pat": [["^who$|^where$|^whose$", "rel-pronoun-choice"]], "e": "Cosa (a bug) + sujeto de 'had been introduced' → that / which."}
+    ]
+  },
+  {
+    "id": "u2-oc-first-job", "format": "open_cloze", "level": "B1-B2", "linguaskill": "Open cloze",
+    "title": "Open cloze: my first job",
+    "instructions": "Escribí UNA palabra gramatical en cada hueco.",
+    "text": "When I was a student, I [1] to work in a café at weekends. It was a small place [2] the coffee was excellent. The owner, [3] name was Carlos, taught me a lot. At first I was not used [4] working long hours, but I soon got used to [5].",
+    "items": [
+      {"n": 1, "a": ["used"], "r": "used-to-form", "pat": [["^use$", "used-to-form"]], "e": "Hábito pasado: used to + base."},
+      {"n": 2, "a": ["where"], "r": "rel-pronoun-choice", "pat": [["^which$|^that$", "rel-pronoun-choice"]], "e": "Lugar → where."},
+      {"n": 3, "a": ["whose"], "r": "rel-whose", "pat": [["^who$|^which$|^that$|^his$", "rel-whose"]], "e": "Posesión: whose name."},
+      {"n": 4, "a": ["to"], "r": "be-used-to", "pat": [["^for$|^with$", "be-used-to"]], "e": "was not used TO + -ing."},
+      {"n": 5, "a": ["it"], "r": "get-used-to", "e": "got used to it (pronombre objeto)."}
+    ]
+  },
+  {
+    "id": "u2-mcc-power", "format": "mc_cloze", "level": "B1", "linguaskill": "Multiple choice cloze (3 opciones)",
+    "title": "Multiple choice cloze: the power cut",
+    "instructions": "Elegí la opción correcta para cada hueco.",
+    "text": "While Marta [1] on a new feature, the office lost power. She [2] not saved her work, so she lost two hours of code. Her boss, [3] was very kind, told her not to worry. Marta [4] to save her work only once a day, but now she saves it every ten minutes. It was a lesson [5] she never forgot.",
+    "items": [
+      {"n": 1, "o": ["was working", "worked", "had worked"], "a": "was working", "r": "past-simple-vs-cont", "wr": {"worked": "past-simple-vs-cont", "had worked": "past-perfect-vs-simple"}, "e": "While + acción en progreso interrumpida."},
+      {"n": 2, "o": ["had", "was", "did"], "a": "had", "r": "past-perfect-form", "wr": {"was": "aux-mixing", "did": "aux-mixing"}, "e": "had not saved: anterior a lost."},
+      {"n": 3, "o": ["who", "that", "which"], "a": "who", "r": "rel-defining-nondefining", "wr": {"that": "rel-defining-nondefining", "which": "rel-pronoun-choice"}, "e": "Entre comas (non-defining) → who; that no."},
+      {"n": 4, "o": ["used", "was used", "got used"], "a": "used", "r": "used-to-form", "wr": {"was used": "used-to-vs-be-used-to", "got used": "used-to-vs-be-used-to"}, "e": "Hábito pasado: used to save."},
+      {"n": 5, "o": ["which", "who", "whose"], "a": "which", "r": "rel-pronoun-choice", "e": "Cosa → which / that."}
+    ]
+  },
+  {
+    "id": "u2-mcc-diego", "format": "mc_cloze", "level": "B2", "linguaskill": "Multiple choice cloze (4 opciones)",
+    "title": "Multiple choice cloze: Diego's first months",
+    "instructions": "Elegí la opción correcta para cada hueco.",
+    "text": "When Diego joined the team, he [1] never worked with microservices, so he was not [2] the tools at first. He [3] used to them after a few months, and now he is the person [4] everyone asks for help. The application [5] he built last year is now in production.",
+    "items": [
+      {"n": 1, "o": ["had", "has", "was", "did"], "a": "had", "r": "past-perfect-form", "wr": {"has": "past-perfect-form", "was": "aux-mixing", "did": "aux-mixing"}, "e": "had never worked: anterior a 'joined'."},
+      {"n": 2, "o": ["used to", "used", "use to", "used for"], "a": "used to", "r": "be-used-to", "wr": {"used": "be-used-to", "use to": "used-to-form"}, "e": "was not used TO + sustantivo."},
+      {"n": 3, "o": ["got", "is", "used", "did"], "a": "got", "r": "get-used-to", "wr": {"is": "used-to-vs-be-used-to", "used": "used-to-vs-be-used-to"}, "e": "'after a few months' → proceso completado → got used to."},
+      {"n": 4, "o": ["who", "which", "whose", "where"], "a": "who", "r": "rel-pronoun-choice", "wr": {"which": "rel-pronoun-choice"}, "e": "Persona → who."},
+      {"n": 5, "o": ["which", "who", "whose", "where"], "a": "which", "r": "rel-pronoun-choice", "e": "Cosa; the application (which) he built: objeto, podría omitirse."}
+    ]
+  },
+  {
+    "id": "u2-gs-migration", "format": "gapped_sentences", "level": "B2", "linguaskill": "Gapped text, sentences",
+    "title": "Gapped text: the migration",
+    "instructions": "Cinco oraciones fueron eliminadas del texto. Elegí de la lista (A-H) la que encaja en cada hueco. Hay TRES oraciones que sobran.",
+    "text": "Last spring, Julia's team decided to move their application to a new cloud provider. [1] They had been using the old system for six years, and everyone was used to it. On the first day of the migration, Julia was checking the logs when the database suddenly stopped responding. [2] She called her colleague Pablo, who was working from home at that time. [3] By the time he connected, she had already restarted two services, but nothing had changed. Pablo, whose experience with databases was much greater, found the problem in ten minutes. [4] Someone had deleted an important configuration file the day before. After that, they created a backup system. [5] Julia says she would never make the same mistake again.",
+    "bank": [
+      "It was not an easy decision.",
+      "For a moment, she did not know what to do.",
+      "It was late, and he had been sleeping for an hour.",
+      "The cause was simple but serious.",
+      "The system has worked perfectly ever since.",
+      "Julia used to work for a company that sold books.",
+      "They are moving to a new office next month.",
+      "Pablo has never liked working from home."
+    ],
+    "items": [
+      {"n": 1, "a": ["It was not an easy decision."], "r": "reading-cohesion", "e": "'It' = la decisión; luego 'They had been using the old system...' explica por qué."},
+      {"n": 2, "a": ["For a moment, she did not know what to do."], "r": "reading-cohesion", "e": "Reacción a que la base de datos dejó de responder; sigue 'She called...'."},
+      {"n": 3, "a": ["It was late, and he had been sleeping for an hour."], "r": "reading-cohesion", "e": "Explica por qué tardó en conectarse ('By the time he connected')."},
+      {"n": 4, "a": ["The cause was simple but serious."], "r": "reading-cohesion", "e": "Anticipa la explicación: 'Someone had deleted...'."},
+      {"n": 5, "a": ["The system has worked perfectly ever since."], "r": "reading-cohesion", "e": "Consecuencia de crear el backup; luego Julia opina."}
+    ]
+  },
+  {
+    "id": "u2-rd-email", "format": "reading_discrete", "level": "B1", "linguaskill": "Reading discrete con soporte visual",
+    "title": "Email de un compañero",
+    "instructions": "Leé el mensaje y elegí la respuesta correcta.",
+    "text": "To: Dev team\nSubject: Login page\nHi team, I was working on the login page when I found a strange error. I had already checked the code twice, so I think the problem is on the server. Could someone who has access to the logs help me? Thanks, Leo.",
+    "items": [
+      {"n": 1, "q": "What does Leo want?", "o": ["Someone to review his design", "Help from a person who can see the logs", "To change the server himself"], "a": "Help from a person who can see the logs", "r": "reading-detail", "e": "'Could someone who has access to the logs help me?'."}
+    ]
+  },
+  {
+    "id": "u2-rd-notice", "format": "reading_discrete", "level": "B1", "linguaskill": "Reading discrete con soporte visual",
+    "title": "Aviso de oficina",
+    "instructions": "Leé el aviso y elegí la respuesta correcta.",
+    "text": "NOTICE\nThe meeting room where we usually hold the Monday meetings is closed for repairs. People who work on the second floor can use Room 4 instead, which is next to the kitchen.",
+    "items": [
+      {"n": 1, "q": "Where should second-floor staff go for the meetings?", "o": ["To the usual room", "To Room 4, next to the kitchen", "To the kitchen"], "a": "To Room 4, next to the kitchen", "r": "reading-detail", "e": "'can use Room 4 instead, which is next to the kitchen'."}
+    ]
+  },
+  {
+    "id": "u2-comp-sara", "format": "comprehension", "level": "B1", "linguaskill": "Comprehension task (5 items)",
+    "title": "Sara's first job",
+    "instructions": "Leé el texto y elegí la respuesta correcta para cada pregunta.",
+    "text": "When Sara started her first job as a developer, she was very nervous. She had studied programming for two years, but she had never worked in a real team before. In her first week, her manager, who was a very patient person, gave her a small task: to fix a bug in the login page.\nSara used to think that professional developers never made mistakes, but that day she discovered the opposite. While she was testing her solution, the whole website went down. She had deleted a line of code that other parts of the application needed. Everyone in the office looked at her, and she wanted to disappear.\nHer manager, however, laughed and said, \"We have all done that. Do you know how long I had been working here when I broke the server for the first time? Three days!\" Together they repaired the site in twenty minutes.\nSara remembers that moment as the day she stopped being afraid. Now, two years later, she is used to working under pressure, and she helps the new members of the team, who are as nervous as she was.",
+    "items": [
+      {"n": 1, "q": "What did Sara have before she started the job?", "o": ["Two years of study but no experience in a team", "Two years of work experience", "A small task already prepared"], "a": "Two years of study but no experience in a team", "r": "reading-detail", "e": "'She had studied programming for two years, but ... had never worked in a real team'."},
+      {"n": 2, "q": "What did Sara think about professional developers?", "o": ["That they never made mistakes", "That they worked too much", "That they were very patient"], "a": "That they never made mistakes", "r": "reading-detail", "e": "'used to think that professional developers never made mistakes'."},
+      {"n": 3, "q": "What happened while she was testing her solution?", "o": ["Her manager fixed the bug", "The website stopped working", "She deleted the test"], "a": "The website stopped working", "r": "reading-detail", "e": "'the whole website went down'."},
+      {"n": 4, "q": "What did the manager say about mistakes?", "o": ["Only new developers make them", "He also made a big one early in his career", "They are very rare"], "a": "He also made a big one early in his career", "r": "reading-detail", "e": "'We have all done that ... I broke the server ... Three days!'."},
+      {"n": 5, "q": "How does Sara feel about working under pressure now?", "o": ["She is afraid of it", "She avoids it", "She is accustomed to it"], "a": "She is accustomed to it", "r": "reading-detail", "e": "'she is used to working under pressure' (be used to = estar acostumbrada)."}
+    ]
+  },
+  {
+    "id": "u2-comp-legacy", "format": "comprehension", "level": "B2", "linguaskill": "Comprehension task (2 items)",
+    "title": "Legacy code",
+    "instructions": "Leé el texto y elegí la respuesta correcta.",
+    "text": "Many developers dislike working with legacy code, which is software that was written years ago and is still used today. Often, the people who created it have left the company, and the documentation, if it exists, is out of date. Junior developers who are not used to reading other people's code find this especially frustrating. However, experienced programmers know that legacy systems have an important advantage: they have been tested by real users for years, so the bugs that would have appeared in a new product were fixed long ago. Before rewriting a system from scratch, teams should ask themselves whether the risk is worth it. Many companies that decided to start again lost months of work, and some of them never managed to reproduce the reliability of the original.",
+    "items": [
+      {"n": 1, "q": "Why do junior developers often find legacy code frustrating?", "o": ["It has not been tested", "They are not accustomed to reading code written by others", "It is too modern", "Its documentation is always excellent"], "a": "They are not accustomed to reading code written by others", "r": "reading-detail", "e": "'not used to reading other people's code'."},
+      {"n": 2, "q": "What advantage of legacy systems does the writer mention?", "o": ["They are cheaper to write", "Users have already helped find and fix many of their bugs", "Their authors still work at the company", "They use modern tools"], "a": "Users have already helped find and fix many of their bugs", "r": "reading-detail", "e": "'tested by real users for years ... bugs were fixed long ago'."}
+    ]
+  }
+]

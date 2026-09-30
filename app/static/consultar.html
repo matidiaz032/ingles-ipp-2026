@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consultar — IPP English</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .in{width:100%;font:inherit;padding:10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+  .ans p{margin:.4em 0}.ans ul{margin:.3em 0 .6em 1.2em;padding:0}.ans h3{font-size:1rem;margin:.9em 0 .2em}
+  .ans code{background:var(--bg);padding:1px 5px;border-radius:4px}
+  .badge{display:inline-block;font-size:.75rem;padding:2px 8px;border-radius:99px;background:var(--warnbg);color:var(--warn)}
+  .gl li{margin:.3em 0}
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="brand">IPP English</a>
+  <nav><a href="index.html">Volver a la app</a></nav>
+</header>
+<main>
+  <div class="card">
+    <h1>📖 Consultar</h1>
+    <p class="mute">Escribí una palabra, frase o estructura. Si la viste en una oración, pegala abajo: la explicación es mucho mejor con contexto.
+      Usa tus apuntes de Obsidian como referencia. <b>Necesita internet.</b></p>
+    <label>Palabra, frase o estructura<br><input id="term" class="in" placeholder="be able to" maxlength="80" autocomplete="off"></label>
+    <label style="display:block;margin-top:10px">Oración donde la viste (opcional)<br>
+      <textarea id="sent" class="in" rows="2" maxlength="400" placeholder="I wasn't able to fix the bug before the demo."></textarea></label>
+    <div class="row"><button id="go">Consultar</button><span id="loading" class="mute" style="display:none">Consultando…</span></div>
+    <div id="out" style="margin-top:14px"></div>
+  </div>
+  <div class="card gl"><h2>Mi glosario</h2>
+    <div id="gl" class="mute">Cargando…</div></div>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+const inl = t => t.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/(?<![*\w])\*(?!\s)(.+?)\*(?![*\w])/g, '<i>$1</i>').replace(/`(.+?)`/g, '<code>$1</code>');
+function md(src) {
+  let html = '', list = false;
+  for (const raw of src.split('\n')) {
+    const l = esc(raw);
+    if (/^\s*([-*]|\d+\.) /.test(l)) { if (!list) { html += '<ul>'; list = true; } html += '<li>' + inl(l.replace(/^\s*([-*]|\d+\.) /, '')) + '</li>'; continue; }
+    if (list) { html += '</ul>'; list = false; }
+    if (/^#{1,4} /.test(l)) html += '<h3>' + inl(l.replace(/^#+ /, '')) + '</h3>';
+    else if (l.trim()) html += '<p>' + inl(l.trim()) + '</p>';
+  }
+  return html + (list ? '</ul>' : '');
+}
+const post = (u, b) => fetch(u, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(b) }).then(r => r.json());
+let cur = null;
+
+async function loadGlossary() {
+  const g = await fetch('/api/glossary').then(r => r.json());
+  $('gl').innerHTML = g.entries.length
+    ? `<ul>${g.entries.map(e => `<li><b>${esc(e.term)}</b>${e.sentence ? ' <span class="mute">— ' + esc(e.sentence) + '</span>' : ''}</li>`).join('')}</ul><div class="mute">Guardado en: ${esc(g.path)}</div>`
+    : `Todavía no guardaste nada. Las entradas van a <code>${esc(g.path)}</code>.`;
+}
+
+async function consultar(force) {
+  const term = $('term').value.trim(), sentence = $('sent').value.trim();
+  $('out').innerHTML = ''; cur = null;
+  if (!term) { $('term').focus(); return; }
+  $('go').disabled = true; $('loading').style.display = 'inline';
+  try {
+    const r = await post('/api/ai/lookup', { term, sentence, force: !!force });
+    if (r.error) { $('out').innerHTML = `<div class="fb bad">✘ ${esc(r.error)}</div>`; return; }
+    if (r.needs_context) {
+      $('out').innerHTML = `<div class="fb bad">🤔 ${inl(esc(r.question))}</div>`;
+      $('sent').focus(); return;
+    }
+    cur = r;
+    $('out').innerHTML = `<div><span class="badge">Sugerencia de IA — sin revisar</span>${r.cached ? ' <span class="mute">(ya la habías consultado)</span>' : ''}</div>
+      <div class="ans">${md(r.body)}</div>
+      <div class="mute" style="margin-top:8px">${r.notes.length ? 'Usó tus apuntes: ' + r.notes.map(esc).join(', ') : 'No encontró apuntes tuyos sobre esto: la respuesta sale solo de la IA.'}</div>
+      <div class="row"><button id="save">${r.saved ? 'Guardar otra vez' : '💾 Guardar en mi glosario'}</button><button class="secondary" id="regen">Regenerar</button></div>
+      <div id="msg" class="mute" style="margin-top:8px"></div>`;
+    $('save').onclick = guardar; $('regen').onclick = () => consultar(true);
+  } catch (e) {
+    $('out').innerHTML = `<div class="fb bad">✘ No se pudo contactar al servidor: ${esc(e.message)}</div>`;
+  } finally { $('go').disabled = false; $('loading').style.display = 'none'; }
+}
+
+async function guardar() {
+  const again = cur.saved || $('save').dataset.done;
+  if (again && !confirm('Ya la guardaste antes. ¿Agregar otra entrada?')) return;
+  const r = await post('/api/ai/save', { id: cur.id, again: !!again });
+  if (r.error) { $('msg').textContent = '✘ ' + r.error; return; }
+  if (r.already) { $('msg').textContent = r.message; return; }
+  cur.saved = true; $('save').dataset.done = '1';
+  $('msg').textContent = '✔ Guardada' + (r.fallback ? ` en ${r.path} (no encontré tu vault de Obsidian en este dispositivo; copiala después a Referencia-General)` : ' en tu glosario de Obsidian') + '.';
+  loadGlossary();
+}
+
+$('go').onclick = () => consultar(false);
+$('term').addEventListener('keydown', e => { if (e.key === 'Enter') consultar(false); });
+loadGlossary();
+</script>
+</body>
+</html>

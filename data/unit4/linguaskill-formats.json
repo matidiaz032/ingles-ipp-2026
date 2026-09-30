@@ -1,0 +1,118 @@
+[
+  {
+    "id": "u4-oc-backup", "format": "open_cloze", "level": "B1-B2", "linguaskill": "Open cloze",
+    "title": "Open cloze: the lost data",
+    "instructions": "Escribí UNA palabra gramatical en cada hueco.",
+    "text": "If we [1] made a backup yesterday, we would not have lost the data. Now I wish I [2] been more careful. From now on I will save my work every day, and I will keep a copy [3] case the computer crashes. I will not change anything [4] I have tested it first. As long as we follow this plan, we [5] not lose data again.",
+    "items": [
+      {"n": 1, "a": ["had"], "r": "cond-third-form", "pat": [["^have$|^has$", "cond-third-form"], ["^would have$|^would$", "cond-third-form"]], "e": "Third: If + had + participio."},
+      {"n": 2, "a": ["had"], "r": "wish-past-perfect", "pat": [["^have$|^would$", "wish-past-perfect"]], "e": "I wish + had been (arrepentimiento)."},
+      {"n": 3, "a": ["in"], "r": "in-case-form", "pat": [["^on$|^by$", "in-case-form"]], "e": "in case = por si acaso."},
+      {"n": 4, "a": ["unless"], "r": "unless-if-not", "pat": [["^if$", "unless-if-not"]], "e": "not ... unless = a menos que ya lo haya probado."},
+      {"n": 5, "a": ["will"], "alt": ["'ll"], "r": "cond-first-form", "pat": [["^would$", "cond-type-choice"]], "e": "as long as (condición posible) + will en la cláusula principal."}
+    ]
+  },
+  {
+    "id": "u4-oc-wishes", "format": "open_cloze", "level": "B2", "linguaskill": "Open cloze",
+    "title": "Open cloze: wishes and regrets",
+    "instructions": "Escribí UNA palabra gramatical en cada hueco.",
+    "text": "I wish I [1] more time to learn new tools, but my job is very busy. If only my manager [2] understand how much work there is! If I [3] the manager, I would hire two more people. Last year I did not ask for a raise. If I had asked, I [4] have received one, and I would not [5] so stressed now.",
+    "items": [
+      {"n": 1, "a": ["had"], "r": "wish-present", "pat": [["^have$|^would have$", "wish-present"]], "e": "Presente → Past Simple (had)."},
+      {"n": 2, "a": ["would"], "r": "wish-would", "pat": [["^will$|^could$", "wish-would"]], "e": "Queja sobre otra persona → would."},
+      {"n": 3, "a": ["were", "was"], "r": "cond-second-form", "pat": [["^am$|^would be$", "cond-second-form"]], "e": "Second: If I were the manager."},
+      {"n": 4, "a": ["would", "might", "could"], "r": "cond-third-form", "pat": [["^will$|^had$", "cond-third-form"]], "e": "Third: would/might/could have + participio."},
+      {"n": 5, "a": ["be"], "r": "cond-second-vs-third", "pat": [["^been$", "cond-second-vs-third"]], "e": "would not BE so stressed now (resultado en el presente)."}
+    ]
+  },
+  {
+    "id": "u4-mcc-outage", "format": "mc_cloze", "level": "B1", "linguaskill": "Multiple choice cloze (3 opciones)",
+    "title": "Multiple choice cloze: the server crash",
+    "instructions": "Elegí la opción correcta para cada hueco.",
+    "text": "If the server [1] down, users cannot open the website. Yesterday it crashed and we lost some data. If we [2] a backup, we would not have lost it. The manager says: \"If we see the problem again, we will change providers.\" I wish it [3] never happened. As long as we [4] the new plan, everything will be fine. I will also keep a copy of the files in case the system [5] again.",
+    "items": [
+      {"n": 1, "o": ["goes", "will go", "went"], "a": "goes", "r": "cond-zero-form", "wr": {"will go": "cond-zero-form", "went": "cond-type-choice"}, "e": "Zero: hecho general."},
+      {"n": 2, "o": ["had made", "made", "would make"], "a": "had made", "r": "cond-third-form", "wr": {"made": "cond-second-vs-third", "would make": "cond-third-form"}, "e": "Pasado imaginario → Past Perfect."},
+      {"n": 3, "o": ["had", "has", "would"], "a": "had", "r": "wish-past-perfect", "wr": {"would": "wish-would", "has": "wish-past-perfect"}, "e": "I wish it had never happened."},
+      {"n": 4, "o": ["follow", "will follow", "are following"], "a": "follow", "r": "provided-as-long-as", "wr": {"will follow": "provided-as-long-as"}, "e": "as long as + Present Simple."},
+      {"n": 5, "o": ["crashes", "will crash", "would crash"], "a": "crashes", "r": "in-case-form", "wr": {"will crash": "in-case-form", "would crash": "in-case-form"}, "e": "in case + Present Simple."}
+    ]
+  },
+  {
+    "id": "u4-mcc-team", "format": "mc_cloze", "level": "B2", "linguaskill": "Multiple choice cloze (4 opciones)",
+    "title": "Multiple choice cloze: a delayed project",
+    "instructions": "Elegí la opción correcta para cada hueco.",
+    "text": "Our project was delayed. If we [1] the requirements more carefully at the start, we could have finished on time. To be honest, I wish we [2] more people in the team. If only the client [3] stop changing the requirements every week! Unless the client [4] the design this week, we will not finish on time. [5], we should have clearer contracts in future.",
+    "items": [
+      {"n": 1, "o": ["had analysed", "analysed", "would have analysed", "would analyse"], "a": "had analysed", "r": "cond-third-form", "wr": {"analysed": "cond-second-vs-third", "would have analysed": "cond-third-form", "would analyse": "cond-third-form"}, "e": "Pasado imaginario → If + Past Perfect."},
+      {"n": 2, "o": ["had", "would have", "have", "could have"], "a": "had", "r": "wish-present", "wr": {"would have": "wish-would", "have": "wish-present"}, "e": "Presente → Past Simple (had)."},
+      {"n": 3, "o": ["would", "will", "did", "had"], "a": "would", "r": "wish-would", "wr": {"will": "wish-would"}, "e": "Queja sobre otro → If only + would."},
+      {"n": 4, "o": ["approves", "doesn't approve", "will approve", "approved"], "a": "approves", "r": "unless-if-not", "wr": {"doesn't approve": "unless-if-not", "will approve": "unless-if-not"}, "e": "Unless + afirmativo, Present Simple."},
+      {"n": 5, "o": ["In conclusion", "First", "Lastly", "Then"], "a": "In conclusion", "r": "connector-sequence", "wr": {"First": "connector-sequence", "Lastly": "connector-sequence", "Then": "connector-sequence"}, "e": "Conclusión final del texto."}
+    ]
+  },
+  {
+    "id": "u4-gs-migration", "format": "gapped_sentences", "level": "B2", "linguaskill": "Gapped text, sentences",
+    "title": "Gapped text: the risky migration",
+    "instructions": "Cinco oraciones fueron eliminadas del texto. Elegí de la lista (A-H) la que encaja en cada hueco. Hay TRES oraciones que sobran.",
+    "text": "Marta manages a small team of developers. Last month, the company asked her team to move all its data to a new cloud provider. [1] If everything goes well, the change will save a lot of money. However, the process is risky. Two years ago, a similar project failed because the tests had not been completed. [2] Marta says that if they had planned it better, they would have avoided those problems. This time, she wants to be careful. [3] The team will not start the migration unless every test passes. [4] As a result, the launch has been postponed by two weeks. Some managers are unhappy about it. Personally, Marta believes it is the right decision. [5] She wishes the company had listened to her advice earlier.",
+    "bank": [
+      "The company hopes to finish the work by the end of the year.",
+      "It was a very expensive mistake.",
+      "She has asked the directors for more time and more tests.",
+      "The first results, however, have not been good enough.",
+      "A failed launch would be much more expensive than a delay.",
+      "Marta studied law before becoming a manager.",
+      "The migration finished yesterday without any problems.",
+      "Next year the company will open offices in three new countries."
+    ],
+    "items": [
+      {"n": 1, "a": ["The company hopes to finish the work by the end of the year."], "r": "reading-cohesion", "e": "Introduce el plan; 'the change' en la oración siguiente se refiere a la migración."},
+      {"n": 2, "a": ["It was a very expensive mistake."], "r": "reading-cohesion", "e": "Comenta el proyecto fallido; Marta lo retoma con un condicional."},
+      {"n": 3, "a": ["She has asked the directors for more time and more tests."], "r": "reading-cohesion", "e": "Muestra cómo Marta 'wants to be careful' antes de la regla del equipo."},
+      {"n": 4, "a": ["The first results, however, have not been good enough."], "r": "reading-cohesion", "e": "Es la causa; 'As a result' introduce la consecuencia (el retraso)."},
+      {"n": 5, "a": ["A failed launch would be much more expensive than a delay."], "r": "reading-cohesion", "e": "Justifica la opinión de Marta (Second Conditional) antes de su arrepentimiento."}
+    ]
+  },
+  {
+    "id": "u4-rd-email", "format": "reading_discrete", "level": "B1", "linguaskill": "Reading discrete con soporte visual",
+    "title": "Email de deploy",
+    "instructions": "Leé el mensaje y elegí la respuesta correcta.",
+    "text": "To: Dev team\nSubject: Deployment tonight\nHi team, if the tests pass this afternoon, we will deploy the new version tonight. Please don't merge anything else unless I tell you. Take a copy of your local branch in case something goes wrong. Thanks, Nora.",
+    "items": [
+      {"n": 1, "q": "What should the team do?", "o": ["Wait for Nora's permission before merging", "Deploy the version right now", "Delete their local branches"], "a": "Wait for Nora's permission before merging", "r": "reading-detail", "e": "'don't merge anything else unless I tell you'."}
+    ]
+  },
+  {
+    "id": "u4-rd-notice", "format": "reading_discrete", "level": "B1", "linguaskill": "Reading discrete con soporte visual",
+    "title": "Aviso de seguridad",
+    "instructions": "Leé el aviso y elegí la respuesta correcta.",
+    "text": "SECURITY NOTICE\nIf you receive an email asking for your password, do not answer it. Forward it to security@company.com in case other employees receive it too. Remember: IT will never ask you for your password.",
+    "items": [
+      {"n": 1, "q": "What should employees do with a suspicious email?", "o": ["Answer it quickly", "Forward it to the security address", "Give their password to IT"], "a": "Forward it to the security address", "r": "reading-detail", "e": "'Forward it to security@company.com'."}
+    ]
+  },
+  {
+    "id": "u4-comp-postmortem", "format": "comprehension", "level": "B1-B2", "linguaskill": "Comprehension task (5 items)",
+    "title": "Post-mortem: the lost orders",
+    "instructions": "Leé el texto y elegí la respuesta correcta para cada pregunta.",
+    "text": "Last Friday, the payments system stopped working for three hours. According to the report, the cause was a mistake made by a junior developer, Iván. He had run a script on the production database instead of the test database. If he had checked the server name, he would have noticed the problem immediately.\nThe team reacted quickly. As soon as they saw the error, they restored a backup. Unfortunately, the backup was two days old, so some customers lost their last orders. If the team had kept more recent copies, the loss would have been much smaller. Therefore, the company has decided to make backups every hour.\nIván feels terrible. \"I wish I had read the screen more carefully,\" he says. \"If only I had asked a colleague to review the script first!\" His manager, however, does not blame him. \"Anyone could have done the same,\" she says. \"We will only improve if we learn from our mistakes. From now on, no one will touch the production database unless a second person approves the change.\"",
+    "items": [
+      {"n": 1, "q": "What caused the failure?", "o": ["A script run on the wrong database", "A hardware breakdown", "A missing backup"], "a": "A script run on the wrong database", "r": "reading-detail", "e": "'run a script on the production database instead of the test database'."},
+      {"n": 2, "q": "How old was the backup the team restored?", "o": ["One hour", "Two days", "One week"], "a": "Two days", "r": "reading-detail", "e": "'the backup was two days old'."},
+      {"n": 3, "q": "Why did some customers lose orders?", "o": ["The backup was old", "Iván deleted them on purpose", "The manager cancelled them"], "a": "The backup was old", "r": "reading-detail", "e": "'the backup was two days old, so some customers lost their last orders'."},
+      {"n": 4, "q": "What does Iván regret?", "o": ["Not asking a colleague to review the script", "Not deleting the backup", "Not leaving the company"], "a": "Not asking a colleague to review the script", "r": "reading-detail", "e": "'If only I had asked a colleague to review the script first!'."},
+      {"n": 5, "q": "What new rule will apply?", "o": ["Nobody will use the test database", "Changes to production will need a second person's approval", "Backups will be made weekly"], "a": "Changes to production will need a second person's approval", "r": "reading-detail", "e": "'no one will touch the production database unless a second person approves'."}
+    ]
+  },
+  {
+    "id": "u4-comp-testing", "format": "comprehension", "level": "B2", "linguaskill": "Comprehension task (2 items)",
+    "title": "Testing in production",
+    "instructions": "Leé el texto y elegí la respuesta correcta.",
+    "text": "Some teams argue that if a system is not tested in real conditions, its problems will only appear when users arrive. That is why some companies run experiments with a small percentage of real users before a full launch. However, critics point out that this practice is acceptable only provided that failures cannot cause serious damage. A photo-sharing app, for example, might test a new button in production; a bank, on the other hand, would think twice unless it had a safe way to undo any change. If more companies had followed this cautious approach, several well-known outages might have been avoided.",
+    "items": [
+      {"n": 1, "q": "According to critics, when is testing in production acceptable?", "o": ["When failures cannot cause serious damage", "When the company is very large", "When users complain", "When there is no backup"], "a": "When failures cannot cause serious damage", "r": "reading-detail", "e": "'acceptable only provided that failures cannot cause serious damage'."},
+      {"n": 2, "q": "What would a bank need before testing in production?", "o": ["A safe way to undo any change", "More users", "A new button", "Fewer developers"], "a": "A safe way to undo any change", "r": "reading-detail", "e": "'unless it had a safe way to undo any change'."}
+    ]
+  }
+]

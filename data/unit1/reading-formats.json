@@ -1,0 +1,1024 @@
+[
+ {
+  "id": "u1-oc-lisbon",
+  "format": "open_cloze",
+  "level": "B1",
+  "linguaskill": "Open cloze",
+  "title": "Open cloze: greetings from Lisbon",
+  "instructions": "Escribí UNA palabra en cada hueco.",
+  "text": "Hi Tomas,\nGreetings from Lisbon! I'm here for a conference this week, so I [1] staying in a small hotel near the venue. Normally I live in Madrid, where I have worked [2] a backend developer for four years. At the moment I [3] preparing a talk about testing, and it [4] going really well. I haven't seen much of the city [5], but I hope to visit the old town tomorrow.\nSee you soon!\nAna",
+  "items": [
+   {
+    "n": 1,
+    "a": [
+     "am"
+    ],
+    "r": "pc-form",
+    "pat": [
+     [
+      "^is$|^are$",
+      "be-forms",
+      [
+       [
+        "forma",
+        "I → am staying."
+       ]
+      ]
+     ],
+     [
+      "^be$",
+      "aux-missing-be",
+      [
+       [
+        "forma",
+        "falta conjugar be: am staying."
+       ]
+      ]
+     ]
+    ],
+    "e": "'this week' → situación temporal: I + am + -ing."
+   },
+   {
+    "n": 2,
+    "a": [
+     "as"
+    ],
+    "r": "prep-collocation",
+    "pat": [
+     [
+      "^like$",
+      "prep-collocation",
+      [
+       [
+        "significado",
+        "work like = 'trabajar como / igual que'; para un rol se usa as: work as a developer."
+       ]
+      ]
+     ]
+    ],
+    "e": "work AS = trabajar de/como (rol). 'like' significaría 'parecido a'."
+   },
+   {
+    "n": 3,
+    "a": [
+     "am"
+    ],
+    "r": "pc-form",
+    "pat": [
+     [
+      "^is$|^are$",
+      "be-forms",
+      [
+       [
+        "forma",
+        "I → am preparing."
+       ]
+      ]
+     ]
+    ],
+    "e": "'At the moment' → I am + -ing."
+   },
+   {
+    "n": 4,
+    "a": [
+     "is"
+    ],
+    "alt": [
+     "'s"
+    ],
+    "r": "pc-form",
+    "pat": [
+     [
+      "^are$|^am$",
+      "be-forms",
+      [
+       [
+        "forma",
+        "it → is going."
+       ]
+      ]
+     ],
+     [
+      "^does$|^do$",
+      "aux-mixing",
+      [
+       [
+        "forma",
+        "mezcla do con going: el Continuous usa be (is going)."
+       ]
+      ]
+     ]
+    ],
+    "e": "it + is + going (Continuous)."
+   },
+   {
+    "n": 5,
+    "a": [
+     "yet"
+    ],
+    "r": "pps-result-keywords",
+    "pat": [
+     [
+      "^already$|^ever$",
+      "pps-result-keywords",
+      [
+       [
+        "forma",
+        "en negativa, al final va yet: haven't seen ... yet. already no va en negativas y ever se usa en preguntas."
+       ]
+      ]
+     ]
+    ],
+    "e": "En negativo, 'yet' va al final: haven't seen ... yet."
+   }
+  ]
+ },
+ {
+  "id": "u1-oc-rust",
+  "format": "open_cloze",
+  "level": "B1-B2",
+  "linguaskill": "Open cloze",
+  "title": "Open cloze: learning Rust",
+  "instructions": "Escribí UNA palabra en cada hueco.",
+  "text": "I have [1] learning Rust since January. So far I [2] built two small tools, and I have never [3] so much fun while coding. My friend [4] been using it at work since 2021. He has been a developer [5] over ten years.",
+  "items": [
+   {
+    "n": 1,
+    "a": [
+     "been"
+    ],
+    "r": "ppc-duration",
+    "pat": [
+     [
+      "^be$|^being$",
+      "ppc-duration",
+      [
+       [
+        "forma",
+        "have + BEEN + -ing."
+       ]
+      ]
+     ]
+    ],
+    "e": "have + BEEN + -ing = Present Perfect Continuous."
+   },
+   {
+    "n": 2,
+    "a": [
+     "have"
+    ],
+    "r": "pps-form",
+    "pat": [
+     [
+      "^has$",
+      "pps-form",
+      [
+       [
+        "forma",
+        "I → have (has es para he / she / it)."
+       ]
+      ]
+     ],
+     [
+      "^did$|^do$",
+      "aux-mixing",
+      [
+       [
+        "tiempo",
+        "'So far' pide Perfecto (have built), no did / do."
+       ]
+      ]
+     ]
+    ],
+    "e": "'So far' → Present Perfect Simple; I → have."
+   },
+   {
+    "n": 3,
+    "a": [
+     "had"
+    ],
+    "r": "pps-form",
+    "pat": [
+     [
+      "^have$|^has$",
+      "pps-form",
+      [
+       [
+        "forma",
+        "have never + participio: el participio de have es had."
+       ]
+      ]
+     ]
+    ],
+    "e": "have + participio de 'have' → had (never had fun)."
+   },
+   {
+    "n": 4,
+    "a": [
+     "has"
+    ],
+    "r": "pps-form",
+    "pat": [
+     [
+      "^have$",
+      "pps-form",
+      [
+       [
+        "forma",
+        "My friend = he → has been using."
+       ]
+      ]
+     ],
+     [
+      "^is$",
+      "aux-mixing",
+      [
+       [
+        "forma",
+        "'is been' no existe: has been."
+       ]
+      ]
+     ]
+    ],
+    "e": "My friend = he → has been using."
+   },
+   {
+    "n": 5,
+    "a": [
+     "for"
+    ],
+    "r": "for-vs-since",
+    "pat": [
+     [
+      "^since$",
+      "for-vs-since",
+      [
+       [
+        "tiempo",
+        "over ten years es una duración → for."
+       ]
+      ]
+     ]
+    ],
+    "e": "'over ten years' = período → for."
+   }
+  ]
+ },
+ {
+  "id": "u1-mcc-clara",
+  "format": "mc_cloze",
+  "level": "B1",
+  "linguaskill": "Multiple choice cloze (3 opciones)",
+  "title": "Multiple choice cloze: Clara's morning",
+  "instructions": "Elegí la opción correcta para cada hueco.",
+  "text": "Every morning, Clara [1] the team chat before she [2] her first task. Today, however, she [3] with a serious bug: the login page [4] properly since yesterday. She [5] on it for three hours now.",
+  "items": [
+   {
+    "n": 1,
+    "o": [
+     "checks",
+     "is checking",
+     "has checked"
+    ],
+    "a": "checks",
+    "r": "ps-routine",
+    "wr": {
+     "is checking": "ps-vs-pc"
+    },
+    "e": "'Every morning' → rutina.",
+    "fb": {
+     "is checking": [
+      [
+       "tiempo",
+       "'Every morning' marca una rutina → Present Simple."
+      ]
+     ],
+     "has checked": [
+      [
+       "tiempo",
+       "acá es una rutina, no un resultado."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 2,
+    "o": [
+     "starts",
+     "is starting",
+     "start"
+    ],
+    "a": "starts",
+    "r": "ps-form",
+    "wr": {
+     "start": "ps-form",
+     "is starting": "ps-vs-pc"
+    },
+    "e": "Rutina + she → starts.",
+    "fb": {
+     "is starting": [
+      [
+       "tiempo",
+       "es una rutina (Present Simple)."
+      ]
+     ],
+     "start": [
+      [
+       "forma",
+       "she → starts."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 3,
+    "o": [
+     "is struggling",
+     "struggles",
+     "has struggled"
+    ],
+    "a": "is struggling",
+    "r": "pc-now-temporary",
+    "wr": {
+     "struggles": "ps-vs-pc"
+    },
+    "e": "'Today, however' → situación temporal actual.",
+    "fb": {
+     "struggles": [
+      [
+       "tiempo",
+       "'Today, however' = situación actual → is struggling."
+      ]
+     ],
+     "has struggled": [
+      [
+       "tiempo",
+       "acá es lo que le pasa hoy, en curso."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 4,
+    "o": [
+     "hasn't worked",
+     "doesn't work",
+     "isn't working"
+    ],
+    "a": "hasn't worked",
+    "r": "pps-form",
+    "wr": {
+     "isn't working": "ppc-duration",
+     "doesn't work": "ppc-duration"
+    },
+    "e": "'since yesterday' → Present Perfect (negativo).",
+    "fb": {
+     "doesn't work": [
+      [
+       "tiempo",
+       "since yesterday pide Present Perfect (hasn't worked)."
+      ]
+     ],
+     "isn't working": [
+      [
+       "tiempo",
+       "since yesterday pide Present Perfect; isn't working no combina con since."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 5,
+    "o": [
+     "has been working",
+     "is working",
+     "works"
+    ],
+    "a": "has been working",
+    "r": "ppc-duration",
+    "wr": {
+     "is working": "ppc-duration",
+     "works": "ppc-duration"
+    },
+    "e": "'for three hours now' → duración: has been working.",
+    "fb": {
+     "is working": [
+      [
+       "tiempo",
+       "for three hours now → duración hasta ahora: has been working."
+      ]
+     ],
+     "works": [
+      [
+       "tiempo",
+       "el Simple no expresa duración."
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "u1-gs-lucia",
+  "format": "gapped_sentences",
+  "level": "B1-B2",
+  "linguaskill": "Gapped text, sentences",
+  "title": "Gapped text: Lucia's week",
+  "instructions": "Cinco oraciones fueron eliminadas del texto. Elegí de la lista (A-H) la que encaja en cada hueco. Hay TRES oraciones que sobran.",
+  "text": "Lucia is a mobile developer who works for a small startup in Córdoba. [1] She usually starts at eight, and the first thing she does is read her messages. After that, she has a short meeting with the team. [2] This week, however, everything is different. [3] They are preparing the launch of a new app, so she is working late every night. She has been testing the payment feature since Monday. [4] Lucia isn't worried, though. She has already fixed the most serious bugs, and her colleagues are helping her with the rest. [5]",
+  "bank": [
+   "Her days normally follow the same routine.",
+   "They talk about the tasks for the day.",
+   "The whole team is under a lot of pressure.",
+   "It has been a long and tiring week.",
+   "She hopes everything works well on the day.",
+   "Yesterday she finished the design in an hour.",
+   "Lucia doesn't like her job at all.",
+   "Her sister is a doctor in Buenos Aires."
+  ],
+  "items": [
+   {
+    "n": 1,
+    "a": [
+     "Her days normally follow the same routine."
+    ],
+    "r": "reading-cohesion",
+    "e": "Introduce la rutina que se detalla a continuación ('She usually starts...')."
+   },
+   {
+    "n": 2,
+    "a": [
+     "They talk about the tasks for the day."
+    ],
+    "r": "reading-cohesion",
+    "e": "'They' = the team, mencionado en la oración anterior."
+   },
+   {
+    "n": 3,
+    "a": [
+     "The whole team is under a lot of pressure."
+    ],
+    "r": "reading-cohesion",
+    "e": "El 'They' siguiente necesita un antecedente plural: the whole team."
+   },
+   {
+    "n": 4,
+    "a": [
+     "It has been a long and tiring week."
+    ],
+    "r": "reading-cohesion",
+    "e": "Resume la semana (Present Perfect + 'this week', 'since Monday')."
+   },
+   {
+    "n": 5,
+    "a": [
+     "She hopes everything works well on the day."
+    ],
+    "r": "reading-cohesion",
+    "e": "Cierre coherente con el lanzamiento y con que 'Lucia isn't worried'."
+   }
+  ]
+ },
+ {
+  "id": "u1-rd-slack",
+  "format": "reading_discrete",
+  "level": "B1",
+  "linguaskill": "Reading discrete con soporte visual",
+  "title": "Mensaje de Slack",
+  "instructions": "Leé el mensaje y elegí la respuesta correcta.",
+  "text": "#dev-team  ·  Slack\nMarta Ruiz:  Hi all — the staging server is down at the moment. Ana is looking into it, so please don't deploy anything until she tells us it's fixed. Thanks!",
+  "items": [
+   {
+    "n": 1,
+    "q": "What should developers do now?",
+    "o": [
+     "Deploy only to staging",
+     "Wait until Ana says the problem is fixed",
+     "Help Ana restart the server"
+    ],
+    "a": "Wait until Ana says the problem is fixed",
+    "r": "reading-detail",
+    "e": "'please don't deploy anything until she tells us it's fixed'.",
+    "fb": {
+     "Deploy only to staging": [
+      [
+       "significado",
+       "el mensaje dice que el servidor de staging está caído y que no se debe hacer deploy de nada."
+      ]
+     ],
+     "Help Ana restart the server": [
+      [
+       "significado",
+       "Ana ya está investigando; el mensaje no pide ayuda, pide esperar."
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "u1-rd-email",
+  "format": "reading_discrete",
+  "level": "B1",
+  "linguaskill": "Reading discrete con soporte visual",
+  "title": "Nota de un compañero",
+  "instructions": "Leé el mensaje y elegí la respuesta correcta.",
+  "text": "To: Sofía\nSubject: Today's call\nSorry, I can't join the call today. I've been working on the invoice bug since 7 a.m. and I still haven't found the cause. Can we talk tomorrow?",
+  "items": [
+   {
+    "n": 1,
+    "q": "Why can't the writer join the call?",
+    "o": [
+     "They are on holiday",
+     "They are busy with a problem they haven't solved",
+     "They already fixed the bug"
+    ],
+    "a": "They are busy with a problem they haven't solved",
+    "r": "reading-detail",
+    "e": "'been working on the invoice bug since 7 a.m. and I still haven't found the cause'.",
+    "fb": {
+     "They are on holiday": [
+      [
+       "significado",
+       "no dice que esté de vacaciones: está trabajando en un bug."
+      ]
+     ],
+     "They already fixed the bug": [
+      [
+       "significado",
+       "dice que todavía no encontró la causa."
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "u1-rd-wifi",
+  "format": "reading_discrete",
+  "level": "B1",
+  "linguaskill": "Reading discrete con soporte visual",
+  "title": "Aviso de oficina",
+  "instructions": "Leé el aviso y elegí la respuesta correcta.",
+  "text": "OFFICE WI-FI\nPlease don't share the office password with visitors. Guests can use the network 'Guest-IT'. It is free and doesn't need a password.",
+  "items": [
+   {
+    "n": 1,
+    "q": "What can visitors do?",
+    "o": [
+     "Ask for the office password",
+     "Use Guest-IT without a password",
+     "Pay to use Guest-IT"
+    ],
+    "a": "Use Guest-IT without a password",
+    "r": "reading-detail",
+    "e": "'It is free and doesn't need a password'.",
+    "fb": {
+     "Ask for the office password": [
+      [
+       "significado",
+       "el aviso pide NO compartir la contraseña con los visitantes."
+      ]
+     ],
+     "Pay to use Guest-IT": [
+      [
+       "significado",
+       "el aviso dice que la red es gratis."
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "u1-comp-pablo",
+  "format": "comprehension",
+  "level": "B1",
+  "linguaskill": "Comprehension task (5 items)",
+  "title": "Working from home: Pablo's story",
+  "instructions": "Leé el texto y elegí la respuesta correcta para cada pregunta.",
+  "text": "Pablo is a data analyst for a logistics company in Rosario. Until last year, he worked in an office in the city centre, but now he works from home three days a week. He says the change has been good for him, although it wasn't easy at first.\n\"I usually start at eight, but at home I don't have to spend an hour on the bus,\" he explains. \"I use that time to exercise, and I feel less tired during the day.\" On the other hand, Pablo misses his colleagues. \"This week I'm working alone because my team is at a conference,\" he says, \"and I haven't spoken to anybody since Monday, except the delivery man!\"\nTo avoid feeling isolated, Pablo has been organising a virtual coffee break every Friday for the last two months. At first only two people joined; now more than ten colleagues connect every week. \"It's a small thing, but it helps a lot,\" he says. His advice for people who are starting to work remotely: \"Don't work in your pyjamas, and always finish at the same time.\"",
+  "items": [
+   {
+    "n": 1,
+    "q": "How does Pablo work now?",
+    "o": [
+     "In an office in the city centre every day",
+     "From home three days a week",
+     "From home every day"
+    ],
+    "a": "From home three days a week",
+    "r": "reading-detail",
+    "e": "'now he works from home three days a week'.",
+    "fb": {
+     "In an office in the city centre every day": [
+      [
+       "significado",
+       "eso era hasta el año pasado; ahora trabaja desde casa tres días."
+      ]
+     ],
+     "From home every day": [
+      [
+       "significado",
+       "son tres días por semana, no todos."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 2,
+    "q": "Why does Pablo feel less tired?",
+    "o": [
+     "He exercises instead of travelling by bus",
+     "He starts work later",
+     "He sleeps during the bus trip"
+    ],
+    "a": "He exercises instead of travelling by bus",
+    "r": "reading-detail",
+    "e": "'I use that time to exercise, and I feel less tired'.",
+    "fb": {
+     "He starts work later": [
+      [
+       "significado",
+       "dice que empieza a las ocho; lo que cambia es que ya no viaja."
+      ]
+     ],
+     "He sleeps during the bus trip": [
+      [
+       "significado",
+       "no menciona dormir: usa ese tiempo para hacer ejercicio."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 3,
+    "q": "Why is Pablo working alone this week?",
+    "o": [
+     "He is on holiday",
+     "His colleagues are at a conference",
+     "He doesn't like his team"
+    ],
+    "a": "His colleagues are at a conference",
+    "r": "reading-detail",
+    "e": "'my team is at a conference'.",
+    "fb": {
+     "He is on holiday": [
+      [
+       "significado",
+       "su equipo está en una conferencia; él no está de vacaciones."
+      ]
+     ],
+     "He doesn't like his team": [
+      [
+       "significado",
+       "dice que extraña a sus colegas."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 4,
+    "q": "What has Pablo been doing for two months?",
+    "o": [
+     "Organising a virtual coffee break each Friday",
+     "Working with ten colleagues",
+     "Exercising every day"
+    ],
+    "a": "Organising a virtual coffee break each Friday",
+    "r": "reading-detail",
+    "e": "'has been organising a virtual coffee break every Friday for the last two months'.",
+    "fb": {
+     "Working with ten colleagues": [
+      [
+       "significado",
+       "más de diez colegas se conectan al café virtual; no dice que trabajen con él."
+      ]
+     ],
+     "Exercising every day": [
+      [
+       "significado",
+       "hace ejercicio con el tiempo que ahorra, pero lo que viene haciendo hace dos meses es el café virtual."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 5,
+    "q": "Which advice does Pablo give?",
+    "o": [
+     "Wear comfortable clothes at home",
+     "Stop working at a fixed time",
+     "Have coffee at eight every day"
+    ],
+    "a": "Stop working at a fixed time",
+    "r": "reading-detail",
+    "e": "'always finish at the same time'.",
+    "fb": {
+     "Wear comfortable clothes at home": [
+      [
+       "significado",
+       "dice lo contrario: no trabajar en pijama."
+      ]
+     ],
+     "Have coffee at eight every day": [
+      [
+       "significado",
+       "el café virtual es los viernes; a las ocho empieza a trabajar."
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "u1-comp-review",
+  "format": "comprehension",
+  "level": "B2",
+  "linguaskill": "Comprehension task (2 items)",
+  "title": "Code review etiquette",
+  "instructions": "Leé el texto y elegí la respuesta correcta.",
+  "text": "Code reviews are one of the most useful habits in software teams, but many beginners find them stressful. A review is not a personal judgement; it is a conversation about the code. Good reviewers usually start with something positive and ask questions instead of giving orders: \"What happens if the list is empty?\" works better than \"Fix this.\" Authors, on the other hand, should keep pull requests small. A change of fifty lines is much easier to understand than one with five hundred, and reviewers are more likely to notice real problems in it. Finally, teams that review code regularly tend to find bugs earlier and share knowledge more quickly, which helps new members feel comfortable sooner.",
+  "items": [
+   {
+    "n": 1,
+    "q": "What does the writer suggest reviewers should do?",
+    "o": [
+     "Give clear orders to the author",
+     "Begin with a positive comment and ask questions",
+     "Only review very small changes",
+     "Avoid discussing the code"
+    ],
+    "a": "Begin with a positive comment and ask questions",
+    "r": "reading-detail",
+    "e": "'start with something positive and ask questions instead of giving orders'.",
+    "fb": {
+     "Give clear orders to the author": [
+      [
+       "significado",
+       "recomienda preguntas en lugar de órdenes."
+      ]
+     ],
+     "Only review very small changes": [
+      [
+       "significado",
+       "eso es un consejo para los autores (PR pequeños), no para los revisores."
+      ]
+     ],
+     "Avoid discussing the code": [
+      [
+       "significado",
+       "la revisión es justamente una conversación sobre el código."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 2,
+    "q": "According to the text, why should pull requests be small?",
+    "o": [
+     "They are less stressful to write",
+     "Reviewers can notice real problems more easily",
+     "They take less time to merge",
+     "Teams review them more regularly"
+    ],
+    "a": "Reviewers can notice real problems more easily",
+    "r": "reading-detail",
+    "e": "'reviewers are more likely to notice real problems in it'.",
+    "fb": {
+     "They are less stressful to write": [
+      [
+       "significado",
+       "el texto no habla del estrés de escribirlas."
+      ]
+     ],
+     "They take less time to merge": [
+      [
+       "significado",
+       "el texto no menciona el tiempo de merge."
+      ]
+     ],
+     "Teams review them more regularly": [
+      [
+       "significado",
+       "la regularidad se menciona como otro beneficio de revisar código, no como motivo de PR pequeños."
+      ]
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "u1-vocab-it",
+  "format": "vocab_def",
+  "level": "B1",
+  "linguaskill": "Vocabulario IT (como en tu Test 1, #26-30)",
+  "title": "Vocabulario IT: definición → término",
+  "instructions": "Elegí el término que corresponde a cada definición.",
+  "options": [
+   "Feature",
+   "Framework",
+   "Documentation",
+   "Debugging",
+   "Maintenance",
+   "Uploading"
+  ],
+  "items": [
+   {
+    "n": 1,
+    "q": "A specific function that a program can perform, like sending messages or saving files.",
+    "a": "Feature",
+    "r": "vocab-it",
+    "e": "feature = función/capacidad del software.",
+    "fb": {
+     "Framework": [
+      [
+       "significado",
+       "Framework = una estructura base con herramientas y reglas; no es lo que describe la definición."
+      ]
+     ],
+     "Documentation": [
+      [
+       "significado",
+       "Documentation = información escrita que explica cómo funciona algo; no es lo que describe la definición."
+      ]
+     ],
+     "Debugging": [
+      [
+       "significado",
+       "Debugging = encontrar y arreglar errores en el código; no es lo que describe la definición."
+      ]
+     ],
+     "Maintenance": [
+      [
+       "significado",
+       "Maintenance = mantener y actualizar un programa a lo largo del tiempo; no es lo que describe la definición."
+      ]
+     ],
+     "Uploading": [
+      [
+       "significado",
+       "Uploading = subir archivos a un servidor; no es lo que describe la definición."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 2,
+    "q": "A set of tools and rules that gives you a basic structure so you don't start from zero.",
+    "a": "Framework",
+    "r": "vocab-it",
+    "e": "framework = estructura base reutilizable.",
+    "fb": {
+     "Feature": [
+      [
+       "significado",
+       "Feature = una función o capacidad de un programa; no es lo que describe la definición."
+      ]
+     ],
+     "Documentation": [
+      [
+       "significado",
+       "Documentation = información escrita que explica cómo funciona algo; no es lo que describe la definición."
+      ]
+     ],
+     "Debugging": [
+      [
+       "significado",
+       "Debugging = encontrar y arreglar errores en el código; no es lo que describe la definición."
+      ]
+     ],
+     "Maintenance": [
+      [
+       "significado",
+       "Maintenance = mantener y actualizar un programa a lo largo del tiempo; no es lo que describe la definición."
+      ]
+     ],
+     "Uploading": [
+      [
+       "significado",
+       "Uploading = subir archivos a un servidor; no es lo que describe la definición."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 3,
+    "q": "Written information that explains how a program or tool works.",
+    "a": "Documentation",
+    "r": "vocab-it",
+    "e": "documentation = documentación.",
+    "fb": {
+     "Feature": [
+      [
+       "significado",
+       "Feature = una función o capacidad de un programa; no es lo que describe la definición."
+      ]
+     ],
+     "Framework": [
+      [
+       "significado",
+       "Framework = una estructura base con herramientas y reglas; no es lo que describe la definición."
+      ]
+     ],
+     "Debugging": [
+      [
+       "significado",
+       "Debugging = encontrar y arreglar errores en el código; no es lo que describe la definición."
+      ]
+     ],
+     "Maintenance": [
+      [
+       "significado",
+       "Maintenance = mantener y actualizar un programa a lo largo del tiempo; no es lo que describe la definición."
+      ]
+     ],
+     "Uploading": [
+      [
+       "significado",
+       "Uploading = subir archivos a un servidor; no es lo que describe la definición."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 4,
+    "q": "The process of finding and fixing errors in your code.",
+    "a": "Debugging",
+    "r": "vocab-it",
+    "e": "debugging = depurar.",
+    "fb": {
+     "Feature": [
+      [
+       "significado",
+       "Feature = una función o capacidad de un programa; no es lo que describe la definición."
+      ]
+     ],
+     "Framework": [
+      [
+       "significado",
+       "Framework = una estructura base con herramientas y reglas; no es lo que describe la definición."
+      ]
+     ],
+     "Documentation": [
+      [
+       "significado",
+       "Documentation = información escrita que explica cómo funciona algo; no es lo que describe la definición."
+      ]
+     ],
+     "Maintenance": [
+      [
+       "significado",
+       "Maintenance = mantener y actualizar un programa a lo largo del tiempo; no es lo que describe la definición."
+      ]
+     ],
+     "Uploading": [
+      [
+       "significado",
+       "Uploading = subir archivos a un servidor; no es lo que describe la definición."
+      ]
+     ]
+    }
+   },
+   {
+    "n": 5,
+    "q": "Making changes to a program over time to fix bugs, improve it or add features, keeping it current.",
+    "a": "Maintenance",
+    "r": "vocab-it",
+    "e": "maintenance = mantenimiento (en tu Test 1 #30 elegiste Uploading).",
+    "fb": {
+     "Feature": [
+      [
+       "significado",
+       "Feature = una función o capacidad de un programa; no es lo que describe la definición."
+      ]
+     ],
+     "Framework": [
+      [
+       "significado",
+       "Framework = una estructura base con herramientas y reglas; no es lo que describe la definición."
+      ]
+     ],
+     "Documentation": [
+      [
+       "significado",
+       "Documentation = información escrita que explica cómo funciona algo; no es lo que describe la definición."
+      ]
+     ],
+     "Debugging": [
+      [
+       "significado",
+       "Debugging = encontrar y arreglar errores en el código; no es lo que describe la definición."
+      ]
+     ],
+     "Uploading": [
+      [
+       "significado",
+       "Uploading = subir archivos a un servidor; no es lo que describe la definición."
+      ]
+     ]
+    }
+   }
+  ]
+ }
+]

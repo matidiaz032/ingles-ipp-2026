@@ -1,0 +1,131 @@
+[
+  {
+    "id": "u2-vg-past-simple", "format": "verb_gap", "level": "B1", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "Past Simple: regulares e irregulares",
+    "instructions": "Completá con el Past Simple (afirmativo, negativo o pregunta) del verbo entre paréntesis.",
+    "text": "1. She [1] (forget) to submit the report yesterday.\n2. We [2] (go) to the conference last week.\n3. I [3] (not / see) the error message.\n4. [4] (you / find) the bug yesterday?\n5. He [5] (buy) a new laptop two days ago.\n6. The server [6] (crash) and then it [7] (restart).\n7. She [8] (teach) me how to use Git.\n8. They [9] (not / be) at the meeting.",
+    "items": [
+      {"n": 1, "a": ["forgot"], "r": "past-simple-form", "pat": [["^forgetted$|^forget$", "past-simple-form"]], "e": "forget es irregular: forget → forgot → forgotten."},
+      {"n": 2, "a": ["went"], "r": "past-simple-form", "pat": [["^gone$|^goed$|^go$", "past-simple-form"]], "e": "go → went (Past Simple); 'gone' es el participio."},
+      {"n": 3, "a": ["didn't see"], "r": "past-aux-did", "pat": [["^didn't saw$|^didn't seen$", "past-aux-did"], ["^not see$|^no see$", "past-aux-did"]], "e": "Negativo: didn't + verbo BASE aunque sea irregular (Unit2/02)."},
+      {"n": 4, "a": ["did you find"], "r": "past-aux-did", "pat": [["^did you found$", "past-aux-did"], ["^you found$|^found you$", "past-aux-did"]], "e": "Pregunta: Did + sujeto + verbo base."},
+      {"n": 5, "a": ["bought"], "r": "past-simple-form", "pat": [["^buyed$|^buy$", "past-simple-form"]], "e": "buy → bought → bought."},
+      {"n": 6, "a": ["crashed"], "r": "past-simple-form", "pat": [["^crash$|^crashes$", "past-simple-form"]], "e": "Verbo regular: + -ed."},
+      {"n": 7, "a": ["restarted"], "r": "past-simple-form", "pat": [["^restart$", "past-simple-form"]], "e": "'and then' → dos acciones en secuencia, ambas Past Simple."},
+      {"n": 8, "a": ["taught"], "r": "past-simple-form", "pat": [["^teached$|^teach$", "past-simple-form"]], "e": "teach → taught → taught."},
+      {"n": 9, "a": ["weren't"], "r": "past-be", "pat": [["^wasn't$", "past-be"], ["^didn't be$", "past-aux-did"]], "e": "they → were; el verbo to be no usa did."}
+    ]
+  },
+  {
+    "id": "u2-vg-past-cont", "format": "verb_gap", "level": "B1", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "Past Simple o Past Continuous (when / while)",
+    "instructions": "Completá con la forma correcta del verbo entre paréntesis.",
+    "text": "1. While I [1] (reboot) the server, the client suddenly disconnected.\n2. She [2] (talk) on the phone when the power went out.\n3. What [3] (you / do) when the bug appeared?\n4. When I [4] (open) the door, my husband was painting the kitchen.\n5. I [5] (walk) to work when it started to rain.\n6. They [6] (work) on the project all morning, so they missed the call.\n7. He [7] (not / know) the answer.\n8. While Ana [8] (write) code, Luis [9] (test) it.",
+    "items": [
+      {"n": 1, "a": ["was rebooting"], "r": "past-cont-form", "pat": [["^rebooted$", "past-simple-vs-cont"], ["^rebooting$|^reboot$", "past-cont-form"]], "e": "Acción larga en progreso + interrupción (disconnected) → Past Continuous."},
+      {"n": 2, "a": ["was talking"], "r": "past-cont-form", "pat": [["^talked$", "past-simple-vs-cont"], ["^were talking$", "past-be"]], "e": "Acción de fondo interrumpida por 'the power went out'."},
+      {"n": 3, "a": ["were you doing"], "r": "past-question-order", "pat": [["^you were doing$", "past-question-order"], ["^did you do$", "past-simple-vs-cont"], ["^was you doing$", "past-be"]], "e": "Pregunta: were + sujeto + -ing (el auxiliar va ANTES del sujeto)."},
+      {"n": 4, "a": ["opened"], "r": "past-simple-vs-cont", "pat": [["^was opening$", "past-simple-vs-cont"]], "e": "La interrupción/momento puntual → Past Simple; 'was painting' es la acción de fondo."},
+      {"n": 5, "a": ["was walking"], "r": "past-cont-form", "pat": [["^walked$", "past-simple-vs-cont"], ["^were walking$", "past-be"]], "e": "Acción en progreso interrumpida por 'it started to rain'."},
+      {"n": 6, "a": ["were working"], "r": "past-cont-form", "pat": [["^worked$", "past-simple-vs-cont"], ["^was working$", "past-be"]], "e": "'all morning' → acción prolongada en progreso → Past Continuous."},
+      {"n": 7, "a": ["didn't know"], "r": "past-state-verb", "pat": [["^wasn't knowing$", "past-state-verb"]], "e": "know = state verb → no va en continuo."},
+      {"n": 8, "a": ["was writing"], "r": "past-cont-form", "pat": [["^wrote$|^writed$", "past-simple-vs-cont"]], "e": "'while' → acciones en paralelo → ambas Past Continuous."},
+      {"n": 9, "a": ["was testing"], "r": "past-cont-form", "pat": [["^tested$", "past-simple-vs-cont"]], "e": "Segunda acción en paralelo."}
+    ]
+  },
+  {
+    "id": "u2-vg-past-perfect", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "Past Perfect: ¿qué ocurrió antes?",
+    "instructions": "Completá con la forma correcta (Past Perfect o Past Simple según el contexto).",
+    "text": "1. By the time she arrived, the developer [1] (fix) all the bugs.\n2. The app crashed after he [2] (update) it.\n3. She [3] (not / read) the documentation before you asked.\n4. The server crashed because someone [4] (delete) the wrong file.\n5. When I [5] (look) everywhere for my keys, I started to panic.\n6. [6] (they / finish) the tests before the release?\n7. He [7] (never / use) Docker before he joined the company.\n8. We [8] (eat) before you arrived.\n9. She [9] (go) home before the meeting started.",
+    "items": [
+      {"n": 1, "a": ["had fixed"], "r": "past-perfect-vs-simple", "pat": [["^fixed$", "past-perfect-vs-simple"], ["^have fixed$", "past-perfect-form"]], "e": "'By the time' → algo ya estaba hecho antes → Past Perfect."},
+      {"n": 2, "a": ["had updated"], "r": "past-perfect-vs-simple", "pat": [["^updated$", "past-perfect-vs-simple"]], "e": "Primero actualizó, después se cayó: la acción anterior va en Past Perfect."},
+      {"n": 3, "a": ["hadn't read"], "r": "past-perfect-form", "pat": [["^didn't read$", "past-perfect-vs-simple"], ["^hadn't readed$|^hadn't red$", "irregular-participle"]], "e": "Negativo: hadn't + participio (read se escribe igual)."},
+      {"n": 4, "a": ["had deleted"], "r": "past-perfect-vs-simple", "pat": [["^deleted$", "past-perfect-vs-simple"]], "e": "'because someone had deleted': la causa ocurrió antes del crash."},
+      {"n": 5, "a": ["had looked"], "r": "past-perfect-vs-simple", "pat": [["^looked$", "past-perfect-vs-simple"], ["^was looking$", "past-simple-vs-cont"]], "e": "Ejemplo de tu apunte: primero buscó, después entró en pánico."},
+      {"n": 6, "a": ["had they finished"], "r": "past-perfect-form", "pat": [["^did they finish$", "past-perfect-vs-simple"], ["^they had finished$", "past-question-order"]], "e": "Pregunta: Had + sujeto + participio."},
+      {"n": 7, "a": ["had never used"], "r": "past-perfect-form", "pat": [["^never used$|^didn't use$", "past-perfect-vs-simple"], ["^never had used$", "past-perfect-form"]], "e": "'never ... before' → Past Perfect; el adverbio va entre had y el participio."},
+      {"n": 8, "a": ["had eaten"], "r": "irregular-participle", "pat": [["^had ate$|^had eated$", "irregular-participle"], ["^ate$", "past-perfect-vs-simple"]], "e": "eat → ate → eaten (participio)."},
+      {"n": 9, "a": ["had gone"], "r": "irregular-participle", "pat": [["^had went$", "irregular-participle"], ["^went$", "past-perfect-vs-simple"]], "e": "go → went → gone. Con had va el participio."}
+    ]
+  },
+  {
+    "id": "u2-vg-past-perfect-cont", "format": "verb_gap", "level": "B2", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "Past Perfect Continuous: duración antes de otro evento",
+    "instructions": "Completá con la forma correcta del verbo entre paréntesis.",
+    "text": "1. They [1] (look) for hours before they found the missing semicolon.\n2. How long [2] (you / write) code before you realized it was the wrong branch?\n3. He was exhausted! He [3] (code) for 36 hours.\n4. The team [4] (refactor) the code for weeks when the project was cancelled.\n5. She [5] (know) him for years before they worked together.\n6. Her clothes were covered in paint. She [6] (paint) the ceiling for hours. (foco en el proceso)",
+    "items": [
+      {"n": 1, "a": ["had been looking"], "alt": ["had looked"], "r": "past-perfect-cont", "pat": [["^looked$|^were looking$", "past-perfect-cont"]], "e": "'for hours' + antes de otro evento pasado → had been + -ing."},
+      {"n": 2, "a": ["had you been writing"], "r": "past-perfect-cont", "pat": [["^were you writing$|^did you write$", "past-perfect-cont"], ["^you had been writing$", "past-question-order"]], "e": "'How long ... before' → duración: Had + sujeto + been + -ing."},
+      {"n": 3, "a": ["had been coding"], "r": "past-perfect-cont", "pat": [["^coded$|^was coding$", "past-perfect-cont"]], "e": "'for 36 hours' antes de 'was exhausted'."},
+      {"n": 4, "a": ["had been refactoring"], "r": "past-perfect-cont", "pat": [["^refactored$|^were refactoring$", "past-perfect-cont"]], "e": "Duración antes de un corte en el pasado (Unit2/01)."},
+      {"n": 5, "a": ["had known"], "r": "past-state-verb", "pat": [["^had been knowing$|^was knowing$", "past-state-verb"], ["^knew$", "past-perfect-vs-simple"]], "e": "know = state verb → Past Perfect Simple, no Continuous."},
+      {"n": 6, "a": ["had been painting"], "alt": ["had painted"], "r": "past-perfect-cont", "pat": [["^painted$|^was painting$", "past-perfect-cont"]], "e": "El foco está en el proceso ('for hours') → had been painting."}
+    ]
+  },
+  {
+    "id": "u2-vg-past-aux", "format": "verb_gap", "level": "B1", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "Auxiliares del pasado: did / was / were / had",
+    "instructions": "Escribí la pregunta o negación correcta. Cada tiempo tiene su propio auxiliar.",
+    "text": "1. [1] (she / go) to the meeting?\n2. I [2] (not / work) late yesterday.\n3. [3] (they / be) at home?\n4. He [4] (not / go) to the meeting yesterday.\n5. [5] (she / work) on the feature when the client called?\n6. Where [6] (they / go) after the meeting?\n7. I [7] (be) tired yesterday.\n8. [8] (he / already / leave) when you arrived?",
+    "items": [
+      {"n": 1, "a": ["did she go"], "r": "past-aux-did", "pat": [["^did she went$", "past-aux-did"], ["^did she goes$", "past-aux-did"], ["^was she go$|^was she going$", "past-simple-vs-cont"]], "e": "Did + sujeto + verbo base (Did she go? ✔ / Did she went? ✘)."},
+      {"n": 2, "a": ["didn't work"], "r": "past-aux-did", "pat": [["^didn't worked$", "past-aux-did"], ["^not worked$|^no worked$", "past-aux-did"]], "e": "didn't + verbo base."},
+      {"n": 3, "a": ["were they"], "r": "past-be", "pat": [["^was they$", "past-be"], ["^did they be$", "past-aux-did"]], "e": "they → were; en pregunta va antes del sujeto."},
+      {"n": 4, "a": ["didn't go"], "r": "past-aux-did", "pat": [["^didn't went$", "past-aux-did"], ["^hadn't gone$|^hadn't went$", "past-perfect-vs-simple"]], "e": "'yesterday' + una sola acción → Past Simple negativo."},
+      {"n": 5, "a": ["was she working"], "r": "past-cont-form", "pat": [["^did she work$", "past-simple-vs-cont"], ["^were she working$", "past-be"], ["^she was working$", "past-question-order"]], "e": "Acción en progreso interrumpida por 'the client called'."},
+      {"n": 6, "a": ["did they go"], "r": "past-aux-did", "pat": [["^did they went$", "past-aux-did"], ["^they did go$|^they went$", "past-question-order"]], "e": "Pregunta con Where + did + sujeto + verbo base."},
+      {"n": 7, "a": ["was"], "r": "past-be", "pat": [["^were$", "past-be"], ["^did be$", "past-aux-did"]], "e": "I → was."},
+      {"n": 8, "a": ["had he already left", "had he left already"], "r": "past-perfect-form", "pat": [["^did he already leave$", "past-perfect-vs-simple"], ["^had he already leaved$|^had he already went$", "irregular-participle"]], "e": "'when you arrived' → ya se había ido antes: Had + sujeto + participio."}
+    ]
+  },
+  {
+    "id": "u2-tense-id", "format": "tense_id", "level": "B1", "linguaskill": "Práctica propia (identificación de tiempo)",
+    "title": "¿Qué tiempo del pasado es?",
+    "instructions": "Elegí el tiempo verbal de la parte en negrita. Traducí al español para confirmar.",
+    "options": ["Past Simple", "Past Continuous", "Past Perfect Simple", "Past Perfect Continuous", "used to (hábito pasado)"],
+    "items": [
+      {"n": 1, "q": "I **worked** all night yesterday.", "a": "Past Simple", "r": "past-simple-vs-cont", "e": "'yesterday' → acción terminada (trabajé)."},
+      {"n": 2, "q": "She **was looking** at the screen when the error appeared.", "a": "Past Continuous", "r": "past-simple-vs-cont", "e": "estaba mirando + interrupción."},
+      {"n": 3, "q": "She **had looked** at the logs before calling me.", "a": "Past Perfect Simple", "r": "past-perfect-vs-simple", "e": "había mirado, antes de otro evento."},
+      {"n": 4, "q": "She **had been looking** at the logs for an hour when she found the bug.", "a": "Past Perfect Continuous", "r": "past-perfect-cont", "e": "había estado mirando + for an hour."},
+      {"n": 5, "q": "He **took** the wrong file.", "a": "Past Simple", "r": "past-simple-vs-cont", "e": "tomó: acción puntual."},
+      {"n": 6, "q": "He **had taken** the wrong file before anyone noticed.", "a": "Past Perfect Simple", "r": "past-perfect-vs-simple", "e": "había tomado, antes de que alguien lo notara."},
+      {"n": 7, "q": "The request **was not being** processed.", "a": "Past Continuous", "r": "past-cont-form", "e": "no estaba siendo procesada: proceso en curso (Continuous pasivo)."},
+      {"n": 8, "q": "We **used to** deploy manually.", "a": "used to (hábito pasado)", "r": "used-to-form", "e": "Antes desplegábamos a mano (ya no)."},
+      {"n": 9, "q": "They **had been working** on that feature for weeks when the project was cancelled.", "a": "Past Perfect Continuous", "r": "past-perfect-cont", "e": "for weeks, antes de la cancelación."}
+    ]
+  },
+  {
+    "id": "u2-dc-past-mixed", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Discrete cloze: pasados mezclados",
+    "instructions": "Elegí la opción correcta.",
+    "items": [
+      {"n": 1, "q": "The programmer ___ to submit the report yesterday.", "o": ["forgot", "forget", "has forgotten", "was forgetting"], "a": "forgot", "r": "past-simple-form", "wr": {"was forgetting": "past-simple-vs-cont", "forget": "past-simple-form"}, "e": "'yesterday' → Past Simple: forgot."},
+      {"n": 2, "q": "While I ___ the server, the client disconnected.", "o": ["was rebooting", "rebooted", "had rebooted", "reboot"], "a": "was rebooting", "r": "past-simple-vs-cont", "wr": {"rebooted": "past-simple-vs-cont", "had rebooted": "past-perfect-vs-simple"}, "e": "While + acción en progreso."},
+      {"n": 3, "q": "By the time I got there, she ___ the whole flat by herself.", "o": ["had painted", "painted", "was painting", "has painted"], "a": "had painted", "r": "past-perfect-vs-simple", "wr": {"painted": "past-perfect-vs-simple", "was painting": "past-simple-vs-cont", "has painted": "past-perfect-form"}, "e": "'By the time' → ya estaba hecho antes de llegar."},
+      {"n": 4, "q": "We ___ for two hours when the power went out.", "o": ["had been working", "were work", "worked", "have been working"], "a": "had been working", "r": "past-perfect-cont", "wr": {"worked": "past-perfect-cont", "have been working": "past-perfect-form"}, "e": "for two hours + corte en el pasado."},
+      {"n": 5, "q": "Did she ___ the file?", "o": ["delete", "deleted", "deleting", "deletes"], "a": "delete", "r": "past-aux-did", "e": "Did + verbo base."},
+      {"n": 6, "q": "She ___ the report before the meeting started.", "o": ["had finished", "has finished", "was finishing", "finish"], "a": "had finished", "r": "past-perfect-vs-simple", "wr": {"has finished": "past-perfect-form", "was finishing": "past-simple-vs-cont"}, "e": "'before' + 2 eventos → el anterior en Past Perfect."},
+      {"n": 7, "q": "___ you working when the alert went off?", "o": ["Were", "Was", "Did", "Had"], "a": "Were", "r": "past-cont-form", "wr": {"Was": "past-be", "Did": "aux-mixing", "Had": "aux-mixing"}, "e": "Past Continuous: were + you + -ing."},
+      {"n": 8, "q": "They ___ at home last night.", "o": ["weren't", "wasn't", "didn't be", "hadn't"], "a": "weren't", "r": "past-be", "wr": {"wasn't": "past-be", "didn't be": "past-aux-did"}, "e": "they → were / weren't."}
+    ]
+  },
+  {
+    "id": "u2-sc-past-errors", "format": "sentence_choice", "level": "B1", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (tus errores comunes de pasado)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["Did she went?", "Did she go?", "Did she goes?"], "a": "Did she go?", "r": "past-aux-did", "e": "Did + verbo base."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["I didn't worked yesterday.", "I didn't work yesterday.", "I not worked yesterday."], "a": "I didn't work yesterday.", "r": "past-aux-did", "e": "didn't + base."},
+      {"n": 3, "q": "Elegí la correcta:", "o": ["He didn't went to the office.", "He didn't go to the office.", "He no went to the office."], "a": "He didn't go to the office.", "r": "past-aux-did", "e": "didn't + base (go)."},
+      {"n": 4, "q": "Elegí la correcta:", "o": ["She hadn't went home.", "She hadn't gone home.", "She didn't gone home."], "a": "She hadn't gone home.", "r": "irregular-participle", "e": "hadn't + participio (gone), no went."},
+      {"n": 5, "q": "Elegí la correcta:", "o": ["Was they working?", "Were they working?", "Did they working?"], "a": "Were they working?", "r": "past-be", "wr": {"Did they working?": "aux-mixing"}, "e": "they → were."},
+      {"n": 6, "q": "Elegí la correcta:", "o": ["By the time I arrived, she finished the report.", "By the time I arrived, she had finished the report.", "By the time I arrived, she has finished the report."], "a": "By the time I arrived, she had finished the report.", "r": "past-perfect-vs-simple", "e": "'By the time' → Past Perfect para la acción anterior."},
+      {"n": 7, "q": "Elegí la correcta:", "o": ["I was knowing the answer.", "I knew the answer.", "I have knew the answer."], "a": "I knew the answer.", "r": "past-state-verb", "e": "know es state verb: sin continuo."},
+      {"n": 8, "q": "Elegí la correcta:", "o": ["I had ate before you arrived.", "I had eaten before you arrived.", "I had eat before you arrived."], "a": "I had eaten before you arrived.", "r": "irregular-participle", "e": "eat → ate → eaten."},
+      {"n": 9, "q": "Elegí la correcta:", "o": ["The server crashed because someone has deleted the wrong file.", "The server crashed because someone had deleted the wrong file.", "The server crashed because someone had delete the wrong file."], "a": "The server crashed because someone had deleted the wrong file.", "r": "past-perfect-vs-simple", "e": "La causa ocurrió antes del crash: had + participio."}
+    ]
+  }
+]

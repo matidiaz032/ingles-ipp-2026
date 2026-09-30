@@ -1,0 +1,86 @@
+[
+  {
+    "id": "u2-dc-used-to", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "used to / be used to / get used to",
+    "instructions": "Elegí la opción correcta. Fijate qué sigue al hueco: ¿verbo base o -ing?",
+    "items": [
+      {"n": 1, "q": "I ___ work long hours during deadlines, but now I don't.", "o": ["used to", "am used to", "am getting used to", "get used to"], "a": "used to", "r": "used-to-vs-be-used-to", "wr": {"am used to": "used-to-vs-be-used-to", "am getting used to": "used-to-vs-be-used-to", "get used to": "used-to-vs-be-used-to"}, "e": "'work' (verbo base) + hábito que ya no existe → used to. Con be/get used to iría 'working'."},
+      {"n": 2, "q": "She has worked alone for years, so she ___ working alone.", "o": ["is used to", "used to", "is getting used to", "got used to"], "a": "is used to", "r": "be-used-to", "wr": {"used to": "used-to-vs-be-used-to", "is getting used to": "get-used-to", "got used to": "get-used-to"}, "e": "Ya está acostumbrada (no es proceso) + -ing → is used to."},
+      {"n": 3, "q": "When I was a student, I ___ every project myself.", "o": ["used to debug", "was used to debug", "am used to debugging", "got used to debug"], "a": "used to debug", "r": "used-to-form", "wr": {"was used to debug": "used-to-vs-be-used-to", "am used to debugging": "used-to-vs-be-used-to", "got used to debug": "get-used-to"}, "e": "Hábito pasado → used to + verbo BASE (debug, no debugged)."},
+      {"n": 4, "q": "Did you ___ work with legacy systems?", "o": ["use to", "used to", "get used to", "be used to"], "a": "use to", "r": "used-to-form", "wr": {"used to": "used-to-form", "get used to": "used-to-vs-be-used-to", "be used to": "used-to-vs-be-used-to"}, "e": "En pregunta, did ya marca el pasado → 'use to' (sin d)."},
+      {"n": 5, "q": "We weren't ___ working under pressure at first, but now we're fine.", "o": ["used to", "got used to", "use to", "used"], "a": "used to", "r": "be-used-to", "wr": {"got used to": "get-used-to", "use to": "used-to-form", "used": "be-used-to"}, "e": "weren't + used to + -ing = no estábamos acostumbrados."},
+      {"n": 6, "q": "She finally ___ the new workflow after a few weeks.", "o": ["got used to", "was used to", "used to", "is used to"], "a": "got used to", "r": "get-used-to", "wr": {"was used to": "be-used-to", "used to": "used-to-vs-be-used-to", "is used to": "be-used-to"}, "e": "'finally ... after a few weeks' → proceso completado → got used to."},
+      {"n": 7, "q": "I didn't ___ smoke before I started this job.", "o": ["use to", "used to", "get used to", "am used to"], "a": "use to", "r": "used-to-form", "wr": {"used to": "used-to-form"}, "e": "Negativo: didn't use to (sin d)."},
+      {"n": 8, "q": "You will ___ reviewing PRs every day.", "o": ["get used to", "used to", "use to", "got used to"], "a": "get used to", "r": "get-used-to", "wr": {"got used to": "get-used-to", "used to": "used-to-vs-be-used-to"}, "e": "will + get used to + -ing (Unit2/04)."},
+      {"n": 9, "q": "I can't ___ this IDE. It's so different from my old one.", "o": ["get used to", "used to", "be used to", "got used to"], "a": "get used to", "r": "get-used-to", "wr": {"be used to": "used-to-vs-be-used-to", "used to": "used-to-vs-be-used-to"}, "e": "can't + get used to (proceso que no logra)."},
+      {"n": 10, "q": "In my early teens I ___ be quiet and shy.", "o": ["used to", "would", "was used to", "got used to"], "a": "used to", "r": "used-to-would", "wr": {"would": "used-to-would", "was used to": "used-to-vs-be-used-to"}, "e": "'be quiet' es un estado → solo used to (would no aplica a estados)."}
+    ]
+  },
+  {
+    "id": "u2-vg-used-forms", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Práctica propia (traducir y completar)",
+    "title": "used to: escribí la estructura correcta",
+    "instructions": "Completá con used to / be used to / get used to en la forma que corresponda (usá el verbo entre paréntesis).",
+    "text": "1. Antes programaba solo en PHP: I [1] (code) in PHP only.\n2. Estoy acostumbrado a trabajar con código legacy: I [2] (work) with legacy code.\n3. Me estoy acostumbrando al nuevo stack: I [3] (use) the new stack.\n4. Antes no teníamos pipelines de CI/CD: We [4] (have) CI/CD pipelines.\n5. ¿Antes usabas Windows? [5] (you / use) Windows before switching to Linux?\n6. No me puedo acostumbrar a esta sintaxis: I can't [6] this syntax.\n7. Se acostumbró al nuevo flujo en unas semanas: She [7] the new workflow in a few weeks.",
+    "items": [
+      {"n": 1, "a": ["used to code"], "r": "used-to-form", "pat": [["^am used to coding$|^used to coding$", "used-to-vs-be-used-to"], ["^use to code$", "used-to-form"]], "e": "Hábito pasado que ya no existe → used to + base."},
+      {"n": 2, "a": ["am used to working"], "r": "be-used-to", "pat": [["^am used to work$", "be-used-to"], ["^used to work$|^used to working$", "used-to-vs-be-used-to"]], "e": "Estar acostumbrado → am used to + -ing."},
+      {"n": 3, "a": ["am getting used to using"], "r": "get-used-to", "pat": [["^am getting used to use$", "get-used-to"], ["^am used to using$", "used-to-vs-be-used-to"]], "e": "Proceso en curso → am getting used to + -ing."},
+      {"n": 4, "a": ["didn't use to have"], "alt": ["never used to have"], "r": "used-to-form", "pat": [["^didn't used to have$", "used-to-form"], ["^weren't used to having$", "used-to-vs-be-used-to"]], "e": "Negativo: didn't use to + base."},
+      {"n": 5, "a": ["did you use to use"], "r": "used-to-form", "pat": [["^did you used to use$", "used-to-form"], ["^were you used to using$", "used-to-vs-be-used-to"]], "e": "Pregunta: Did + sujeto + use to + base."},
+      {"n": 6, "a": ["get used to"], "r": "get-used-to", "pat": [["^be used to$", "used-to-vs-be-used-to"], ["^used to$", "used-to-vs-be-used-to"]], "e": "can't + get used to."},
+      {"n": 7, "a": ["got used to"], "r": "get-used-to", "pat": [["^was used to$", "be-used-to"], ["^used to$", "used-to-vs-be-used-to"]], "e": "Proceso completado en el pasado → got used to."}
+    ]
+  },
+  {
+    "id": "u2-tense-id-used", "format": "tense_id", "level": "B1", "linguaskill": "Práctica propia (identificar significado)",
+    "title": "¿Qué significa? used to / be used to / get used to",
+    "instructions": "Elegí el significado de la parte en negrita.",
+    "options": ["Hábito del pasado (ya no existe)", "Ya estoy acostumbrado", "Proceso de acostumbrarse"],
+    "items": [
+      {"n": 1, "q": "I **used to** work with jQuery.", "a": "Hábito del pasado (ya no existe)", "r": "used-to-vs-be-used-to", "e": "Antes trabajaba con jQuery (ya no)."},
+      {"n": 2, "q": "I **am used to** working with jQuery.", "a": "Ya estoy acostumbrado", "r": "used-to-vs-be-used-to", "e": "Estoy acostumbrado: no me resulta difícil."},
+      {"n": 3, "q": "I **am getting used to** working with jQuery.", "a": "Proceso de acostumbrarse", "r": "used-to-vs-be-used-to", "e": "Me estoy acostumbrando (todavía cuesta un poco)."},
+      {"n": 4, "q": "We **didn't use to** have CI/CD pipelines.", "a": "Hábito del pasado (ya no existe)", "r": "used-to-form", "e": "Antes no teníamos pipelines."},
+      {"n": 5, "q": "She **got used to** the new workflow after a few weeks.", "a": "Proceso de acostumbrarse", "r": "get-used-to", "e": "Se acostumbró: proceso completado."},
+      {"n": 6, "q": "He **was used to** working alone before joining the team.", "a": "Ya estoy acostumbrado", "r": "be-used-to", "e": "Estaba acostumbrado (en pasado): ya no le resultaba difícil."}
+    ]
+  },
+  {
+    "id": "u2-sc-used-errors", "format": "sentence_choice", "level": "B1", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (tus errores de used to)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["I am used to work late.", "I am used to working late.", "I am use to working late."], "a": "I am used to working late.", "r": "be-used-to", "e": "Después de be used to va -ing."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["I didn't used to smoke.", "I didn't use to smoke.", "I not used to smoke."], "a": "I didn't use to smoke.", "r": "used-to-form", "e": "didn't ya marca el pasado → use to."},
+      {"n": 3, "q": "Elegí la correcta:", "o": ["I use to go there.", "I used to go there.", "I used to going there."], "a": "I used to go there.", "r": "used-to-form", "e": "En afirmativo siempre lleva -d; después, verbo base."},
+      {"n": 4, "q": "Elegí la correcta:", "o": ["I got used to work alone.", "I got used to working alone.", "I got use to working alone."], "a": "I got used to working alone.", "r": "get-used-to", "e": "Después de get used to va -ing."},
+      {"n": 5, "q": "Elegí la correcta:", "o": ["She is used to long meetings.", "She used to long meetings.", "She is use to long meetings."], "a": "She is used to long meetings.", "r": "be-used-to", "e": "be used to + sustantivo también es válido."},
+      {"n": 6, "q": "Elegí la correcta:", "o": ["Did you used to work here?", "Did you use to work here?", "Were you use to work here?"], "a": "Did you use to work here?", "r": "used-to-form", "e": "Did + you + use to + base."}
+    ]
+  },
+  {
+    "id": "u2-dc-used-would", "format": "discrete_cloze", "level": "B2", "linguaskill": "Práctica propia (used to vs would)",
+    "title": "used to vs would",
+    "instructions": "¿Qué opción(es) es/son posible(s) en cada oración?",
+    "items": [
+      {"n": 1, "q": "When we were kids, we ___ play outside every afternoon.", "o": ["Solo used to", "Solo would", "Used to y would"], "a": "Used to y would", "r": "used-to-would", "e": "Hábito repetido: ambos valen."},
+      {"n": 2, "q": "In my early teens I ___ be quiet and introverted.", "o": ["Solo used to", "Solo would", "Used to y would"], "a": "Solo used to", "r": "used-to-would", "e": "'be quiet' es un estado, no una acción repetida."},
+      {"n": 3, "q": "She ___ have a car, but she sold it.", "o": ["Solo used to", "Solo would", "Used to y would"], "a": "Solo used to", "r": "used-to-would", "e": "have (posesión) = estado."},
+      {"n": 4, "q": "Every summer we ___ visit our grandparents.", "o": ["Solo used to", "Solo would", "Used to y would"], "a": "Used to y would", "r": "used-to-would", "e": "Acción repetida = hábito."},
+      {"n": 5, "q": "He ___ be the best player in the team.", "o": ["Solo used to", "Solo would", "Used to y would"], "a": "Solo used to", "r": "used-to-would", "e": "be the best = estado."}
+    ]
+  },
+  {
+    "id": "u2-oc-used", "format": "open_cloze", "level": "B1-B2", "linguaskill": "Open cloze",
+    "title": "Open cloze: learning to code",
+    "instructions": "Escribí UNA palabra en cada hueco.",
+    "text": "When I started coding, I [1] to write everything in a single file. Now I am used [2] working with folders and modules. At first I could not get used to the terminal, but I [3] used to it after a month. My old laptop [4] to overheat all the time. I didn't [5] to like Linux, but now I love it.",
+    "items": [
+      {"n": 1, "a": ["used"], "r": "used-to-form", "pat": [["^use$", "used-to-form"]], "e": "Afirmativo: used to + base (con -d)."},
+      {"n": 2, "a": ["to"], "r": "be-used-to", "pat": [["^for$|^with$", "be-used-to"]], "e": "am used TO + -ing."},
+      {"n": 3, "a": ["got"], "r": "get-used-to", "pat": [["^was$|^am$", "used-to-vs-be-used-to"], ["^get$", "get-used-to"]], "e": "'after a month' → proceso completado → got used to."},
+      {"n": 4, "a": ["used"], "r": "used-to-form", "e": "My old laptop used to overheat (ya no)."},
+      {"n": 5, "a": ["use"], "r": "used-to-form", "pat": [["^used$", "used-to-form"]], "e": "didn't + use to (sin d)."}
+    ]
+  }
+]

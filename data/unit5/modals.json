@@ -1,0 +1,113 @@
+[
+  {
+    "id": "u5-dc-modals-present", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Modal verbs (presente): elegí el correcto",
+    "instructions": "Elegí la opción correcta. Primero identificá la categoría: obligación, consejo, prohibición, deducción, habilidad, permiso, falta de necesidad.",
+    "items": [
+      {"n": 1, "q": "You ___ back up your files regularly to avoid losing important data.", "o": ["should", "should have", "mustn't", "can't"], "a": "should", "r": "modal-advice", "wr": {"should have": "modal-past-vs-present", "mustn't": "modal-prohibition"}, "e": "Consejo en presente → should. 'should have' es crítica sobre el pasado."},
+      {"n": 2, "q": "The server is down. The IT team ___ be working on it now.", "o": ["must", "can't", "mustn't", "needn't"], "a": "must", "r": "modal-deduction", "wr": {"can't": "modal-deduction", "mustn't": "modal-deduction"}, "e": "Deducción positiva casi segura → must be."},
+      {"n": 3, "q": "You ___ use your colleague's password without permission.", "o": ["mustn't", "don't have to", "can't be", "needn't"], "a": "mustn't", "r": "modal-prohibition", "wr": {"don't have to": "modal-prohibition", "needn't": "modal-prohibition"}, "e": "Prohibido → mustn't."},
+      {"n": 4, "q": "We ___ finish the report today. The deadline is next week.", "o": ["don't have to", "mustn't", "can't", "must"], "a": "don't have to", "r": "modal-prohibition", "wr": {"mustn't": "modal-prohibition", "must": "modal-obligation"}, "e": "No es necesario → don't have to (no prohibido)."},
+      {"n": 5, "q": "You ___ install that program. It may contain malware.", "o": ["shouldn't", "don't have to", "can't be", "must be"], "a": "shouldn't", "r": "modal-advice", "wr": {"don't have to": "modal-prohibition"}, "e": "Consejo negativo → shouldn't."},
+      {"n": 6, "q": "The developer isn't answering his phone. He ___ be in a meeting.", "o": ["might", "must have", "should have", "ought to have"], "a": "might", "r": "modal-possibility", "wr": {"must have": "modal-past-vs-present", "should have": "modal-past-vs-present"}, "e": "Posibilidad presente (no hay certeza) → might/may/could + base."},
+      {"n": 7, "q": "She ___ be a beginner. She fixed that bug in five minutes.", "o": ["can't", "mustn't", "needn't", "shouldn't"], "a": "can't", "r": "modal-deduction", "wr": {"mustn't": "modal-deduction"}, "e": "Deducción negativa → can't be, nunca mustn't be."},
+      {"n": 8, "q": "The company says all employees ___ change their passwords every 90 days.", "o": ["have to", "mustn't", "can't", "could"], "a": "have to", "r": "modal-obligation", "wr": {"mustn't": "modal-prohibition"}, "e": "Regla externa de la empresa → have to."},
+      {"n": 9, "q": "You ___ pay for this software. It's open-source.", "o": ["don't have to", "mustn't", "can't", "shouldn't have"], "a": "don't have to", "r": "modal-prohibition", "wr": {"mustn't": "modal-prohibition", "shouldn't have": "modal-past-vs-present"}, "e": "No hace falta pagar (es gratis)."},
+      {"n": 10, "q": "___ I deploy this to staging now?", "o": ["Can", "Must", "Mustn't", "Needn't"], "a": "Can", "r": "modal-permission", "e": "Pedir permiso → Can I...?"},
+      {"n": 11, "q": "When I started working here, I ___ write code very well, but now I can.", "o": ["couldn't", "can't", "mustn't", "needn't"], "a": "couldn't", "r": "modal-ability", "wr": {"can't": "modal-ability"}, "e": "Habilidad en el pasado (negativo) → couldn't."},
+      {"n": 12, "q": "___ you like some coffee?", "o": ["Would", "Should", "Must", "Might"], "a": "Would", "r": "would-uses", "e": "Ofrecimiento formal → Would you like...?"}
+    ]
+  },
+  {
+    "id": "u5-vg-modals", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Práctica propia (traducir y completar)",
+    "title": "Modal verbs: escribí el modal",
+    "instructions": "Escribí el modal (o semi-modal) que corresponde a la traducción.",
+    "text": "1. Tenés que parar en la luz roja (es una regla): You [1] stop at a red light.\n2. No hace falta que compres tomates: You [2] buy any tomatoes.\n3. Está prohibido fumar acá: You [3] smoke here.\n4. Deberías ver a un médico: You [4] see a doctor.\n5. No puede ser americano; su inglés es terrible: He [5] be American.\n6. Debe ser muy rico; tiene un Rolls Royce: He [6] be very rich.\n7. Puede que llueva: It [7] rain.\n8. Cuando estaba en la facultad, solía quedarme despierto toda la noche: When I was in college, I [8] stay up all night coding.",
+    "items": [
+      {"n": 1, "a": ["have to"], "alt": ["must"], "r": "modal-obligation", "pat": [["^should$", "modal-advice"], ["^have$|^has to$", "semi-modal-to"]], "e": "Regla externa → have to (must también se acepta)."},
+      {"n": 2, "a": ["don't have to", "needn't", "don't need to"], "r": "modal-prohibition", "pat": [["^mustn't$", "modal-prohibition"], ["^have to$|^must$", "modal-prohibition"]], "e": "No es necesario → don't have to / needn't."},
+      {"n": 3, "a": ["mustn't"], "r": "modal-prohibition", "pat": [["^don't have to$|^needn't$|^don't need to$", "modal-prohibition"], ["^can't$", "modal-prohibition"]], "e": "Prohibido → mustn't."},
+      {"n": 4, "a": ["should", "ought to"], "r": "modal-advice", "pat": [["^must$|^have to$", "modal-advice"]], "e": "Consejo → should."},
+      {"n": 5, "a": ["can't"], "r": "modal-deduction", "pat": [["^mustn't$", "modal-deduction"]], "e": "Deducción negativa → can't be (nunca mustn't be)."},
+      {"n": 6, "a": ["must"], "r": "modal-deduction", "pat": [["^should$|^have to$", "modal-deduction"]], "e": "Deducción positiva → must be."},
+      {"n": 7, "a": ["might", "may", "could"], "r": "modal-possibility", "pat": [["^must$|^can't$", "modal-possibility"]], "e": "Posibilidad → might / may / could."},
+      {"n": 8, "a": ["would", "used to"], "r": "would-uses", "pat": [["^will$", "would-uses"]], "e": "Hábito pasado repetido → would (o used to)."}
+    ]
+  },
+  {
+    "id": "u5-tense-id-modal", "format": "tense_id", "level": "B1", "linguaskill": "Práctica propia (identificar la categoría)",
+    "title": "¿Qué expresa el modal?",
+    "instructions": "Elegí la categoría de la parte en negrita.",
+    "options": ["Obligation", "Advice", "Prohibition", "Ability", "Certainty (deduction)", "Possibility", "Lack of necessity", "Permission"],
+    "items": [
+      {"n": 1, "q": "You **must** finish the report.", "a": "Obligation", "r": "modal-obligation", "e": "Tengo que / debo."},
+      {"n": 2, "q": "You **should** see a doctor.", "a": "Advice", "r": "modal-advice", "e": "Deberías: consejo."},
+      {"n": 3, "q": "You **mustn't** smoke here.", "a": "Prohibition", "r": "modal-prohibition", "e": "Está prohibido."},
+      {"n": 4, "q": "She **can** code in three languages.", "a": "Ability", "r": "modal-ability", "e": "Habilidad general."},
+      {"n": 5, "q": "He **must be** rich.", "a": "Certainty (deduction)", "r": "modal-deduction", "e": "Debe ser: deducción."},
+      {"n": 6, "q": "It **might** rain.", "a": "Possibility", "r": "modal-possibility", "e": "Puede que llueva."},
+      {"n": 7, "q": "You **don't have to** buy tomatoes.", "a": "Lack of necessity", "r": "modal-prohibition", "e": "No hace falta."},
+      {"n": 8, "q": "**Can** I go out?", "a": "Permission", "r": "modal-permission", "e": "Pedir permiso."},
+      {"n": 9, "q": "He **can't be** American.", "a": "Certainty (deduction)", "r": "modal-deduction", "e": "Deducción negativa."},
+      {"n": 10, "q": "You **needn't** finish it today.", "a": "Lack of necessity", "r": "modal-prohibition", "e": "No hace falta (forma formal)."}
+    ]
+  },
+  {
+    "id": "u5-tense-id-would", "format": "tense_id", "level": "B1-B2", "linguaskill": "Práctica propia (would)",
+    "title": "Los usos de would",
+    "instructions": "Elegí el uso de would en la parte en negrita. Truco: si se traduce con -ía, es would.",
+    "options": ["Condicional hipotético", "Pedido formal / cortesía", "Opinión suavizada", "Hábito pasado repetido"],
+    "items": [
+      {"n": 1, "q": "If I had more time, I **would learn** Rust.", "a": "Condicional hipotético", "r": "would-uses", "e": "aprendería."},
+      {"n": 2, "q": "**Would** you mind closing the door?", "a": "Pedido formal / cortesía", "r": "would-uses", "e": "¿Te importaría...?"},
+      {"n": 3, "q": "I **would say** this bug is critical.", "a": "Opinión suavizada", "r": "would-uses", "e": "Yo diría."},
+      {"n": 4, "q": "When I was in college, I **would stay up** all night coding.", "a": "Hábito pasado repetido", "r": "would-uses", "e": "Solía quedarme."},
+      {"n": 5, "q": "**Would** you like some coffee?", "a": "Pedido formal / cortesía", "r": "would-uses", "e": "¿Querrías...?"},
+      {"n": 6, "q": "I **would fix** that bug right now if I could.", "a": "Condicional hipotético", "r": "would-uses", "e": "Lo arreglaría."}
+    ]
+  },
+  {
+    "id": "u5-sc-modal-errors", "format": "sentence_choice", "level": "B1-B2", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (modales)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["She must to go.", "She must go.", "She musts go."], "a": "She must go.", "r": "modal-form", "e": "Modal + verbo base, sin to y sin -s."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["I can to run fast.", "I can run fast.", "I cans run fast."], "a": "I can run fast.", "r": "modal-form", "e": "Sin to."},
+      {"n": 3, "q": "Elegí la correcta (deducción negativa):", "o": ["He mustn't be American. His English is terrible.", "He can't be American. His English is terrible.", "He doesn't must be American. His English is terrible."], "a": "He can't be American. His English is terrible.", "r": "modal-deduction", "e": "Deducción negativa → can't be."},
+      {"n": 4, "q": "Elegí la correcta (no es obligatorio):", "o": ["You mustn't come to the meeting; it's optional.", "You don't have to come to the meeting; it's optional.", "You mustn't to come to the meeting; it's optional."], "a": "You don't have to come to the meeting; it's optional.", "r": "modal-prohibition", "e": "mustn't = prohibido; don't have to = no es necesario."},
+      {"n": 5, "q": "Elegí la correcta (hábito/estado pasado):", "o": ["I would have a car when I was young.", "I used to have a car when I was young.", "I use to have a car when I was young."], "a": "I used to have a car when I was young.", "r": "would-uses", "e": "would no aplica a estados (have); usá used to."},
+      {"n": 6, "q": "Elegí la correcta:", "o": ["She has go home early.", "She has to go home early.", "She have to go home early."], "a": "She has to go home early.", "r": "semi-modal-to", "e": "Semi-modal: has TO go."},
+      {"n": 7, "q": "Elegí la correcta:", "o": ["You had better to back up the files.", "You had better back up the files.", "You had better backing up the files."], "a": "You had better back up the files.", "r": "had-better", "e": "had better NO lleva to."},
+      {"n": 8, "q": "Elegí la correcta:", "o": ["She oughts to see a doctor.", "She ought to see a doctor.", "She ought see a doctor."], "a": "She ought to see a doctor.", "r": "semi-modal-to", "e": "ought to nunca lleva -s."}
+    ]
+  },
+  {
+    "id": "u5-dc-modals-past", "format": "discrete_cloze", "level": "B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Modales en pasado: should have / must have / might have...",
+    "instructions": "Elegí la opción correcta. Pista: ¿crítica, deducción o necesidad en el pasado?",
+    "items": [
+      {"n": 1, "q": "The programmer ___ made a mistake in the code. That's why the application crashed.", "o": ["must have", "must", "should", "can"], "a": "must have", "r": "modal-past-deduction", "wr": {"must": "modal-past-vs-present", "should": "modal-past-vs-present"}, "e": "Deducción sobre el pasado → must have + participio."},
+      {"n": 2, "q": "We ___ tested the new feature before releasing it. Now users are reporting problems.", "o": ["should have", "must", "can't", "might"], "a": "should have", "r": "modal-past-criticism", "wr": {"must": "modal-past-vs-present", "might": "modal-past-vs-present"}, "e": "Crítica: no lo hicimos y debimos → should have."},
+      {"n": 3, "q": "The system was working perfectly yesterday, so the problem ___ happened during the update.", "o": ["must have", "should", "needn't", "mustn't"], "a": "must have", "r": "modal-past-deduction", "wr": {"should": "modal-past-vs-present"}, "e": "Deducción lógica sobre el pasado."},
+      {"n": 4, "q": "The programmer ___ forgotten to update the database.", "o": ["may have", "may", "should", "would"], "a": "may have", "r": "modal-past-deduction", "wr": {"may": "modal-past-vs-present"}, "e": "Posibilidad en el pasado → may have + participio."},
+      {"n": 5, "q": "He ___ fixed the bug yesterday. He was on holiday.", "o": ["can't have", "mustn't have", "shouldn't", "won't have"], "a": "can't have", "r": "modal-past-deduction", "wr": {"mustn't have": "modal-deduction"}, "e": "Deducción negativa pasada → can't have (no mustn't have)."},
+      {"n": 6, "q": "We ___ informed the client about the delay earlier.", "o": ["should have", "must", "can't", "mightn't"], "a": "should have", "r": "modal-past-criticism", "wr": {"must": "modal-past-vs-present"}, "e": "Crítica retrospectiva."},
+      {"n": 7, "q": "The developer ___ changed the code without telling the rest of the team.", "o": ["shouldn't have", "mustn't", "can't", "needn't"], "a": "shouldn't have", "r": "modal-past-criticism", "wr": {"mustn't": "modal-past-vs-present"}, "e": "Lo hizo y no debió → shouldn't have + participio."},
+      {"n": 8, "q": "The files aren't on the computer. Someone ___ deleted them accidentally.", "o": ["might have", "must", "should", "can"], "a": "might have", "r": "modal-past-deduction", "e": "Posibilidad sobre algo pasado."},
+      {"n": 9, "q": "I ___ worried about the test. I got 100%!", "o": ["needn't have", "didn't need to", "mustn't have", "couldn't"], "a": "needn't have", "r": "modal-past-necessity", "wr": {"didn't need to": "modal-past-necessity"}, "e": "Te preocupaste y no hacía falta → needn't have + participio."},
+      {"n": 10, "q": "The window was open when we arrived. Someone ___ forgotten to close it.", "o": ["must have", "must", "can't", "should"], "a": "must have", "r": "modal-past-deduction", "wr": {"must": "modal-past-vs-present"}, "e": "Deducción por evidencia pasada."}
+    ]
+  },
+  {
+    "id": "u5-sc-modal-past-errors", "format": "sentence_choice", "level": "B2", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (modales en pasado)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["She should have go home.", "She should have gone home.", "She should has gone home."], "a": "She should have gone home.", "r": "modal-past-form", "e": "have + participio (gone)."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["He must have go to the office.", "He must have gone to the office.", "He must has went to the office."], "a": "He must have gone to the office.", "r": "modal-past-form", "e": "must have + participio."},
+      {"n": 3, "q": "Elegí la correcta:", "o": ["I needn't have worry.", "I needn't have worried.", "I needn't worried."], "a": "I needn't have worried.", "r": "modal-past-necessity", "e": "needn't have + participio."},
+      {"n": 4, "q": "Elegí la que critica algo que SÍ hiciste (desplegaste un viernes):", "o": ["You should have deployed on a Friday.", "You shouldn't have deployed on a Friday.", "You shouldn't deployed on a Friday."], "a": "You shouldn't have deployed on a Friday.", "r": "modal-past-criticism", "e": "Lo hiciste y no debiste → shouldn't have."},
+      {"n": 5, "q": "Elegí la que deduce sobre el pasado (a él le pidieron que se fuera):", "o": ["He must be asked to leave.", "He must have been asked to leave.", "He must have asked to leave."], "a": "He must have been asked to leave.", "r": "passive-modal", "wr": {"He must be asked to leave.": "modal-past-form"}, "e": "Deducción pasada + pasiva → must have been + participio."}
+    ]
+  }
+]

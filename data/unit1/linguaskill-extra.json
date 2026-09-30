@@ -1,0 +1,141 @@
+[
+  {
+    "id": "u1-oc-remote", "format": "open_cloze", "level": "B1", "linguaskill": "Open cloze",
+    "title": "Open cloze: working from home",
+    "instructions": "Escribí UNA palabra gramatical en cada hueco.",
+    "text": "At the moment, many developers [1] working from home, and I am one of them. I have been working remotely [2] almost three years, and I [3] not want to go back to an office. My team talks [4] each other on video calls every morning. Working from home is not as expensive [5] living near the office.",
+    "items": [
+      {"n": 1, "a": ["are"], "r": "pc-form", "pat": [["^is$|^am$", "be-forms", [["forma", "developers es plural → are working."]]]], "e": "'At the moment' → Continuous: many developers ARE working."},
+      {"n": 2, "a": ["for"], "r": "for-vs-since", "pat": [["^since$", "for-vs-since", [["tiempo", "almost three years es una duración → for. since necesita un punto de inicio."]]]], "e": "'almost three years' = período → for."},
+      {"n": 3, "a": ["do"], "r": "aux-do-base", "pat": [["^does$", "aux-do-base", [["forma", "I → do (does es para he / she / it)."]]], ["^am$|^is$|^have$", "aux-mixing", [["forma", "la negación del Present Simple usa do + not: I do not want. am / is / have son de otros aspectos."]]]], "e": "Negativo de Present Simple: I + do + not + verbo base."},
+      {"n": 4, "a": ["to", "with"], "r": "prep-collocation", "e": "talk TO / WITH each other."},
+      {"n": 5, "a": ["as"], "r": "comp-as-as", "pat": [["^than$", "comp-as-as", [["forma", "not as expensive AS: la igualdad se cierra con as."]]]], "e": "not as expensive AS."}
+    ]
+  },
+  {
+    "id": "u1-oc-startup", "format": "open_cloze", "level": "B1", "linguaskill": "Open cloze",
+    "title": "Open cloze: first week at a startup",
+    "instructions": "Escribí UNA palabra gramatical en cada hueco.",
+    "text": "It is my first week at a new company. I [1] never used this framework before, so everything is new [2] me. Luckily, my manager is much [3] strict than my old boss. Today I [4] working on my first task, and I hope to finish it [5] the end of the day.",
+    "items": [
+      {"n": 1, "a": ["have"], "r": "pps-form", "pat": [["^has$", "pps-form", [["forma", "I → have (has es para he / she / it)."]]], ["^did$|^do$", "aux-mixing", [["tiempo", "'never ... before' pide Perfecto (have used), no did / do."]]]], "e": "'never ... before' → experiencia: I have never used."},
+      {"n": 2, "a": ["to", "for"], "r": "prep-collocation", "e": "new TO me (o for me)."},
+      {"n": 3, "a": ["less"], "r": "comp-short-long", "pat": [["^more$", "comp-short-long", [["significado", "'Luckily' indica algo bueno: menos estricto → less. much more strict diría que es MÁS estricto."]]]], "e": "Por el sentido ('luckily'): menos estricto → much LESS strict than."},
+      {"n": 4, "a": ["am"], "r": "pc-form", "pat": [["^is$|^are$", "be-forms", [["forma", "I → am working."]]]], "e": "'Today' + tarea en curso → I am + -ing."},
+      {"n": 5, "a": ["by", "before"], "r": "prep-collocation", "e": "by the end of the day = como tarde al final del día."}
+    ]
+  },
+  {
+    "id": "u1-oc-monitor", "format": "open_cloze", "level": "B2", "linguaskill": "Open cloze",
+    "title": "Open cloze: monitoring the server",
+    "instructions": "Escribí UNA palabra gramatical en cada hueco.",
+    "text": "Our team has [1] monitoring the server since Monday. So far we [2] found three serious errors, and we [3] not fixed all of them yet. Ana has been working [4] ten o'clock last night, and she is [5] tired to keep going.",
+    "items": [
+      {"n": 1, "a": ["been"], "r": "ppc-duration", "pat": [["^be$|^being$", "ppc-duration", [["forma", "has + BEEN + -ing: has been monitoring (Present Perfect Continuous)."]]]], "e": "has + BEEN + -ing (since Monday → duración)."},
+      {"n": 2, "a": ["have"], "r": "pps-result-keywords", "pat": [["^has$", "pps-form", [["forma", "Our team / we → have found (has es para he / she / it)."]]], ["^did$", "pps-vs-past", [["tiempo", "'So far' pide Present Perfect (have found); did es Past Simple."]]]], "e": "'So far' → Present Perfect. Our team = we → have found."},
+      {"n": 3, "a": ["have"], "r": "pps-form", "pat": [["^has$", "pps-form", [["forma", "we → have not fixed (has es para he / she / it)."]]], ["^do$|^did$", "aux-mixing", [["forma", "'have not fixed yet' es Perfecto; do / did no se combinan con el participio fixed."]]]], "e": "have not fixed ... yet (Perfecto negativo)."},
+      {"n": 4, "a": ["since"], "r": "for-vs-since", "pat": [["^for$", "for-vs-since", [["tiempo", "'ten o'clock last night' es un punto de inicio → since. for va con una duración."]]]], "e": "'ten o'clock last night' = punto de inicio → since."},
+      {"n": 5, "a": ["too"], "r": "too-enough", "pat": [["^enough$|^very$|^so$", "too-enough", [["forma", "too tired to keep going: too + adjetivo + to + verbo. enough iría después del adjetivo y no expresa exceso."]]]], "e": "too tired to keep going = demasiado cansada para seguir."}
+    ]
+  },
+  {
+    "id": "u1-oc-python", "format": "open_cloze", "level": "B2", "linguaskill": "Open cloze",
+    "title": "Open cloze: Python and Java",
+    "instructions": "Escribí UNA palabra gramatical en cada hueco.",
+    "text": "Python is not as difficult [1] Java for beginners. Its syntax is much [2] complicated. [3] more you practise, the easier it becomes. However, Java is usually [4] faster than Python. Even so, Python is often the [5] popular language among beginners.",
+    "items": [
+      {"n": 1, "a": ["as"], "r": "comp-as-as", "pat": [["^than$", "comp-as-as", [["forma", "not as difficult AS: la igualdad usa as ... as."]]]], "e": "not as difficult AS."},
+      {"n": 2, "a": ["less"], "r": "comp-short-long", "pat": [["^more$", "comp-short-long", [["significado", "'not as difficult' indica que Python es más fácil → menos complicado: much LESS complicated."]]]], "e": "Por el sentido (no es tan difícil): much LESS complicated."},
+      {"n": 3, "a": ["the"], "r": "comp-double", "pat": [["^more$", "comp-double", [["forma", "en 'The more ..., the easier' los dos comparativos llevan the: THE more you practise..."]]]], "e": "The more you practise, the easier it becomes: ambas partes con 'the'."},
+      {"n": 4, "a": ["much", "far", "a lot", "even", "slightly", "rather"], "r": "comp-degree", "pat": [["^very$|^too$", "comp-degree", [["forma", "very / too no acompañan comparativos: much / far / a lot faster."]]]], "e": "much / far / a lot + comparativo (nunca very)."},
+      {"n": 5, "a": ["most"], "r": "comp-short-long", "pat": [["^more$", "comp-short-long", [["forma", "superlativo: the MOST popular. the more sería comparativo."]]]], "e": "Superlativo largo: the MOST popular."}
+    ]
+  },
+  {
+    "id": "u1-mcc-sam", "format": "mc_cloze", "level": "B1", "linguaskill": "Multiple choice cloze (3 opciones)",
+    "title": "Multiple choice cloze: Sam's day",
+    "instructions": "Elegí la opción correcta para cada hueco.",
+    "text": "Sam [1] to work by bike every day. Today, however, it [2] heavily, so he is taking the bus. He [3] the same laptop since 2020, and he is very careful with it. At the moment he [4] to a podcast about cybersecurity. He [5] any important calls today, so he can relax.",
+    "items": [
+      {"n": 1, "o": ["goes", "is going", "has gone"], "a": "goes", "r": "ps-routine", "wr": {"is going": "ps-vs-pc"}, "e": "'every day' → rutina.", "fb": {"is going": [["tiempo", "every day marca una rutina → Present Simple (goes)."]], "has gone": [["tiempo", "has gone = ya se fue (resultado); acá es una rutina → goes."]]}},
+      {"n": 2, "o": ["is raining", "rains", "has rained"], "a": "is raining", "r": "pc-now-temporary", "wr": {"rains": "ps-vs-pc"}, "e": "'Today, however' → situación actual/temporal.", "fb": {"rains": [["tiempo", "'Today, however' contrasta con la rutina: situación actual → is raining."]], "has rained": [["tiempo", "has rained pone el foco en el resultado; acá está lloviendo hoy, ahora."]]}},
+      {"n": 3, "o": ["has had", "has been having", "is having"], "a": "has had", "r": "state-verb-duration", "wr": {"has been having": "state-verb-duration", "is having": "state-verb-simple"}, "e": "have (posesión) + since → Present Perfect Simple, no Continuous.", "fb": {"has been having": [["significado", "have = poseer es un estado: no va en continuo, ni siquiera con since. → has had."]], "is having": [["significado", "have (posesión) no admite continuo, y since pide Perfecto → has had."]]}},
+      {"n": 4, "o": ["is listening", "listens", "has listened"], "a": "is listening", "r": "pc-now-temporary", "wr": {"listens": "ps-vs-pc"}, "e": "'At the moment' → Continuous.", "fb": {"listens": [["tiempo", "'At the moment' → acción en curso: is listening."]], "has listened": [["tiempo", "has listened = ya terminó; at the moment pide continuo."]]}},
+      {"n": 5, "o": ["doesn't have", "isn't having", "hasn't have"], "a": "doesn't have", "r": "state-verb-simple", "wr": {"isn't having": "state-verb-simple", "hasn't have": "aux-mixing"}, "e": "have = posesión → simple; negativo con doesn't + base.", "fb": {"isn't having": [["significado", "'today' parece pedir continuo, pero acá have = tener (llamadas en la agenda): es un estado. El significado del verbo pesa más que el marcador de tiempo."]], "hasn't have": [["forma", "hasn't es del Perfecto y pide participio (hasn't had), y acá no hay motivo para el Perfecto. Con have = tener: doesn't have."]]}}
+    ]
+  },
+  {
+    "id": "u1-mcc-late", "format": "mc_cloze", "level": "B2", "linguaskill": "Multiple choice cloze (4 opciones)",
+    "title": "Multiple choice cloze: working late",
+    "instructions": "Elegí la opción correcta para cada hueco.",
+    "text": "Sofia [1] the same project for six months, and she is [2] tired to concentrate any longer. Her manager says the deadline is [3] than they thought, so the team [4] overtime this week. [5] she works, the more mistakes she makes.",
+    "items": [
+      {"n": 1, "o": ["has been developing", "is developing", "develops", "developed"], "a": "has been developing", "r": "ppc-duration", "wr": {"is developing": "ppc-duration", "develops": "ppc-duration", "developed": "pps-vs-past"}, "e": "'for six months' → duración hasta ahora.", "fb": {"is developing": [["tiempo", "for six months es una duración hasta ahora → Present Perfect (has been developing). is developing no combina con for + período."]], "develops": [["tiempo", "el Present Simple no expresa duración desde el pasado hasta ahora."]], "developed": [["tiempo", "Past Simple = terminó; el proyecto sigue en curso → has been developing."]]}},
+      {"n": 2, "o": ["too", "enough", "so", "very"], "a": "too", "r": "too-enough", "wr": {"enough": "too-enough", "so": "too-enough", "very": "too-enough"}, "e": "too tired to concentrate.", "fb": {"enough": [["significado", "se busca exceso (está demasiado cansada para concentrarse) → too. enough no expresa exceso."]], "so": [["forma", "'so tired to concentrate' no existe: too tired to concentrate."]], "very": [["forma", "very no se combina con 'to + verbo' para expresar exceso; too sí."]]}},
+      {"n": 3, "o": ["closer", "more close", "the closest", "closest"], "a": "closer", "r": "comp-short-long", "e": "Comparativo corto + than.", "fb": {"more close": [["forma", "close es corto: closer than."]], "the closest": [["forma", "es un superlativo; acá se compara con 'they thought' → closer than."]], "closest": [["forma", "es un superlativo; acá se compara con 'they thought' → closer than."]]}},
+      {"n": 4, "o": ["is working", "works", "has worked", "work"], "a": "is working", "r": "pc-now-temporary", "wr": {"works": "ps-vs-pc", "work": "ps-form"}, "e": "'this week' → situación temporal.", "fb": {"works": [["tiempo", "this week marca una situación temporal → Continuous (is working)."]], "has worked": [["valida", "es posible (this week es un período abierto), pero enfoca el resultado; acá se habla de trabajo en curso esta semana → is working."]], "work": [["forma", "the team es singular (works), y this week pide Continuous."]]}},
+      {"n": 5, "o": ["The later", "Later", "The more later", "More late"], "a": "The later", "r": "comp-double", "e": "The later she works, the more mistakes she makes.", "fb": {"Later": [["forma", "falta the: THE later she works, the more mistakes..."]], "The more later": [["forma", "later ya es comparativo: The later."]], "More late": [["forma", "la estructura es the + comparativo: The later."]]}}
+    ]
+  },
+  {
+    "id": "u1-mcc-framework", "format": "mc_cloze", "level": "B2", "linguaskill": "Multiple choice cloze (4 opciones)",
+    "title": "Multiple choice cloze: choosing a framework",
+    "instructions": "Elegí la opción correcta para cada hueco.",
+    "text": "I have [1] using this framework since 2021. It [2] a lot of useful features, and the documentation is [3] than the one for the old version. Right now I [4] with the team lead about migrating our app. In my opinion, it is [5] option for a small team.",
+    "items": [
+      {"n": 1, "o": ["been", "be", "being", "was"], "a": "been", "r": "ppc-duration", "e": "have + been + -ing.", "fb": {"be": [["forma", "have + BEEN + -ing."]], "being": [["forma", "'have being' no existe: have been using."]], "was": [["forma", "'I have was' no existe: have been."]]}},
+      {"n": 2, "o": ["has", "is having", "have", "has been having"], "a": "has", "r": "state-verb-simple", "wr": {"is having": "state-verb-simple", "has been having": "state-verb-simple", "have": "pps-form"}, "e": "have (posesión) → Present Simple; It → has.", "fb": {"is having": [["significado", "have (posesión) es verbo de estado: no va en continuo → has."]], "have": [["forma", "It → has (have es para I / you / we / they)."]], "has been having": [["significado", "have = poseer no admite continuo, ni siquiera con since."]]}},
+      {"n": 3, "o": ["more helpful", "helpfuler", "most helpful", "as helpful"], "a": "more helpful", "r": "comp-short-long", "wr": {"helpfuler": "comp-short-long", "most helpful": "comp-short-long", "as helpful": "comp-as-as"}, "e": "Adjetivo largo → more helpful than.", "fb": {"helpfuler": [["forma", "helpful es largo: more helpful."]], "most helpful": [["forma", "es un superlativo; acá es comparativo con than → more helpful."]], "as helpful": [["forma", "as helpful iría con as ... as, no con than."]]}},
+      {"n": 4, "o": ["am talking", "talk", "have talked", "have been talking"], "a": "am talking", "r": "pc-now-temporary", "wr": {"talk": "ps-vs-pc"}, "e": "'Right now' → Continuous.", "fb": {"talk": [["tiempo", "'Right now' → acción en curso: am talking."]], "have talked": [["tiempo", "'Right now' indica algo en curso, no terminado."]], "have been talking": [["valida", "es posible en inglés real (si lleva un rato hablando), pero con 'Right now' y sin marca de duración lo esperado es am talking."]]}},
+      {"n": 5, "o": ["the best", "the better", "the most good", "the goodest"], "a": "the best", "r": "comp-irregular", "e": "good → better → the best.", "fb": {"the better": [["forma", "better es comparativo; acá se pide el mejor de todos → superlativo: the best."]], "the most good": [["forma", "good es irregular: good → better → the best."]], "the goodest": [["forma", "good es irregular: good → better → the best."]]}}
+    ]
+  },
+  {
+    "id": "u1-dc-b2", "format": "discrete_cloze", "level": "B2", "linguaskill": "Discrete cloze (4 opciones)",
+    "title": "Discrete cloze: mezcla B2",
+    "instructions": "Elegí la opción correcta.",
+    "items": [
+      {"n": 1, "q": "I ___ this bug for two hours and I still can't find it.", "o": ["have been looking for", "am looking for", "look for", "was looking for"], "a": "have been looking for", "r": "ppc-duration", "e": "'for two hours' + sigue sin resolverse → have been + -ing.", "fb": {"am looking for": [["tiempo", "for two hours (duración hasta ahora) → have been looking for."]], "look for": [["tiempo", "el Present Simple no expresa duración."]], "was looking for": [["tiempo", "was looking = pasado terminado; el problema sigue ('still can't find it')."]]}},
+      {"n": 2, "q": "Nobody ___ how the legacy code works, so we avoid touching it.", "o": ["knows", "know", "is knowing", "has been knowing"], "a": "knows", "r": "state-verb-simple", "wr": {"know": "ps-form", "is knowing": "state-verb-simple", "has been knowing": "state-verb-simple"}, "e": "state verb + Nobody (singular) → knows.", "fb": {"know": [["forma", "Nobody es singular → knows."]], "is knowing": [["significado", "know es verbo de estado: no va en continuo."]], "has been knowing": [["significado", "know es verbo de estado: no va en continuo."]]}},
+      {"n": 3, "q": "She is not ___ experienced as her manager, but she learns fast.", "o": ["as", "more", "than", "much"], "a": "as", "r": "comp-as-as", "e": "not as ... as.", "fb": {"more": [["forma", "not as ... as: la igualdad usa as."]], "than": [["forma", "not as experienced AS (la igualdad se cierra con as)."]], "much": [["forma", "'much experienced as' no existe: as ... as."]]}},
+      {"n": 4, "q": "I have ___ finished the report, so we can send it now.", "o": ["just", "yet", "since", "ever"], "a": "just", "r": "pps-result-keywords", "e": "'just' = acabo de; 'yet' iría al final y en negativo/pregunta.", "fb": {"yet": [["forma", "yet va al final de preguntas y negativas; en una afirmación 'acabo de' se dice just."]], "since": [["forma", "since necesita un punto de inicio (since 2020)."]], "ever": [["forma", "ever se usa en preguntas o negativas, no en una afirmación como esta."]]}},
+      {"n": 5, "q": "The app is ___ slow to use on old phones.", "o": ["too", "enough", "much", "more"], "a": "too", "r": "too-enough", "e": "too + adj (problema).", "fb": {"enough": [["significado", "enough va después del adjetivo y no expresa exceso; acá hay un problema → too slow."]], "much": [["forma", "much no modifica un adjetivo así: too slow."]], "more": [["forma", "more slow no existe y falta la idea de exceso → too slow."]]}},
+      {"n": 6, "q": "This is the ___ interesting article I have read this year.", "o": ["most", "more", "much", "very"], "a": "most", "r": "comp-short-long", "e": "Superlativo largo: the most interesting.", "fb": {"more": [["forma", "superlativo: the MOST interesting. the more es comparativo."]], "much": [["forma", "'the much interesting' no existe."]], "very": [["forma", "'the very interesting' no forma un superlativo."]]}},
+      {"n": 7, "q": "How ___ have you been using Linux? — For about ten years.", "o": ["long", "much", "often", "many"], "a": "long", "r": "ppc-duration", "e": "How long → duración; la respuesta es 'For about ten years'.", "fb": {"much": [["forma", "How much se usa con incontables; para una duración es How long."]], "often": [["forma", "How often = con qué frecuencia; la respuesta 'for ten years' es una duración → How long."]], "many": [["forma", "How many se usa con sustantivos contables en plural."]]}},
+      {"n": 8, "q": "He ___ his emails first thing every morning.", "o": ["checks", "is checking", "has checked", "check"], "a": "checks", "r": "ps-routine", "wr": {"check": "ps-form", "is checking": "ps-vs-pc"}, "e": "'every morning' → rutina; he → checks.", "fb": {"is checking": [["tiempo", "'first thing every morning' es una rutina → Present Simple."]], "has checked": [["tiempo", "el Perfecto marca resultado presente; acá es una rutina."]], "check": [["forma", "he → checks (con -s)."]]}}
+    ]
+  },
+  {
+    "id": "u1-gp-elena", "format": "gapped_paragraphs", "level": "B2", "linguaskill": "Gapped text, paragraphs",
+    "title": "Gapped text: from accountant to developer",
+    "instructions": "Cinco párrafos fueron eliminados del texto. Elegí de la lista (A-F) el que encaja en cada hueco. Hay UN párrafo que sobra. (Más corto que en el examen real.)",
+    "text": "Elena Vidal is a 41-year-old accountant from Mendoza. Two years ago she decided to change her career, and today she is a junior web developer. This is her story.\n\n[1]\n\nThe first months were hard. Elena worked all day and studied at night, so she was often exhausted.\n\n[2]\n\nWhat helped her most was a small community of learners. They shared tips, corrected each other's code and celebrated every small success.\n\n[3]\n\nToday, Elena works for a small software company. She has been part of the team for eight months now, and she has already finished her first big project.\n\n[4]\n\nDoes she regret her decision? Not at all.\n\n[5]",
+    "bank": [
+      "It all started on a rainy Sunday. Elena was watching a video about programming, and she realised she wanted to build things, not only count them. She signed up for an online course the next day.",
+      "Nothing seemed to make sense at the beginning: variables, loops and functions were like a foreign language. But she kept practising every single day, even for only twenty minutes.",
+      "In that community she met Diego, a senior developer who offered to review her first project. His advice was direct but kind, and it made her code much cleaner.",
+      "Her colleagues say that her experience with numbers gives her an advantage: she finds errors that others don't see. She is also better at explaining technical problems to clients.",
+      "'It was the hardest thing I have ever done,' she says, 'but also the best. If you are thinking about changing careers, start today. Don't wait for the perfect moment.'",
+      "Diego, on the other hand, has never taken a course and learned everything on his own."
+    ],
+    "items": [
+      {"n": 1, "a": ["It all started on a rainy Sunday. Elena was watching a video about programming, and she realised she wanted to build things, not only count them. She signed up for an online course the next day."], "r": "reading-cohesion", "e": "Explica cómo empezó la historia ('This is her story') y anticipa 'The first months' (del curso)."},
+      {"n": 2, "a": ["Nothing seemed to make sense at the beginning: variables, loops and functions were like a foreign language. But she kept practising every single day, even for only twenty minutes."], "r": "reading-cohesion", "e": "Continúa con las dificultades de los primeros meses."},
+      {"n": 3, "a": ["In that community she met Diego, a senior developer who offered to review her first project. His advice was direct but kind, and it made her code much cleaner."], "r": "reading-cohesion", "e": "'In that community' retoma el párrafo anterior; introduce a Diego."},
+      {"n": 4, "a": ["Her colleagues say that her experience with numbers gives her an advantage: she finds errors that others don't see. She is also better at explaining technical problems to clients."], "r": "reading-cohesion", "e": "Sigue hablando de su trabajo actual y prepara la pregunta '¿se arrepiente?'."},
+      {"n": 5, "a": ["'It was the hardest thing I have ever done,' she says, 'but also the best. If you are thinking about changing careers, start today. Don't wait for the perfect moment.'"], "r": "reading-cohesion", "e": "Responde a 'Not at all' con su propia voz. El párrafo sobrante (Diego...) no encaja: presupone alguien autodidacta ya mencionado."}
+    ]
+  },
+  {
+    "id": "u1-ct-remote", "format": "cross_text", "level": "B2", "linguaskill": "Cross-text matching",
+    "title": "Cross-text matching: where do you prefer to work?",
+    "instructions": "Leé los cuatro textos y elegí a qué persona (A-D) corresponde cada afirmación.",
+    "text": "TEXT A — Marco, freelance designer\nI have been working from home for five years, and I honestly can't imagine going back to an office. I save two hours a day because I don't commute, and I choose my own schedule: I usually start early and finish around three. The only problem is that I sometimes feel lonely, so I go to a co-working space on Fridays. I think companies that force people to come to the office every day are losing good employees.\n\nTEXT B — Laura, team leader\nI manage a team of twelve developers, and we work in the office three days a week. I believe face-to-face contact is essential, especially for new members, who learn much faster when they sit next to experienced colleagues. On the other days, we work remotely and we use video calls to stay in touch. For me, the mixed system is the best of both worlds, although organising meetings is more difficult than it was before.\n\nTEXT C — Nicolás, student intern\nThis is my first job, and I am working in the office five days a week. Honestly, I prefer it: at home I get distracted very easily, and my flat is too small to have a proper desk. I also like having lunch with the team because I am learning a lot from their conversations. My friends think I'm crazy, but I'm not planning to ask for remote work any time soon.\n\nTEXT D — Carmen, accountant\nMy company changed to fully remote work last year. At first I was worried about the technology, but now everything works well. The biggest advantage for me is that I can look after my children in the afternoons. However, I don't have a quiet place at home, so I'm thinking about renting a desk somewhere. I miss the small talk in the corridor, but I wouldn't change my situation.",
+    "items": [
+      {"n": 1, "q": "Who thinks new employees learn faster when they work beside experienced colleagues?", "o": ["A", "B", "C", "D"], "a": "B", "r": "reading-detail", "e": "Laura: 'new members ... learn much faster when they sit next to experienced colleagues'.", "fb": {"A": [["significado", "Marco (A) habla de ahorrar tiempo sin viajar; no menciona que los nuevos aprendan más rápido."]], "C": [["significado", "Nicolás (C) prefiere la oficina por las distracciones y por almorzar con el equipo, pero no dice que los nuevos aprendan más rápido."]], "D": [["significado", "Carmen (D) trabaja remoto y no habla de los miembros nuevos."]]}},
+      {"n": 2, "q": "Who goes to a shared workspace one day a week?", "o": ["A", "B", "C", "D"], "a": "A", "r": "reading-detail", "e": "Marco: 'I go to a co-working space on Fridays'. Carmen solo está pensando en alquilar un escritorio.", "fb": {"B": [["significado", "Laura (B) trabaja tres días en la oficina y el resto remoto; no menciona un espacio compartido."]], "C": [["significado", "Nicolás (C) trabaja cinco días en la oficina."]], "D": [["significado", "Carmen (D) solo está pensando en alquilar un escritorio: todavía no va a ninguno."]]}},
+      {"n": 3, "q": "Who prefers working in the office because of distractions at home?", "o": ["A", "B", "C", "D"], "a": "C", "r": "reading-detail", "e": "Nicolás: 'at home I get distracted very easily'.", "fb": {"A": [["significado", "Marco (A) trabaja en casa y lo prefiere."]], "B": [["significado", "Laura (B) prefiere el sistema mixto."]], "D": [["significado", "Carmen (D) tampoco tiene un lugar tranquilo en casa, pero elige seguir remota; no prefiere la oficina."]]}},
+      {"n": 4, "q": "Who says remote work makes it easier to take care of their children?", "o": ["A", "B", "C", "D"], "a": "D", "r": "reading-detail", "e": "Carmen: 'I can look after my children in the afternoons'.", "fb": {"A": [["significado", "Marco (A) valora ahorrar tiempo sin viajar; no habla de hijos."]], "B": [["significado", "Laura (B) dirige un equipo de doce; no menciona hijos."]], "C": [["significado", "Nicolás (C) es pasante y no habla de hijos."]]}}
+    ]
+  }
+]

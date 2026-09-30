@@ -1,0 +1,76 @@
+[
+  {
+    "id": "u3-dc-future-forms", "format": "discrete_cloze", "level": "B1", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "will / going to / Present Continuous / Present Simple",
+    "instructions": "Elegí la forma de futuro correcta. Primero identificá la intención: ¿predicción, plan, arreglo o horario?",
+    "items": [
+      {"n": 1, "q": "Look at those dark clouds! It ___ any minute now.", "o": ["is going to rain", "will rain", "rains", "is rained"], "a": "is going to rain", "r": "future-will-vs-going-to", "wr": {"will rain": "future-will-vs-going-to", "rains": "future-present-simple"}, "e": "Evidencia visible ahora → be going to."},
+      {"n": 2, "q": "The train ___ at 7:30, so don't be late.", "o": ["leaves", "will leave", "is going to leave", "leave"], "a": "leaves", "r": "future-present-simple", "wr": {"will leave": "future-present-simple", "is going to leave": "future-present-simple"}, "e": "Horario fijo → Present Simple."},
+      {"n": 3, "q": "I ___ my friends at 6 PM at the café.", "o": ["am meeting", "will meet", "meet", "meeting"], "a": "am meeting", "r": "future-present-continuous", "wr": {"will meet": "future-present-continuous", "meet": "future-present-continuous"}, "e": "Arreglo ya organizado (hora + personas) → Present Continuous."},
+      {"n": 4, "q": "I think our company ___ launch a new version next year.", "o": ["will", "is launching", "launches", "are going"], "a": "will", "r": "will-form", "wr": {"is launching": "future-will-vs-going-to", "launches": "future-present-simple"}, "e": "'I think' → predicción/opinión → will + base."},
+      {"n": 5, "q": "A: I've forgotten my charger. B: Don't worry, I ___ you mine.", "o": ["will lend", "am going to lend", "am lending", "lend"], "a": "will lend", "r": "future-will-vs-going-to", "wr": {"am going to lend": "future-will-vs-going-to", "am lending": "future-present-continuous"}, "e": "Oferta/decisión en el momento → will."},
+      {"n": 6, "q": "We ___ the new office next Tuesday at 10. Everything is arranged.", "o": ["are visiting", "will visit", "visit", "are going visit"], "a": "are visiting", "r": "future-present-continuous", "wr": {"will visit": "future-present-continuous", "are going visit": "future-going-to-form"}, "e": "Ya organizado con día y hora → Present Continuous."},
+      {"n": 7, "q": "We ___ move to a bigger office, but we haven't decided when.", "o": ["are going to", "are moving", "will", "move"], "a": "are going to", "r": "future-going-to-form", "wr": {"are moving": "future-present-continuous", "will": "future-will-vs-going-to"}, "e": "Decisión tomada pero sin fecha → be going to."},
+      {"n": 8, "q": "The conference ___ on 12 May. Here is the schedule.", "o": ["starts", "will start", "is going to start", "start"], "a": "starts", "r": "future-present-simple", "wr": {"will start": "future-present-simple", "is going to start": "future-present-simple"}, "e": "Evento programado → Present Simple."},
+      {"n": 9, "q": "I'm sure she ___ the exam.", "o": ["will pass", "is passing", "passes", "is going pass"], "a": "will pass", "r": "will-form", "wr": {"is passing": "future-will-vs-going-to", "is going pass": "future-going-to-form"}, "e": "'I'm sure' → predicción → will."},
+      {"n": 10, "q": "Watch out! You ___ that glass!", "o": ["are going to drop", "will drop", "are dropping", "drop"], "a": "are going to drop", "r": "future-will-vs-going-to", "wr": {"will drop": "future-will-vs-going-to", "are dropping": "future-present-continuous"}, "e": "Va a pasar algo y se ve ahora → going to."}
+    ]
+  },
+  {
+    "id": "u3-vg-future-forms", "format": "verb_gap", "level": "B1", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "Future forms: escribí la forma",
+    "instructions": "Completá con la forma de futuro más adecuada del verbo entre paréntesis.",
+    "text": "1. Look at the sky! It [1] (rain).\n2. The bus [2] (leave) at 9 a.m.\n3. I [3] (meet) my accountant tomorrow at 9.\n4. A: There's no milk. B: I [4] (buy) some.\n5. I think she [5] (win) the competition.\n6. We [6] (get) married in Spain on July 24th.\n7. I [7] (read) War and Peace this weekend. I've already bought it.\n8. It [8] (be) my birthday tomorrow.",
+    "items": [
+      {"n": 1, "a": ["is going to rain"], "r": "future-will-vs-going-to", "pat": [["^will rain$", "future-will-vs-going-to"], ["^is going to rains$", "future-going-to-form"], ["^is go to rain$|^is going rain$", "future-going-to-form"]], "e": "Evidencia visible (Look at the sky!) → is going to + base."},
+      {"n": 2, "a": ["leaves"], "r": "future-present-simple", "pat": [["^will leave$|^is leaving$|^is going to leave$", "future-present-simple"], ["^leave$", "future-present-simple"]], "e": "Horario de transporte → Present Simple."},
+      {"n": 3, "a": ["am meeting"], "r": "future-present-continuous", "pat": [["^will meet$|^meet$", "future-present-continuous"], ["^am going to meet$", "future-present-continuous"]], "e": "Arreglo con hora y persona → am + -ing."},
+      {"n": 4, "a": ["will buy"], "alt": ["'ll buy"], "r": "future-will-vs-going-to", "pat": [["^am going to buy$|^am buying$", "future-will-vs-going-to"], ["^will buys$|^will to buy$", "will-form"]], "e": "Decisión espontánea, en el momento → will."},
+      {"n": 5, "a": ["will win"], "r": "will-form", "pat": [["^will wins$|^will to win$|^will winning$", "will-form"], ["^is going to win$|^wins$", "future-will-vs-going-to"]], "e": "'I think' → will + verbo base."},
+      {"n": 6, "a": ["are getting"], "r": "future-present-continuous", "pat": [["^will get$|^get$", "future-present-continuous"], ["^are get$", "future-present-continuous"]], "e": "Fecha y lugar confirmados → Present Continuous."},
+      {"n": 7, "a": ["am going to read"], "r": "future-going-to-form", "pat": [["^am going to reading$|^am go to read$|^am going read$", "future-going-to-form"], ["^will read$", "future-will-vs-going-to"]], "e": "Intención con decisión ya tomada (ya lo compré) → be going to."},
+      {"n": 8, "a": ["is"], "alt": ["'s"], "r": "future-present-simple", "pat": [["^will be$", "future-present-simple"]], "e": "Fecha fija (cumpleaños) → Present Simple."}
+    ]
+  },
+  {
+    "id": "u3-vg-future-questions", "format": "verb_gap", "level": "B1", "linguaskill": "Práctica propia (preguntas y negaciones)",
+    "title": "Future forms: preguntas y negaciones",
+    "instructions": "Escribí la pregunta o negación con la forma de futuro correcta.",
+    "text": "1. [1] (you / attend) the conference next month?\n2. She [2] (not / win). I'm sure of it.\n3. [3] (it / rain) tomorrow?\n4. We [4] (not / attend) the workshop. We've already decided.\n5. What time [5] (you / meet) the client tomorrow?",
+    "items": [
+      {"n": 1, "a": ["are you going to attend"], "r": "future-going-to-form", "pat": [["^are you going to attending$|^are you going attend$", "future-going-to-form"], ["^do you attend$", "future-present-simple"]], "e": "Are + sujeto + going to + base."},
+      {"n": 2, "a": ["won't win"], "r": "will-form", "pat": [["^won't wins$|^won't to win$", "will-form"], ["^doesn't win$", "future-will-vs-going-to"]], "e": "Negativo de will: won't + base."},
+      {"n": 3, "a": ["will it rain"], "r": "will-form", "pat": [["^will it rains$", "will-form"], ["^it will rain$", "will-form"], ["^is it going to rain$", "future-will-vs-going-to"]], "e": "Will + sujeto + base (predicción sin evidencia)."},
+      {"n": 4, "a": ["aren't going to attend"], "r": "future-going-to-form", "pat": [["^won't attend$", "future-will-vs-going-to"], ["^aren't going to attending$|^aren't go to attend$", "future-going-to-form"]], "e": "Decisión ya tomada → aren't going to + base."},
+      {"n": 5, "a": ["are you meeting"], "alt": ["are you going to meet"], "r": "future-present-continuous", "pat": [["^will you meet$", "future-present-continuous"], ["^do you meet$", "future-present-continuous"]], "e": "Arreglo con hora ('What time') → are you + -ing."}
+    ]
+  },
+  {
+    "id": "u3-tense-id-future", "format": "tense_id", "level": "B1", "linguaskill": "Práctica propia (identificación de forma)",
+    "title": "¿Qué forma de futuro es?",
+    "instructions": "Elegí la forma de futuro de la parte en negrita.",
+    "options": ["will", "be going to", "Present Continuous (futuro)", "Present Simple (futuro)"],
+    "items": [
+      {"n": 1, "q": "I think it **will rain** tomorrow.", "a": "will", "r": "future-will-vs-going-to", "e": "Predicción por opinión."},
+      {"n": 2, "q": "Look at those clouds — it **is going to rain**.", "a": "be going to", "r": "future-will-vs-going-to", "e": "Evidencia visible."},
+      {"n": 3, "q": "I **am meeting** my boss at 9 tomorrow.", "a": "Present Continuous (futuro)", "r": "future-present-continuous", "e": "Arreglo con hora y persona."},
+      {"n": 4, "q": "The train **leaves** at 9 a.m.", "a": "Present Simple (futuro)", "r": "future-present-simple", "e": "Horario."},
+      {"n": 5, "q": "OK, I**'ll help** you with that.", "a": "will", "r": "future-will-vs-going-to", "e": "Oferta/decisión en el momento."},
+      {"n": 6, "q": "We **are going to** get married, but we don't know when.", "a": "be going to", "r": "future-will-vs-going-to", "e": "Intención sin fecha."},
+      {"n": 7, "q": "They **are flying** to Australia tomorrow.", "a": "Present Continuous (futuro)", "r": "future-present-continuous", "e": "Vuelo ya organizado (ejemplo de tus apuntes)."},
+      {"n": 8, "q": "It **is** Christmas next week!", "a": "Present Simple (futuro)", "r": "future-present-simple", "e": "Fecha fija del calendario."}
+    ]
+  },
+  {
+    "id": "u3-sc-future-errors", "format": "sentence_choice", "level": "B1", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (future forms)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["I think it will rains.", "I think it will rain.", "I think it will to rain."], "a": "I think it will rain.", "r": "will-form", "e": "Después de will siempre verbo base."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["I'm go to study tonight.", "I'm going to study tonight.", "I going to study tonight."], "a": "I'm going to study tonight.", "r": "future-going-to-form", "e": "am + going to + base."},
+      {"n": 3, "q": "Elegí la correcta (horario fijo):", "o": ["The train will leave at 9am, according to the timetable.", "The train leaves at 9am, according to the timetable.", "The train is leave at 9am, according to the timetable."], "a": "The train leaves at 9am, according to the timetable.", "r": "future-present-simple", "wr": {"The train will leave at 9am, according to the timetable.": "future-present-simple"}, "e": "Horarios fijos → Present Simple, no will (Unit3/01)."},
+      {"n": 4, "q": "Elegí la correcta:", "o": ["Look at the sky, it will rain.", "Look at the sky, it's going to rain.", "Look at the sky, it rain."], "a": "Look at the sky, it's going to rain.", "r": "future-will-vs-going-to", "wr": {"Look at the sky, it will rain.": "future-will-vs-going-to"}, "e": "Evidencia visible → going to."},
+      {"n": 5, "q": "Elegí la correcta:", "o": ["I'm having coffee with my boss tomorrow.", "I having coffee with my boss tomorrow.", "I'm have coffee with my boss tomorrow."], "a": "I'm having coffee with my boss tomorrow.", "r": "future-present-continuous", "e": "Arreglo organizado → am + -ing."}
+    ]
+  }
+]

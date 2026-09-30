@@ -1,0 +1,90 @@
+[
+  {
+    "id": "u2-dc-rel-pronoun", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Relative pronouns: who / which / that / where / whose / when / why",
+    "instructions": "Elegí el pronombre relativo correcto.",
+    "items": [
+      {"n": 1, "q": "The developer ___ fixed the bug works at our company.", "o": ["who", "which", "whose", "where"], "a": "who", "r": "rel-pronoun-choice", "e": "Persona → who."},
+      {"n": 2, "q": "That's the tool ___ lets you track memory leaks.", "o": ["which", "who", "where", "whose"], "a": "which", "r": "rel-pronoun-choice", "e": "Cosa → which / that."},
+      {"n": 3, "q": "The office ___ we used to work has been renovated.", "o": ["where", "which", "who", "whose"], "a": "where", "r": "rel-pronoun-choice", "e": "Lugar → where."},
+      {"n": 4, "q": "The project manager, ___ name I always forget, will join us later.", "o": ["whose", "that", "who", "which"], "a": "whose", "r": "rel-whose", "wr": {"that": "rel-whose", "who": "rel-whose", "which": "rel-whose"}, "e": "Posesión (su nombre) → whose."},
+      {"n": 5, "q": "The app ___ interface is more intuitive is more popular.", "o": ["whose", "which", "that", "who"], "a": "whose", "r": "rel-whose", "wr": {"which": "rel-whose", "that": "rel-whose", "who": "rel-whose"}, "e": "'cuya interfaz' → whose."},
+      {"n": 6, "q": "The library, ___ was built by the former government, is huge.", "o": ["which", "that", "who", "whose"], "a": "which", "r": "rel-defining-nondefining", "wr": {"that": "rel-defining-nondefining"}, "e": "Non-defining (entre comas) → nunca that; cosa → which."},
+      {"n": 7, "q": "That was the moment ___ everything stopped working.", "o": ["when", "where", "why", "which"], "a": "when", "r": "rel-pronoun-choice", "e": "Momento → when."},
+      {"n": 8, "q": "I don't know the reason ___ the build failed.", "o": ["why", "when", "where", "who"], "a": "why", "r": "rel-pronoun-choice", "e": "Razón → why."},
+      {"n": 9, "q": "She is the colleague ___ laptop I borrowed.", "o": ["whose", "who", "which", "that"], "a": "whose", "r": "rel-whose", "wr": {"who": "rel-whose", "which": "rel-whose", "that": "rel-whose"}, "e": "'cuya laptop' → whose."},
+      {"n": 10, "q": "A browser is a program ___ lets you access the internet.", "o": ["that", "who", "where", "whose"], "a": "that", "r": "rel-pronoun-choice", "e": "Cosa (defining) → that / which."}
+    ]
+  },
+  {
+    "id": "u2-tense-id-omit", "format": "tense_id", "level": "B2", "linguaskill": "Práctica propia (relative clauses)",
+    "title": "¿Se puede omitir el pronombre relativo?",
+    "instructions": "Mirá lo que sigue al pronombre en negrita: ¿un verbo (es sujeto) o un sujeto nuevo (es objeto)?",
+    "options": ["Se puede omitir", "No se puede omitir"],
+    "items": [
+      {"n": 1, "q": "The shirt **that** I bought was too expensive.", "a": "Se puede omitir", "r": "rel-omit", "e": "Después viene 'I' (sujeto propio) → that es objeto → se puede omitir."},
+      {"n": 2, "q": "She's the developer **who** fixed the bug.", "a": "No se puede omitir", "r": "rel-omit", "e": "Después viene un verbo → who es sujeto → no se omite."},
+      {"n": 3, "q": "The bug **that** she fixed was critical.", "a": "Se puede omitir", "r": "rel-omit", "e": "Después viene 'she' → objeto."},
+      {"n": 4, "q": "The program **that** runs in the background is using too much memory.", "a": "No se puede omitir", "r": "rel-omit", "e": "Después viene 'runs' → sujeto."},
+      {"n": 5, "q": "The framework **which** we use every day is Laravel.", "a": "Se puede omitir", "r": "rel-omit", "e": "Después viene 'we' → objeto."},
+      {"n": 6, "q": "Mark Zuckerberg, **who** founded Facebook, wears grey T-shirts.", "a": "No se puede omitir", "r": "rel-omit", "e": "Non-defining: nunca se omite (y además who es sujeto)."}
+    ]
+  },
+  {
+    "id": "u2-vg-rel-write", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Open cloze (oraciones sueltas)",
+    "title": "Completá con el pronombre relativo",
+    "instructions": "Escribí who / which / that / where / whose / when / why según corresponda.",
+    "text": "1. She is the person [1] looks after our networks.\n2. It's a chip [2] controls a computer.\n3. That's the man [3] dog bit me.\n4. This is the place [4] I first learned Python.\n5. The reason [5] he left was a mystery.\n6. That was the year [6] they launched the app.\n7. Python, [7] was created in 1991, is still very popular.\n8. Mark, [8] is the founder of the company, always wears grey.",
+    "items": [
+      {"n": 1, "a": ["who", "that"], "r": "rel-pronoun-choice", "pat": [["^which$", "rel-pronoun-choice"]], "e": "Persona → who (o that)."},
+      {"n": 2, "a": ["that", "which"], "r": "rel-pronoun-choice", "pat": [["^who$", "rel-pronoun-choice"]], "e": "Cosa → that / which."},
+      {"n": 3, "a": ["whose"], "r": "rel-whose", "pat": [["^who$|^which$|^that$", "rel-whose"]], "e": "Posesión → whose."},
+      {"n": 4, "a": ["where"], "r": "rel-pronoun-choice", "pat": [["^which$|^that$", "rel-pronoun-choice"]], "e": "Lugar → where."},
+      {"n": 5, "a": ["why"], "r": "rel-pronoun-choice", "pat": [["^that$|^which$", "rel-pronoun-choice"]], "e": "Razón → why."},
+      {"n": 6, "a": ["when"], "r": "rel-pronoun-choice", "pat": [["^that$|^which$", "rel-pronoun-choice"]], "e": "Tiempo/año → when."},
+      {"n": 7, "a": ["which"], "r": "rel-defining-nondefining", "pat": [["^that$", "rel-defining-nondefining"]], "e": "Entre comas (non-defining) → which, nunca that."},
+      {"n": 8, "a": ["who"], "r": "rel-defining-nondefining", "pat": [["^that$", "rel-defining-nondefining"]], "e": "Entre comas → who, nunca that."}
+    ]
+  },
+  {
+    "id": "u2-vg-rel-define", "format": "verb_gap", "level": "B1", "linguaskill": "Práctica propia (definiciones IT)",
+    "title": "Definí términos IT con relative clauses",
+    "instructions": "Completá cada definición con el pronombre relativo (who / that / which / where).",
+    "text": "1. A search bar: It's a tool [1] you type what you're looking for.\n2. A printer: It's a device [2] prints documents.\n3. A CPU: It's a chip [3] controls a computer.\n4. A developer: It's a person [4] writes code.\n5. A repository: It's a place [5] a project's code is stored.",
+    "items": [
+      {"n": 1, "a": ["where"], "r": "rel-pronoun-choice", "pat": [["^that$|^which$", "rel-pronoun-choice"]], "e": "Ejemplo de tus apuntes: 'a tool where you type...'."},
+      {"n": 2, "a": ["that", "which"], "r": "rel-pronoun-choice", "pat": [["^who$|^where$", "rel-pronoun-choice"]], "e": "Cosa → that / which."},
+      {"n": 3, "a": ["that", "which"], "r": "rel-pronoun-choice", "pat": [["^who$|^where$", "rel-pronoun-choice"]], "e": "Cosa → that / which."},
+      {"n": 4, "a": ["who", "that"], "r": "rel-pronoun-choice", "pat": [["^which$", "rel-pronoun-choice"]], "e": "Persona → who."},
+      {"n": 5, "a": ["where"], "r": "rel-pronoun-choice", "pat": [["^that$|^which$", "rel-pronoun-choice"]], "e": "Lugar → where."}
+    ]
+  },
+  {
+    "id": "u2-sc-rel-errors", "format": "sentence_choice", "level": "B1-B2", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (relative clauses)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["Mark Zuckerberg, that is the founder of Facebook, wears grey.", "Mark Zuckerberg, who is the founder of Facebook, wears grey.", "Mark Zuckerberg, which is the founder of Facebook, wears grey."], "a": "Mark Zuckerberg, who is the founder of Facebook, wears grey.", "r": "rel-defining-nondefining", "e": "Non-defining: who/which, nunca that. Persona → who."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["The person which called was rude.", "The person who called was rude.", "The person whose called was rude."], "a": "The person who called was rude.", "r": "rel-pronoun-choice", "e": "Personas → who, no which."},
+      {"n": 3, "q": "Elegí la correcta:", "o": ["She is the developer who she fixed it.", "She is the developer who fixed it.", "She is the developer fixed it."], "a": "She is the developer who fixed it.", "r": "rel-double-pronoun", "wr": {"She is the developer fixed it.": "rel-omit"}, "e": "No se repite el sujeto; y who (sujeto) no se omite."},
+      {"n": 4, "q": "Elegí la correcta:", "o": ["The shirt which I bought it was expensive.", "The shirt which I bought was expensive.", "The shirt I bought it was expensive."], "a": "The shirt which I bought was expensive.", "r": "rel-double-pronoun", "e": "No se repite el objeto (it)."},
+      {"n": 5, "q": "Elegí la correcta:", "o": ["Python, which was created in 1991, is popular.", "Python, that was created in 1991, is popular.", "Python, who was created in 1991, is popular."], "a": "Python, which was created in 1991, is popular.", "r": "rel-defining-nondefining", "e": "Cosa + non-defining → which."},
+      {"n": 6, "q": "Elegí la correcta:", "o": ["The place where I went it was amazing.", "The place where I went was amazing.", "The place which I went was amazing."], "a": "The place where I went was amazing.", "r": "rel-double-pronoun", "wr": {"The place which I went was amazing.": "rel-pronoun-choice"}, "e": "Lugar → where, y no se repite 'it'."}
+    ]
+  },
+  {
+    "id": "u2-dc-reduced", "format": "discrete_cloze", "level": "B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Reduced relative clauses y participle clauses",
+    "instructions": "Elegí la opción correcta.",
+    "items": [
+      {"n": 1, "q": "There were lots of people ___ at the party.", "o": ["dancing", "danced", "who dancing", "are dancing"], "a": "dancing", "r": "reduced-relative", "e": "who were dancing → dancing (participio presente, sentido activo)."},
+      {"n": 2, "q": "The developer ___ on this feature is very experienced.", "o": ["working", "works", "worked", "who working"], "a": "working", "r": "reduced-relative", "e": "who is working → working."},
+      {"n": 3, "q": "The presents ___ to the children are all hand-made.", "o": ["given", "giving", "gave", "who given"], "a": "given", "r": "reduced-relative", "e": "which are given → given (participio pasado, sentido pasivo)."},
+      {"n": 4, "q": "Decisions ___ in a rush are often regretted later.", "o": ["made", "making", "make", "are making"], "a": "made", "r": "reduced-relative", "e": "Decisions that are made → made (pasivo)."},
+      {"n": 5, "q": "The files ___ in the folder are old.", "o": ["stored", "storing", "store", "to store"], "a": "stored", "r": "reduced-relative", "e": "Los archivos son almacenados → participio pasado."},
+      {"n": 6, "q": "The team ___ the release is under pressure.", "o": ["preparing", "prepared", "prepare", "prepares"], "a": "preparing", "r": "reduced-relative", "e": "who is preparing → preparing (el equipo hace la acción)."},
+      {"n": 7, "q": "___ very tired, they decided to go straight home.", "o": ["Feeling", "Felt", "To feel", "Feels"], "a": "Feeling", "r": "participle-clause", "e": "Participle clause de razón (as they were tired)."},
+      {"n": 8, "q": "___ the coat, she asked her friend's opinion.", "o": ["Before buying", "Before buy", "Before to buy", "Before bought"], "a": "Before buying", "r": "participle-clause", "e": "Before + -ing (mismo sujeto en ambas cláusulas)."}
+    ]
+  }
+]

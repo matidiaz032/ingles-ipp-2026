@@ -1,0 +1,132 @@
+[
+  {
+    "id": "u3-vg-fut-cont-perfect", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "Future Continuous o Future Perfect",
+    "instructions": "Completá con will be + -ing (en progreso) o will have + participio (completado antes de un momento futuro).",
+    "text": "1. This time tomorrow, I [1] (fly) over the Atlantic.\n2. Don't call at 8. We [2] (have) dinner.\n3. Next week, they [3] (test) the new system.\n4. By 2030, she [4] (finish) her degree in AI.\n5. They [5] (sign) the contract by the end of the day.\n6. By the time you get there, we [6] (already / leave).\n7. This time next year, they [7] (work) in their new office.\n8. Can I call at 5:30? — Better not, I [8] (do) my homework then.\n9. Better not, I [9] (do) my homework by then.",
+    "items": [
+      {"n": 1, "a": ["will be flying"], "r": "future-cont-form", "pat": [["^will flown$|^will fly$|^will be flown$|^will flying$", "future-cont-form"], ["^will have flown$", "future-cont-vs-perfect"]], "e": "'This time tomorrow' → en progreso: will + be + -ing."},
+      {"n": 2, "a": ["will be having"], "r": "future-cont-form", "pat": [["^will have$|^will having$", "future-cont-form"], ["^will have had$", "future-cont-vs-perfect"]], "e": "'at 8' → acción en progreso en ese momento."},
+      {"n": 3, "a": ["will be testing"], "r": "future-cont-form", "pat": [["^will test$|^will testing$", "future-cont-form"], ["^will have tested$", "future-cont-vs-perfect"]], "e": "Acción en progreso durante un período futuro."},
+      {"n": 4, "a": ["will have finished"], "r": "future-perfect-form", "pat": [["^will have finish$|^will finished$|^will have finishing$", "future-perfect-form"], ["^will be finishing$|^will finish$", "future-cont-vs-perfect"]], "e": "'By 2030' → completado antes de ese momento: will + have + participio."},
+      {"n": 5, "a": ["will have signed"], "r": "future-perfect-form", "pat": [["^will sign$|^will be signing$", "future-cont-vs-perfect"], ["^will have sign$|^will have signing$", "future-perfect-form"]], "e": "'by the end of the day' → Future Perfect."},
+      {"n": 6, "a": ["will have already left", "will already have left"], "r": "future-perfect-form", "pat": [["^will have already went$|^will have already leave$", "future-perfect-form"], ["^will already left$|^will leave$", "future-cont-vs-perfect"]], "e": "By the time → Future Perfect; left es el participio de leave."},
+      {"n": 7, "a": ["will be working"], "r": "future-cont-form", "pat": [["^will have worked$", "future-cont-vs-perfect"], ["^will working$|^will work$", "future-cont-form"]], "e": "'This time next year' → en progreso."},
+      {"n": 8, "a": ["will be doing"], "r": "future-cont-vs-perfect", "pat": [["^will have done$", "future-cont-vs-perfect"], ["^will doing$|^will be do$", "future-cont-form"]], "e": "'then' = en ese momento → la tarea sigue en progreso."},
+      {"n": 9, "a": ["will have done"], "r": "future-cont-vs-perfect", "pat": [["^will be doing$", "future-cont-vs-perfect"], ["^will have do$|^will have doing$", "future-perfect-form"]], "e": "'by then' = para ese momento → ya terminada."}
+    ]
+  },
+  {
+    "id": "u3-dc-cont-vs-perfect", "format": "discrete_cloze", "level": "B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "then vs by then: Future Continuous o Future Perfect",
+    "instructions": "Elegí la opción correcta. 'then' → en progreso; 'by then' → ya completado.",
+    "items": [
+      {"n": 1, "q": "Don't call me at 3. I ___ the presentation.", "o": ["will be giving", "will have given", "give", "gave"], "a": "will be giving", "r": "future-cont-vs-perfect", "wr": {"will have given": "future-cont-vs-perfect"}, "e": "At 3 → acción en progreso."},
+      {"n": 2, "q": "By 3 o'clock, I ___ the presentation, so call me after that.", "o": ["will have given", "will be giving", "will give", "give"], "a": "will have given", "r": "future-cont-vs-perfect", "wr": {"will be giving": "future-cont-vs-perfect", "will give": "future-cont-vs-perfect"}, "e": "By + hora → completado."},
+      {"n": 3, "q": "This time next week, we ___ on the beach.", "o": ["will be lying", "will have lain", "are lying", "lay"], "a": "will be lying", "r": "future-cont-form", "wr": {"will have lain": "future-cont-vs-perfect", "are lying": "future-cont-form"}, "e": "'This time next week' → en progreso."},
+      {"n": 4, "q": "By next Friday, the team ___ the migration.", "o": ["will have finished", "will be finishing", "finishes", "will finishing"], "a": "will have finished", "r": "future-perfect-form", "wr": {"will be finishing": "future-cont-vs-perfect", "will finishing": "future-perfect-form"}, "e": "By + fecha → Future Perfect."},
+      {"n": 5, "q": "Don't call Luke — he ___ his homework now.", "o": ["will be doing", "will have done", "will do", "does"], "a": "will be doing", "r": "future-cont-form", "wr": {"will have done": "future-cont-vs-perfect"}, "e": "Suposición sobre algo que pasa ahora (Unit3/02 d)."},
+      {"n": 6, "q": "I ___ all afternoon, so I can't meet you.", "o": ["will be working", "will have worked", "will work", "work"], "a": "will be working", "r": "future-cont-form", "wr": {"will have worked": "future-cont-vs-perfect"}, "e": "'all afternoon' → período en progreso."},
+      {"n": 7, "q": "By the end of this course, you ___ over 500 new words.", "o": ["will have learned", "will be learning", "will learn", "learn"], "a": "will have learned", "r": "future-perfect-form", "wr": {"will be learning": "future-cont-vs-perfect"}, "e": "By the end of → resultado acumulado."},
+      {"n": 8, "q": "I can't wait for Friday! We ___ our exams by then.", "o": ["will have finished", "will be finishing", "will finish", "finish"], "a": "will have finished", "r": "future-perfect-form", "wr": {"will be finishing": "future-cont-vs-perfect"}, "e": "Ejemplo de tu apunte: by then → completado."}
+    ]
+  },
+  {
+    "id": "u3-sc-cont-perfect-errors", "format": "sentence_choice", "level": "B1-B2", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (Future Continuous y Perfect)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["I'll have writing my CV.", "I'll be writing my CV.", "I'll writing my CV."], "a": "I'll be writing my CV.", "r": "future-cont-form", "e": "Future Continuous = will + be + -ing."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["By then, I'll be finished my homework.", "By then, I'll have finished my homework.", "By then, I'll finishing my homework."], "a": "By then, I'll have finished my homework.", "r": "future-perfect-form", "wr": {"By then, I'll be finished my homework.": "future-cont-vs-perfect"}, "e": "'completado antes de' → will have + participio."},
+      {"n": 3, "q": "Elegí la correcta:", "o": ["I will have do it tomorrow.", "I will do it tomorrow.", "I will be do it tomorrow."], "a": "I will do it tomorrow.", "r": "future-perfect-form", "e": "Sin referencia 'antes de un momento futuro' → no es Future Perfect."},
+      {"n": 4, "q": "Elegí la correcta:", "o": ["Will you writing your CV?", "Will you be writing your CV?", "Are you will be writing your CV?"], "a": "Will you be writing your CV?", "r": "future-cont-form", "e": "Will + sujeto + be + -ing."},
+      {"n": 5, "q": "Elegí la correcta:", "o": ["I won't have finished by then.", "I won't finished by then.", "I won't have finish by then."], "a": "I won't have finished by then.", "r": "future-perfect-form", "e": "won't + have + participio."}
+    ]
+  },
+  {
+    "id": "u3-vg-time-clauses", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "Future time clauses: nunca will",
+    "instructions": "Completá con la forma correcta del verbo entre paréntesis. Ojo con qué va después de when / until / as soon as...",
+    "text": "1. I'll send the report to the client as soon as I [1] (finish) it.\n2. We won't leave until the meeting [2] (be) over.\n3. Call me when you [3] (arrive) at the hotel.\n4. Before she [4] (arrive), let's prepare the room.\n5. When I [5] (see) them, I'll talk to them about it.\n6. By the time you [6] (get) there, we'll have left.\n7. OK, I [7] (call) you back when I finish this task.\n8. Once the client [8] (approve) the design, we'll start development.\n9. While you [9] (present), I'll be setting up the demo.\n10. As soon as it [10] (be) ready, we'll deploy.",
+    "items": [
+      {"n": 1, "a": ["finish"], "alt": ["have finished"], "r": "time-clause-no-will", "pat": [["^will finish$", "time-clause-no-will"], ["^finishes$", "time-clause-no-will"]], "e": "as soon as → Present Simple o Present Perfect, nunca will."},
+      {"n": 2, "a": ["is"], "alt": ["'s", "has been"], "r": "time-clause-no-will", "pat": [["^will be$", "time-clause-no-will"], ["^be$|^are$", "time-clause-no-will"]], "e": "until → Present Simple: until the meeting IS over (no will be)."},
+      {"n": 3, "a": ["arrive"], "alt": ["have arrived"], "r": "time-clause-no-will", "pat": [["^will arrive$", "time-clause-no-will"], ["^arrives$", "time-clause-no-will"]], "e": "when + Present Simple; you → arrive."},
+      {"n": 4, "a": ["arrives"], "alt": ["has arrived"], "r": "time-clause-no-will", "pat": [["^will arrive$", "time-clause-no-will"], ["^arrive$", "time-clause-no-will"]], "e": "Before + Present Simple; she → arrives."},
+      {"n": 5, "a": ["see"], "alt": ["have seen"], "r": "time-clause-no-will", "pat": [["^will see$", "time-clause-no-will"]], "e": "Ejemplo de tu apunte: When we see them, we'll talk."},
+      {"n": 6, "a": ["get"], "alt": ["have got", "have gotten"], "r": "time-clause-no-will", "pat": [["^will get$", "time-clause-no-will"], ["^gets$", "time-clause-no-will"]], "e": "By the time + Present Simple/Perfect; principal en Future Perfect."},
+      {"n": 7, "a": ["will call"], "alt": ["'ll call"], "r": "future-will-vs-going-to", "pat": [["^am going to call$|^am calling$", "future-will-vs-going-to"], ["^call$", "will-form"]], "e": "Promesa/decisión en el momento → will en la cláusula PRINCIPAL."},
+      {"n": 8, "a": ["approves"], "alt": ["has approved"], "r": "time-clause-no-will", "pat": [["^will approve$", "time-clause-no-will"], ["^approve$", "time-clause-no-will"]], "e": "Once + Present Simple/Perfect; the client → approves."},
+      {"n": 9, "a": ["present"], "alt": ["are presenting"], "r": "time-clause-no-will", "pat": [["^will present$|^will be presenting$", "time-clause-no-will"]], "e": "While + Present (Simple o Continuous), nunca will."},
+      {"n": 10, "a": ["is"], "alt": ["'s"], "r": "time-clause-no-will", "pat": [["^will be$", "time-clause-no-will"]], "e": "Tu apunte: As soon as it IS ready (no will be)."}
+    ]
+  },
+  {
+    "id": "u3-sc-time-errors", "format": "sentence_choice", "level": "B1-B2", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (time clauses)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["When I will finish, I'll call you.", "When I finish, I'll call you.", "When I finishing, I'll call you."], "a": "When I finish, I'll call you.", "r": "time-clause-no-will", "e": "Después de when, nunca will."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["As soon as it will be ready, we'll deploy.", "As soon as it is ready, we'll deploy.", "As soon as it be ready, we'll deploy."], "a": "As soon as it is ready, we'll deploy.", "r": "time-clause-no-will", "e": "as soon as + Present Simple."},
+      {"n": 3, "q": "Elegí la correcta:", "o": ["By the time you will arrive, I'll be gone.", "By the time you arrive, I'll be gone.", "By the time you arrived, I'll be gone."], "a": "By the time you arrive, I'll be gone.", "r": "time-clause-no-will", "e": "By the time + Present Simple."},
+      {"n": 4, "q": "Elegí la correcta:", "o": ["By the time she arrives, I'll finish the report.", "By the time she arrives, I'll have finished the report.", "By the time she arrives, I'll be finished the report."], "a": "By the time she arrives, I'll have finished the report.", "r": "time-clause-main", "wr": {"By the time she arrives, I'll finish the report.": "time-clause-main", "By the time she arrives, I'll be finished the report.": "future-cont-vs-perfect"}, "e": "By the time → cláusula principal en Future Perfect."},
+      {"n": 5, "q": "Elegí la correcta:", "o": ["While we will be waiting, let's review the notes.", "While we wait, let's review the notes.", "While we to wait, let's review the notes."], "a": "While we wait, let's review the notes.", "r": "time-clause-no-will", "e": "While + Present (Simple o Continuous), nunca will."}
+    ]
+  },
+  {
+    "id": "u3-dc-time-mixed", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Discrete cloze: conjunciones de tiempo",
+    "instructions": "Elegí la opción correcta.",
+    "items": [
+      {"n": 1, "q": "I'll call you as soon as I ___ the results.", "o": ["get", "will get", "am getting", "got"], "a": "get", "r": "time-clause-no-will", "wr": {"will get": "time-clause-no-will"}, "e": "as soon as + Present Simple."},
+      {"n": 2, "q": "By the time the client calls, we ___ the bug.", "o": ["will have fixed", "will fix", "are fixing", "fixed"], "a": "will have fixed", "r": "time-clause-main", "wr": {"will fix": "time-clause-main"}, "e": "By the time → Future Perfect."},
+      {"n": 3, "q": "___ you leave, push your changes.", "o": ["Before", "Until", "Since", "While"], "a": "Before", "r": "time-conjunction-choice", "e": "Antes de que te vayas → Before."},
+      {"n": 4, "q": "Don't push to main ___ the tests pass.", "o": ["until", "when", "as soon as", "once"], "a": "until", "r": "time-conjunction-choice", "e": "'hasta que' → until."},
+      {"n": 5, "q": "___ you're presenting, I'll be setting up the demo.", "o": ["While", "Until", "Before", "By the time"], "a": "While", "r": "time-conjunction-choice", "e": "Dos acciones simultáneas → while (+ Future Continuous)."},
+      {"n": 6, "q": "Next time this ___, I'll know what to do.", "o": ["happens", "will happen", "is happening", "happened"], "a": "happens", "r": "time-clause-no-will", "wr": {"will happen": "time-clause-no-will"}, "e": "Tu apunte: Next time this happens."},
+      {"n": 7, "q": "I'll wait here until you ___ back.", "o": ["come", "will come", "are coming", "came"], "a": "come", "r": "time-clause-no-will", "wr": {"will come": "time-clause-no-will"}, "e": "until + Present Simple."},
+      {"n": 8, "q": "___ the client has approved the design, we'll start development.", "o": ["Once", "While", "Since", "During"], "a": "Once", "r": "time-conjunction-choice", "e": "'una vez que' + Present Perfect → Once."}
+    ]
+  },
+  {
+    "id": "u3-dc-phrases", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "be about to / be due to / be likely to",
+    "instructions": "Elegí la opción correcta.",
+    "items": [
+      {"n": 1, "q": "The keynote speaker is ___ arrive at any moment, so please be ready to welcome her.", "o": ["about to", "about", "due", "likely"], "a": "about to", "r": "about-to", "wr": {"about": "future-phrase-form", "due": "future-phrase-form", "likely": "future-phrase-form"}, "e": "Inminente ('at any moment') → be about TO + infinitivo."},
+      {"n": 2, "q": "The exam ___ start in ten minutes.", "o": ["is due to", "is about", "is unlikely", "is going"], "a": "is due to", "r": "due-to", "wr": {"is about": "about-to", "is unlikely": "likely-to", "is going": "future-phrase-form"}, "e": "Programado con horario → be due to."},
+      {"n": 3, "q": "Look! The film ___ start. Everyone is sitting down.", "o": ["is about to", "is due", "is likely", "is unlikely"], "a": "is about to", "r": "about-to", "e": "Inminente → is about to."},
+      {"n": 4, "q": "We ___ win the contract. Our offer is much more expensive than the others.", "o": ["are unlikely to", "are likely to", "are due to", "are about to"], "a": "are unlikely to", "r": "likely-to", "e": "Poco probable → unlikely to."},
+      {"n": 5, "q": "He studies hard every day, so he ___ do well in the exam.", "o": ["is likely to", "is unlikely to", "is about", "is due"], "a": "is likely to", "r": "likely-to", "e": "Probable → likely to + base."},
+      {"n": 6, "q": "That new platform has received a lot of attention lately. It is ___ become very popular.", "o": ["likely to", "about", "about to", "unlikely to"], "a": "likely to", "r": "likely-to", "wr": {"about to": "about-to", "about": "future-phrase-form"}, "e": "Probabilidad (por la atención reciente) → likely to. 'about to' implicaría que ocurre en minutos."},
+      {"n": 7, "q": "The new update ___ be released on Monday, according to the calendar.", "o": ["is due to", "is about", "is unlikely", "is going"], "a": "is due to", "r": "due-to", "e": "Fecha programada → due to."},
+      {"n": 8, "q": "She's ___ the exam.", "o": ["due to pass", "due to passing", "due pass", "due for pass"], "a": "due to pass", "r": "future-phrase-form", "e": "Después de estas frases va infinitivo, no -ing."},
+      {"n": 9, "q": "He's ___ do well.", "o": ["likely to", "likely", "likely do", "likely for"], "a": "likely to", "r": "future-phrase-form", "e": "Falta el 'to' del infinitivo."},
+      {"n": 10, "q": "They ___ attend the workshop due to travel issues.", "o": ["are unlikely to", "are about to", "are due to", "will to"], "a": "are unlikely to", "r": "likely-to", "e": "Problemas de viaje → poco probable."}
+    ]
+  },
+  {
+    "id": "u3-vg-phrases", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Open cloze (oraciones sueltas)",
+    "title": "Completá con la frase de futuro",
+    "instructions": "Escribí la frase (about to / due to / likely to / unlikely to) que corresponde.",
+    "text": "1. Hurry up! The train is [1] leave.\n2. The exam is [2] start in ten minutes.\n3. We are [3] win. Our competitor is much better.\n4. She is [4] pass the exam. She has studied for months.\n5. The report is [5] be published on Friday.",
+    "items": [
+      {"n": 1, "a": ["about to"], "r": "about-to", "pat": [["^about$", "future-phrase-form"], ["^due to$", "about-to"]], "e": "Inminente → about to."},
+      {"n": 2, "a": ["due to"], "r": "due-to", "pat": [["^about to$", "about-to"], ["^due$", "future-phrase-form"]], "e": "Programado ('in ten minutes' con horario) → due to."},
+      {"n": 3, "a": ["unlikely to"], "r": "likely-to", "pat": [["^likely to$", "likely-to"], ["^unlikely$", "future-phrase-form"]], "e": "Improbable → unlikely to."},
+      {"n": 4, "a": ["likely to"], "r": "likely-to", "pat": [["^unlikely to$", "likely-to"], ["^likely$", "future-phrase-form"]], "e": "Probable → likely to."},
+      {"n": 5, "a": ["due to"], "r": "due-to", "pat": [["^about to$", "about-to"], ["^due$", "future-phrase-form"]], "e": "Fecha programada → due to."}
+    ]
+  },
+  {
+    "id": "u3-sc-phrases-errors", "format": "sentence_choice", "level": "B1", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (frases de futuro)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["She's due to passing the exam.", "She's due to pass the exam.", "She's due pass the exam."], "a": "She's due to pass the exam.", "r": "future-phrase-form", "e": "due to + infinitivo."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["He's likely do well.", "He's likely to do well.", "He's likely to doing well."], "a": "He's likely to do well.", "r": "future-phrase-form", "e": "likely TO + base."},
+      {"n": 3, "q": "Elegí la correcta:", "o": ["She's likely passing the exam.", "She's likely to pass the exam.", "She likely to pass the exam."], "a": "She's likely to pass the exam.", "r": "future-phrase-form", "e": "Tu apunte: be likely to + infinitivo."},
+      {"n": 4, "q": "Elegí la correcta:", "o": ["The exam is about starting.", "The exam is about to start.", "The exam is about start."], "a": "The exam is about to start.", "r": "about-to", "e": "be about TO + infinitivo."}
+    ]
+  }
+]

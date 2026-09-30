@@ -1,0 +1,138 @@
+[
+  {
+    "id": "u4-dc-alt-forms", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "unless / in case / as long as / provided that",
+    "instructions": "Elegí la opción correcta.",
+    "items": [
+      {"n": 1, "q": "You won't be able to access the server ___ you enter the correct password.", "o": ["unless", "if", "in case", "as long as"], "a": "unless", "r": "unless-if-not", "wr": {"if": "unless-if-not", "as long as": "provided-as-long-as", "in case": "in-case-form"}, "e": "unless = if not: a menos que ingreses la contraseña."},
+      {"n": 2, "q": "Take a copy of the configuration file ___ something goes wrong during the update.", "o": ["in case", "unless", "as long as", "when"], "a": "in case", "r": "in-case-form", "wr": {"unless": "unless-if-not", "as long as": "provided-as-long-as", "when": "when-vs-if"}, "e": "Preparación anticipada → in case (por si acaso)."},
+      {"n": 3, "q": "The application will work correctly ___ all the dependencies are installed.", "o": ["as long as", "unless", "in case", "whether"], "a": "as long as", "r": "provided-as-long-as", "wr": {"unless": "unless-if-not", "in case": "in-case-form"}, "e": "Condición estricta → as long as."},
+      {"n": 4, "q": "The software won't work properly ___ you update the operating system.", "o": ["unless", "in case", "as long as", "when"], "a": "unless", "r": "unless-if-not", "wr": {"in case": "in-case-form", "as long as": "provided-as-long-as"}, "e": "unless = a menos que."},
+      {"n": 5, "q": "We can finish the project on time ___ everyone meets their deadlines.", "o": ["as long as", "unless", "in case", "until"], "a": "as long as", "r": "provided-as-long-as", "wr": {"unless": "unless-if-not"}, "e": "as long as = siempre y cuando."},
+      {"n": 6, "q": "Save your work regularly ___ your computer crashes.", "o": ["in case", "unless", "as long as", "when"], "a": "in case", "r": "in-case-form", "e": "Por si acaso se cuelga la computadora."},
+      {"n": 7, "q": "I'll help you ___ that you pay me back.", "o": ["provided", "unless", "in case", "when"], "a": "provided", "r": "provided-as-long-as", "wr": {"unless": "unless-if-not", "in case": "in-case-form"}, "e": "provided that = siempre y cuando."},
+      {"n": 8, "q": "I'll take an umbrella ___ it rains.", "o": ["in case", "unless", "as long as", "provided"], "a": "in case", "r": "in-case-form", "e": "Preparación, no condición."},
+      {"n": 9, "q": "___ the tests pass, we won't deploy.", "o": ["Unless", "In case", "Provided that", "As long as"], "a": "Unless", "r": "unless-if-not", "e": "Unless the tests pass = if the tests don't pass."},
+      {"n": 10, "q": "I'll visit you ___ I have time. (quizás sí, quizás no)", "o": ["if", "when", "unless", "in case"], "a": "if", "r": "when-vs-if", "wr": {"when": "when-vs-if"}, "e": "if = incierto; when = seguro."}
+    ]
+  },
+  {
+    "id": "u4-vg-alt-forms", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "unless / in case / provided that + verbo",
+    "instructions": "Completá con la forma correcta del verbo entre paréntesis. Ninguna de estas conjunciones lleva will.",
+    "text": "1. I'll take some food in case we [1] (get) hungry.\n2. She won't enjoy her new school unless she [2] (make) friends.\n3. I'll help you provided that you [3] (pay) me back.\n4. Unless the tests [4] (pass), we won't deploy.\n5. I'll create a backup in case something [5] (go) wrong.\n6. We took some water in case we [6] (get) thirsty.\n7. You can wait here as long as you [7] (not / mind) being on your own.",
+    "items": [
+      {"n": 1, "a": ["get"], "r": "in-case-form", "pat": [["^will get$|^would get$", "in-case-form"]], "e": "in case + Present Simple, no will."},
+      {"n": 2, "a": ["makes"], "r": "unless-if-not", "pat": [["^doesn't make$", "unless-if-not"], ["^will make$", "unless-if-not"], ["^make$", "ps-form"]], "e": "unless ya es negativo: no dupliques la negación."},
+      {"n": 3, "a": ["pay"], "r": "provided-as-long-as", "pat": [["^will pay$", "provided-as-long-as"], ["^paid$", "provided-as-long-as"]], "e": "provided that + Present Simple."},
+      {"n": 4, "a": ["pass"], "r": "unless-if-not", "pat": [["^don't pass$", "unless-if-not"], ["^will pass$", "unless-if-not"]], "e": "Unless the tests pass (= if the tests don't pass)."},
+      {"n": 5, "a": ["goes"], "r": "in-case-form", "pat": [["^will go$", "in-case-form"], ["^go$", "ps-form"]], "e": "Tu apunte: in case something goes wrong."},
+      {"n": 6, "a": ["got"], "r": "in-case-form", "pat": [["^get$", "in-case-form"], ["^would get$", "in-case-form"]], "e": "En el pasado: in case + Past Simple."},
+      {"n": 7, "a": ["don't mind"], "r": "provided-as-long-as", "pat": [["^won't mind$", "provided-as-long-as"], ["^not mind$", "provided-as-long-as"]], "e": "as long as + Present Simple (negativo: don't mind)."}
+    ]
+  },
+  {
+    "id": "u4-sc-alt-errors", "format": "sentence_choice", "level": "B1-B2", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (unless / in case / provided that)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["Unless she doesn't come, we'll start.", "Unless she comes, we'll start.", "Unless she not comes, we'll start."], "a": "Unless she comes, we'll start.", "r": "unless-if-not", "e": "unless ya es negativo."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["I'll take food in case I will be hungry.", "I'll take food in case I am hungry.", "I'll take food in case I would be hungry."], "a": "I'll take food in case I am hungry.", "r": "in-case-form", "e": "in case + Present Simple."},
+      {"n": 3, "q": "Elegí la correcta:", "o": ["I'll help provided that you will pay.", "I'll help provided that you pay.", "I'll help provided you paying."], "a": "I'll help provided that you pay.", "r": "provided-as-long-as", "e": "provided that + Present Simple."},
+      {"n": 4, "q": "Elegí la correcta:", "o": ["I'll take an umbrella in case it will rain.", "I'll take an umbrella in case it rains.", "I'll take an umbrella in case it rain."], "a": "I'll take an umbrella in case it rains.", "r": "in-case-form", "e": "Tu apunte: ❌ in case it will rain → ✔ in case it rains."},
+      {"n": 5, "q": "Elegí la correcta:", "o": ["You can wait here as long as you don't mind being alone.", "You can wait here as long as you won't mind being alone.", "You can wait here as long as you not mind being alone."], "a": "You can wait here as long as you don't mind being alone.", "r": "provided-as-long-as", "e": "as long as + Present Simple."}
+    ]
+  },
+  {
+    "id": "u4-dc-wish", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "I wish / If only",
+    "instructions": "Elegí la opción correcta. ¿Presente, habilidad, queja sobre otro o arrepentimiento del pasado?",
+    "items": [
+      {"n": 1, "q": "I wish I ___ how to fix this bug without asking for help.", "o": ["knew", "know", "had known", "would know"], "a": "knew", "r": "wish-present", "wr": {"would know": "wish-would", "know": "wish-present", "had known": "wish-past-perfect"}, "e": "Presente que no nos gusta → Past Simple."},
+      {"n": 2, "q": "If only we ___ the code before deploying it!", "o": ["had tested", "tested", "would test", "have tested"], "a": "had tested", "r": "wish-past-perfect", "wr": {"tested": "wish-past-perfect", "would test": "wish-would"}, "e": "Arrepentimiento del pasado → Past Perfect."},
+      {"n": 3, "q": "I wish I ___ code as fast as her.", "o": ["could", "can", "would", "will"], "a": "could", "r": "wish-could", "wr": {"can": "wish-could", "would": "wish-would"}, "e": "Habilidad → could."},
+      {"n": 4, "q": "My colleague keeps interrupting me. I wish he ___ interrupting my meetings.", "o": ["would stop", "stops", "has stopped", "stopping"], "a": "would stop", "r": "wish-would", "wr": {"stops": "wish-would"}, "e": "Queja sobre otra persona → would."},
+      {"n": 5, "q": "I wish we ___ the farm. It's been such hard work.", "o": ["hadn't bought", "didn't buy", "wouldn't buy", "haven't bought"], "a": "hadn't bought", "r": "wish-past-perfect", "wr": {"didn't buy": "wish-past-perfect", "wouldn't buy": "wish-would"}, "e": "Tu apunte: I wish we hadn't bought the farm."},
+      {"n": 6, "q": "If only I ___ more free time to code side projects.", "o": ["had", "have", "would have", "had had"], "a": "had", "r": "wish-present", "wr": {"would have": "wish-would", "had had": "wish-past-perfect"}, "e": "Presente → Past Simple (had)."},
+      {"n": 7, "q": "I wish I ___ more before the exam yesterday.", "o": ["had studied", "studied", "would study", "study"], "a": "had studied", "r": "wish-past-perfect", "wr": {"studied": "wish-past-perfect", "would study": "wish-would"}, "e": "'yesterday' → pasado → Past Perfect."},
+      {"n": 8, "q": "I wish I ___ more people here.", "o": ["knew", "know", "would know", "had known"], "a": "knew", "r": "wish-present", "wr": {"would know": "wish-would"}, "e": "Deseo sobre uno mismo → Past Simple, no would."},
+      {"n": 9, "q": "If only I ___ sing!", "o": ["could", "can", "would", "will"], "a": "could", "r": "wish-could", "wr": {"can": "wish-could", "would": "wish-would"}, "e": "If only I could sing."},
+      {"n": 10, "q": "I wish the client ___ respond faster to emails.", "o": ["would", "will", "had", "did"], "a": "would", "r": "wish-would", "wr": {"will": "wish-would"}, "e": "Queja sobre otra persona → would + base."}
+    ]
+  },
+  {
+    "id": "u4-vg-wish", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Discrete cloze (respuesta libre)",
+    "title": "I wish / If only: escribí la forma",
+    "instructions": "Completá con la forma correcta del verbo entre paréntesis.",
+    "text": "1. I wish I [1] (know) more about cybersecurity.\n2. If only our team [2] (have) more time to improve the user interface.\n3. I wish I [3] (not / forget) to commit my changes yesterday.\n4. If only we [4] (test) the application before releasing it.\n5. My neighbours are so annoying! I wish they [5] (stop) yelling all the time.\n6. If only I [6] (can) fix this bug.\n7. I wish we [7] (live) nearer the city centre.\n8. I wish I [8] (not / buy) this laptop. It's too slow.",
+    "items": [
+      {"n": 1, "a": ["knew"], "r": "wish-present", "pat": [["^know$", "wish-present"], ["^would know$", "wish-would"], ["^had known$", "wish-past-perfect"]], "e": "Presente → Past Simple."},
+      {"n": 2, "a": ["had"], "r": "wish-present", "pat": [["^had have$|^have$|^would have$", "wish-present"], ["^had had$", "wish-past-perfect"]], "e": "Presente → Past Simple (had). No 'had have'."},
+      {"n": 3, "a": ["hadn't forgotten"], "r": "wish-past-perfect", "pat": [["^didn't forget$|^don't forget$|^don't forgot$", "wish-past-perfect"], ["^hadn't forgot$|^hadn't forgetted$", "irregular-participle"]], "e": "Arrepentimiento → hadn't + participio (forget → forgot → forgotten)."},
+      {"n": 4, "a": ["had tested"], "r": "wish-past-perfect", "pat": [["^tested$|^would test$", "wish-past-perfect"]], "e": "Arrepentimiento → Past Perfect."},
+      {"n": 5, "a": ["would stop"], "r": "wish-would", "pat": [["^wouldn't$|^wouldn't stop$", "wish-would"], ["^stopped$|^stop$", "wish-would"]], "e": "Queja sobre otros: would + verbo base. (Antes respondiste 'wouldn't' sin el verbo.)"},
+      {"n": 6, "a": ["could"], "r": "wish-could", "pat": [["^can$|^would$", "wish-could"]], "e": "Habilidad → could."},
+      {"n": 7, "a": ["lived"], "r": "wish-present", "pat": [["^live$|^would live$", "wish-present"]], "e": "Presente → Past Simple."},
+      {"n": 8, "a": ["hadn't bought"], "r": "wish-past-perfect", "pat": [["^didn't buy$|^haven't bought$", "wish-past-perfect"], ["^hadn't buyed$|^hadn't buy$", "irregular-participle"]], "e": "Arrepentimiento → hadn't + participio."}
+    ]
+  },
+  {
+    "id": "u4-tense-id-wish", "format": "tense_id", "level": "B1", "linguaskill": "Práctica propia (identificar la función)",
+    "title": "¿Para qué se usa? (I wish / If only)",
+    "instructions": "Elegí la función de la parte en negrita.",
+    "options": ["Presente que no nos gusta", "Habilidad", "Queja sobre otra persona", "Arrepentimiento del pasado"],
+    "items": [
+      {"n": 1, "q": "I wish we **lived** nearer the city centre.", "a": "Presente que no nos gusta", "r": "wish-present", "e": "Vivimos lejos y no nos gusta."},
+      {"n": 2, "q": "If only I **could sing**.", "a": "Habilidad", "r": "wish-could", "e": "Desear una habilidad."},
+      {"n": 3, "q": "If only they **wouldn't make** so much noise.", "a": "Queja sobre otra persona", "r": "wish-would", "e": "Queja sobre 'they'."},
+      {"n": 4, "q": "I wish we **hadn't bought** the farm.", "a": "Arrepentimiento del pasado", "r": "wish-past-perfect", "e": "Ya pasó."},
+      {"n": 5, "q": "I wish my colleague **would stop** interrupting my meetings.", "a": "Queja sobre otra persona", "r": "wish-would", "e": "Hábito molesto de otro."},
+      {"n": 6, "q": "I wish I **had** more free time.", "a": "Presente que no nos gusta", "r": "wish-present", "e": "Situación actual."},
+      {"n": 7, "q": "If only I **had studied** more before the exam.", "a": "Arrepentimiento del pasado", "r": "wish-past-perfect", "e": "Pasado que lamentamos."}
+    ]
+  },
+  {
+    "id": "u4-sc-wish-errors", "format": "sentence_choice", "level": "B1-B2", "linguaskill": "Práctica propia (detectar el error)",
+    "title": "¿Cuál oración es correcta? (I wish / If only)",
+    "instructions": "Elegí la única oración correcta.",
+    "items": [
+      {"n": 1, "q": "Elegí la correcta:", "o": ["I wish I would know more people.", "I wish I knew more people.", "I wish I know more people."], "a": "I wish I knew more people.", "r": "wish-would", "e": "Deseo sobre uno mismo → Past Simple, no would."},
+      {"n": 2, "q": "Elegí la correcta:", "o": ["If only I can sing.", "If only I could sing.", "If only I will sing."], "a": "If only I could sing.", "r": "wish-could", "e": "Habilidad → could."},
+      {"n": 3, "q": "Elegí la correcta:", "o": ["I wish we didn't buy the farm.", "I wish we hadn't bought the farm.", "I wish we hadn't buy the farm."], "a": "I wish we hadn't bought the farm.", "r": "wish-past-perfect", "e": "Arrepentimiento pasado → Past Perfect."},
+      {"n": 4, "q": "Elegí la correcta:", "o": ["I wish they wouldn't made noise.", "I wish they wouldn't make noise.", "I wish they wouldn't making noise."], "a": "I wish they wouldn't make noise.", "r": "wish-would", "e": "would + verbo base, no participio."},
+      {"n": 5, "q": "Elegí la correcta:", "o": ["I wish I would study more.", "I wish I studied more.", "I wish I study more."], "a": "I wish I studied more.", "r": "wish-would", "e": "Sobre uno mismo → Past Simple."}
+    ]
+  },
+  {
+    "id": "u4-dc-connectors", "format": "discrete_cloze", "level": "B1-B2", "linguaskill": "Discrete cloze (opción múltiple)",
+    "title": "Conectores: secuencia, causa-efecto y opinión",
+    "instructions": "Elegí el conector correcto.",
+    "items": [
+      {"n": 1, "q": "The deployment failed ___ a missing environment variable.", "o": ["due to", "therefore", "so", "consequently"], "a": "due to", "r": "connector-cause-effect", "wr": {"therefore": "connector-cause-effect", "so": "connector-cause-effect", "consequently": "connector-cause-effect"}, "e": "due to + sustantivo (debido a)."},
+      {"n": 2, "q": "I slept very late last night. ___, I missed the morning shift.", "o": ["Therefore", "Due to", "Because", "Since"], "a": "Therefore", "r": "connector-cause-effect", "e": "Therefore = por lo tanto (efecto)."},
+      {"n": 3, "q": "She was late ___ it was raining heavily.", "o": ["because", "due to", "therefore", "thus"], "a": "because", "r": "connector-cause-effect", "wr": {"due to": "connector-cause-effect"}, "e": "because + oración (sujeto + verbo); due to + sustantivo."},
+      {"n": 4, "q": "___, run the tests. Then, build the project. Finally, deploy to production.", "o": ["First", "Lastly", "Later", "At first sight"], "a": "First", "r": "connector-sequence", "wr": {"Lastly": "connector-sequence"}, "e": "Tu apunte: First, ... Then, ... Finally, ..."},
+      {"n": 5, "q": "___, I think static typing prevents a lot of bugs.", "o": ["Personally", "Consequently", "Later", "Hence"], "a": "Personally", "r": "connector-opinion", "e": "Conector de opinión."},
+      {"n": 6, "q": "___ she loves ice cream so much, I decided to give her an ice-cream printed dress.", "o": ["Since", "Due to", "Therefore", "Lastly"], "a": "Since", "r": "connector-cause-effect", "e": "Since = ya que."},
+      {"n": 7, "q": "The match got cancelled ___ the heavy rain.", "o": ["due to", "as a result", "therefore", "so"], "a": "due to", "r": "connector-cause-effect", "e": "due to + the heavy rain (sustantivo)."},
+      {"n": 8, "q": "___, it is always better to take prevention.", "o": ["In conclusion", "First of all", "To start with", "Next"], "a": "In conclusion", "r": "connector-sequence", "e": "Cierre → in conclusion."},
+      {"n": 9, "q": "I got stuck in the traffic. ___, I missed the flight.", "o": ["Consequently", "Because", "Due to", "Since"], "a": "Consequently", "r": "connector-cause-effect", "e": "Consequently = en consecuencia."},
+      {"n": 10, "q": "___, I don't support the idea.", "o": ["To be honest", "As a result", "Then", "Lastly"], "a": "To be honest", "r": "connector-opinion", "e": "Opinión: para ser honesto."}
+    ]
+  },
+  {
+    "id": "u4-vg-connectors", "format": "verb_gap", "level": "B1-B2", "linguaskill": "Open cloze (oraciones sueltas)",
+    "title": "Conectores: completá",
+    "instructions": "Escribí el conector que falta.",
+    "text": "1. The build failed [1] a missing dependency.\n2. I disagree [2] the idea of buying a new server.\n3. [3], let's review the requirements. [4], we design the solution. [5], we deploy.\n4. The server crashed. [6], the team had to roll back the release.\n5. [7] my point of view, the project is terrific.",
+    "items": [
+      {"n": 1, "a": ["due to", "because of", "on account of"], "r": "connector-cause-effect", "pat": [["^because$", "connector-cause-effect"]], "e": "Sustantivo (a missing dependency) → due to / because of."},
+      {"n": 2, "a": ["with"], "r": "connector-opinion", "pat": [["^to$|^of$", "connector-opinion"]], "e": "I disagree WITH."},
+      {"n": 3, "a": ["first", "first of all", "to start with", "in the first place"], "r": "connector-sequence", "e": "Inicio de una secuencia."},
+      {"n": 4, "a": ["then", "next", "second", "secondly"], "r": "connector-sequence", "e": "Paso siguiente."},
+      {"n": 5, "a": ["finally", "lastly", "and finally"], "r": "connector-sequence", "e": "Último paso."},
+      {"n": 6, "a": ["consequently", "as a result", "therefore", "thus", "hence"], "r": "connector-cause-effect", "pat": [["^because$|^due to$", "connector-cause-effect"]], "e": "Efecto de la primera oración."},
+      {"n": 7, "a": ["from"], "r": "connector-opinion", "pat": [["^in$|^by$", "connector-opinion"]], "e": "From my point of view."}
+    ]
+  }
+]

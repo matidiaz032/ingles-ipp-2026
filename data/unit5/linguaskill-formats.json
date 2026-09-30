@@ -1,0 +1,118 @@
+[
+  {
+    "id": "u5-oc-security", "format": "open_cloze", "level": "B1-B2", "linguaskill": "Open cloze",
+    "title": "Open cloze: security rules",
+    "instructions": "Escribí UNA palabra gramatical en cada hueco.",
+    "text": "You [1] share your password with anyone: it is a company rule. If you forget it, you can ask IT to reset it, but IT will never ask you [2] it. All employees have [3] change their passwords every ninety days. Your files [4] backed up automatically every night, so you don't [5] to save copies yourself.",
+    "items": [
+      {"n": 1, "a": ["mustn't"], "r": "modal-prohibition", "pat": [["^don't have to$|^needn't$", "modal-prohibition"], ["^can't$", "modal-prohibition"]], "e": "Está prohibido → mustn't."},
+      {"n": 2, "a": ["for"], "r": "prep-collocation", "pat": [["^to$|^of$", "prep-collocation"]], "e": "ask (someone) FOR something."},
+      {"n": 3, "a": ["to"], "r": "semi-modal-to", "e": "have TO + verbo base."},
+      {"n": 4, "a": ["are"], "r": "passive-form", "pat": [["^have$|^is$", "passive-form"]], "e": "Your files are backed up: pasiva de presente simple."},
+      {"n": 5, "a": ["have", "need"], "r": "modal-prohibition", "pat": [["^must$", "modal-prohibition"]], "e": "don't have to / don't need to = no hace falta."}
+    ]
+  },
+  {
+    "id": "u5-oc-incident", "format": "open_cloze", "level": "B2", "linguaskill": "Open cloze",
+    "title": "Open cloze: the website incident",
+    "instructions": "Escribí UNA palabra gramatical en cada hueco.",
+    "text": "The website was down for an hour last night. The server [1] have crashed because of a memory problem, but nobody is sure. The team should [2] checked the logs earlier. The problem [3] discovered by a customer, not by our monitoring system. By tomorrow, all the data [4] have been restored, and the servers [5] being monitored more carefully.",
+    "items": [
+      {"n": 1, "a": ["might", "may", "could"], "r": "modal-past-deduction", "pat": [["^must$", "modal-past-deduction"], ["^can't$", "modal-past-deduction"]], "e": "'nobody is sure' → posibilidad pasada: might/may/could have crashed."},
+      {"n": 2, "a": ["have"], "r": "modal-past-criticism", "pat": [["^has$|^had$", "modal-past-form"], ["^be$", "modal-past-form"]], "e": "should HAVE + participio (crítica)."},
+      {"n": 3, "a": ["was"], "r": "passive-tense", "pat": [["^is$|^were$", "passive-tense"], ["^has$|^had$", "passive-vs-active"]], "e": "Past Simple pasivo: was discovered."},
+      {"n": 4, "a": ["will"], "alt": ["'ll"], "r": "passive-perfect", "pat": [["^would$|^has$|^have$", "passive-perfect"]], "e": "By tomorrow → Future Perfect pasivo: will have been restored."},
+      {"n": 5, "a": ["are"], "r": "passive-continuous", "pat": [["^is$|^were$", "passive-continuous"], ["^will be$", "passive-continuous"]], "e": "are being monitored (Continuous pasivo)."}
+    ]
+  },
+  {
+    "id": "u5-mcc-rules", "format": "mc_cloze", "level": "B1", "linguaskill": "Multiple choice cloze (3 opciones)",
+    "title": "Multiple choice cloze: office rules",
+    "instructions": "Elegí la opción correcta para cada hueco.",
+    "text": "In our company, all employees [1] wear a badge at the office. It is a rule. You [2] bring your own laptop if you don't want to, because the company gives one to everyone. Visitors [3] enter the server room: it is forbidden. If you have a problem, you [4] ask IT for help. The new laptops [5] delivered next week.",
+    "items": [
+      {"n": 1, "o": ["have to", "might", "could"], "a": "have to", "r": "modal-obligation", "wr": {"might": "modal-obligation", "could": "modal-obligation"}, "e": "Regla de la empresa → have to."},
+      {"n": 2, "o": ["don't have to", "mustn't", "can't"], "a": "don't have to", "r": "modal-prohibition", "wr": {"mustn't": "modal-prohibition", "can't": "modal-prohibition"}, "e": "No es necesario (la empresa da una)."},
+      {"n": 3, "o": ["mustn't", "don't have to", "needn't"], "a": "mustn't", "r": "modal-prohibition", "wr": {"don't have to": "modal-prohibition", "needn't": "modal-prohibition"}, "e": "'it is forbidden' → mustn't."},
+      {"n": 4, "o": ["should", "must have", "can't"], "a": "should", "r": "modal-advice", "wr": {"must have": "modal-past-vs-present"}, "e": "Consejo → should."},
+      {"n": 5, "o": ["will be", "will", "have been"], "a": "will be", "r": "passive-tense", "wr": {"will": "passive-form", "have been": "passive-tense"}, "e": "next week → will be delivered."}
+    ]
+  },
+  {
+    "id": "u5-mcc-bug", "format": "mc_cloze", "level": "B2", "linguaskill": "Multiple choice cloze (4 opciones)",
+    "title": "Multiple choice cloze: the Monday crash",
+    "instructions": "Elegí la opción correcta para cada hueco.",
+    "text": "The application crashed on Monday. We [1] tested it more carefully before the release, but we did not have time. The developer [2] have known about the bug, because she wrote a comment about it in the code. She [3] told the manager, but she didn't. Now the issue [4] by a specialist team. The bug [5] fixed by tomorrow morning, according to the schedule.",
+    "items": [
+      {"n": 1, "o": ["should have", "should", "must have", "can"], "a": "should have", "r": "modal-past-criticism", "wr": {"should": "modal-past-vs-present", "must have": "modal-past-deduction"}, "e": "Crítica retrospectiva."},
+      {"n": 2, "o": ["must", "can't", "needn't", "mustn't"], "a": "must", "r": "modal-past-deduction", "wr": {"can't": "modal-past-deduction", "mustn't": "modal-deduction"}, "e": "'because she wrote a comment' → deducción casi segura: must have known."},
+      {"n": 3, "o": ["should have", "must have", "can't have", "needn't have"], "a": "should have", "r": "modal-past-criticism", "wr": {"must have": "modal-past-deduction", "can't have": "modal-past-deduction", "needn't have": "modal-past-necessity"}, "e": "'but she didn't' → debió hacerlo y no lo hizo."},
+      {"n": 4, "o": ["is being investigated", "is investigating", "has investigating", "investigated"], "a": "is being investigated", "r": "passive-continuous", "wr": {"is investigating": "passive-vs-active"}, "e": "Now + Continuous pasivo."},
+      {"n": 5, "o": ["will have been", "has been", "would have been", "will have"], "a": "will have been", "r": "passive-perfect", "wr": {"has been": "passive-perfect", "would have been": "passive-perfect"}, "e": "by tomorrow morning → Future Perfect pasivo."}
+    ]
+  },
+  {
+    "id": "u5-gs-attack", "format": "gapped_sentences", "level": "B2", "linguaskill": "Gapped text, sentences",
+    "title": "Gapped text: the cyber-attack",
+    "instructions": "Cinco oraciones fueron eliminadas del texto. Elegí de la lista (A-H) la que encaja en cada hueco. Hay TRES oraciones que sobran.",
+    "text": "Last month, a hospital in the north of the country suffered a serious cyber-attack. [1] At 3 a.m., the patient system was locked, and doctors had to use paper for six hours. It was later discovered that an employee had opened a suspicious email. [2] She says that the message looked completely normal. The hospital has confirmed that no patient data was stolen. [3] New rules are being introduced this month. From now on, all emails will be checked automatically. [4] Employees don't have to pay for the course, because it is provided by the hospital. Experts say that the attack could have been avoided. [5] With better training, the email would have been reported instead of opened.",
+    "bank": [
+      "The problem started in the middle of the night.",
+      "The employee must have felt terrible afterwards.",
+      "However, the hospital has decided that changes are necessary.",
+      "All staff must also attend a security course.",
+      "Human mistakes are the main cause of these incidents.",
+      "The hospital was built more than a hundred years ago.",
+      "The doctors have refused to work with computers again.",
+      "The police must have arrested the attackers already."
+    ],
+    "items": [
+      {"n": 1, "a": ["The problem started in the middle of the night."], "r": "reading-cohesion", "e": "Introduce el momento; 'At 3 a.m.' lo concreta."},
+      {"n": 2, "a": ["The employee must have felt terrible afterwards."], "r": "reading-cohesion", "e": "'She says...' retoma a la empleada."},
+      {"n": 3, "a": ["However, the hospital has decided that changes are necessary."], "r": "reading-cohesion", "e": "Contrasta con 'no data was stolen' y anticipa las nuevas reglas."},
+      {"n": 4, "a": ["All staff must also attend a security course."], "r": "reading-cohesion", "e": "'the course' aparece en la oración siguiente; este es el primer dato del curso."},
+      {"n": 5, "a": ["Human mistakes are the main cause of these incidents."], "r": "reading-cohesion", "e": "Justifica 'With better training...'."}
+    ]
+  },
+  {
+    "id": "u5-rd-notice", "format": "reading_discrete", "level": "B1", "linguaskill": "Reading discrete con soporte visual",
+    "title": "Aviso de IT",
+    "instructions": "Leé el aviso y elegí la respuesta correcta.",
+    "text": "IT NOTICE\nAll laptops must be updated before Friday. You don't have to bring your laptop to the IT office: the update will be done remotely. However, you mustn't turn off your computer during the update. If you have any questions, you should contact IT.",
+    "items": [
+      {"n": 1, "q": "What are employees NOT allowed to do during the update?", "o": ["Turn off their computer", "Contact IT", "Update remotely"], "a": "Turn off their computer", "r": "reading-detail", "e": "'you mustn't turn off your computer during the update'."}
+    ]
+  },
+  {
+    "id": "u5-rd-email", "format": "reading_discrete", "level": "B1", "linguaskill": "Reading discrete con soporte visual",
+    "title": "Email sobre un informe",
+    "instructions": "Leé el mensaje y elegí la respuesta correcta.",
+    "text": "To: Tom\nSubject: Missing report\nHi Tom, the client says the report was sent yesterday, but we can't find it. Could you check whether it was sent to the right address? It may have gone to spam. Thanks!",
+    "items": [
+      {"n": 1, "q": "What does the writer think may have happened?", "o": ["The report may be in the spam folder", "The client never wrote a report", "Tom deleted it on purpose"], "a": "The report may be in the spam folder", "r": "reading-detail", "e": "'It may have gone to spam'."}
+    ]
+  },
+  {
+    "id": "u5-comp-audit", "format": "comprehension", "level": "B1-B2", "linguaskill": "Comprehension task (5 items)",
+    "title": "The security audit",
+    "instructions": "Leé el texto y elegí la respuesta correcta para cada pregunta.",
+    "text": "Last week, an external company reviewed the security of Nova Systems, a software company with three hundred employees. The audit lasted five days, and the results were presented on Friday.\nAccording to the report, the technical part of the system is well protected. All data is stored in encrypted servers, and every change is recorded automatically. However, the auditors found several problems with human behaviour. Some employees share passwords with colleagues, and others use the same password for all their accounts. \"This mustn't happen,\" the head auditor explained. \"One stolen password can open the door to the whole company.\"\nThe company has reacted quickly. New rules are being prepared, and a training course will be offered to everyone. Employees who already know the basics don't have to attend, but they should read the new guide. The company's director admitted that the audit should have been done years ago. \"We were lucky nothing serious happened,\" she said. \"It could have been a disaster.\"\nThe changes will have been completed by the end of the year, and a second audit is planned for next spring.",
+    "items": [
+      {"n": 1, "q": "What did the audit find about the technical system?", "o": ["It is well protected", "It has to be replaced", "It was hacked"], "a": "It is well protected", "r": "reading-detail", "e": "'the technical part of the system is well protected'."},
+      {"n": 2, "q": "What problem did the auditors find?", "o": ["Employees share or reuse passwords", "The servers have no backups", "Nobody uses encryption"], "a": "Employees share or reuse passwords", "r": "reading-detail", "e": "'share passwords ... use the same password for all their accounts'."},
+      {"n": 3, "q": "Who doesn't have to attend the training course?", "o": ["Employees who already know the basics", "The directors", "New employees"], "a": "Employees who already know the basics", "r": "reading-detail", "e": "'Employees who already know the basics don't have to attend'."},
+      {"n": 4, "q": "What does the director say about the audit?", "o": ["It should have been done earlier", "It was unnecessary", "It cost too much"], "a": "It should have been done earlier", "r": "reading-detail", "e": "'the audit should have been done years ago'."},
+      {"n": 5, "q": "What is planned for next spring?", "o": ["A second audit", "The end of the training", "A new office"], "a": "A second audit", "r": "reading-detail", "e": "'a second audit is planned for next spring'."}
+    ]
+  },
+  {
+    "id": "u5-comp-ai", "format": "comprehension", "level": "B2", "linguaskill": "Comprehension task (2 items)",
+    "title": "Programmers and AI tools",
+    "instructions": "Leé el texto y elegí la respuesta correcta.",
+    "text": "Many people believe that artificial intelligence will soon be able to write all software, but experienced programmers are not convinced. AI tools can generate code quickly, and they are already being used by thousands of developers. However, the code they produce must be reviewed carefully, because it may contain errors that are difficult to notice. Some companies have already suffered problems that could have been avoided if the code had been checked by a human. For this reason, many experts argue that programmers should learn to work with these tools rather than fear them. A developer who can explain what a piece of code does, and why it might fail, is unlikely to be replaced.",
+    "items": [
+      {"n": 1, "q": "Why must code produced by AI be reviewed?", "o": ["It may contain errors that are hard to notice", "It is always too slow", "It cannot be read by humans", "It is illegal"], "a": "It may contain errors that are hard to notice", "r": "reading-detail", "e": "'it may contain errors that are difficult to notice'."},
+      {"n": 2, "q": "What do many experts recommend?", "o": ["Programmers should learn to work with AI tools", "Programmers should stop learning", "Companies should ban AI", "Humans should never check code"], "a": "Programmers should learn to work with AI tools", "r": "reading-detail", "e": "'programmers should learn to work with these tools rather than fear them'."}
+    ]
+  }
+]
