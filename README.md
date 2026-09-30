@@ -24,7 +24,20 @@ Abrí <http://127.0.0.1:8765>. En Windows también podés hacer doble clic en `p
 
 **Celular:** `python tools/make_mobile_zip.py` genera un zip para instalar con Termux (ver la sección *En el celular*).
 
-**Qué no incluye este repo:** el booklet y los tests originales del curso, y los apuntes personales de Obsidian (son material de terceros o privado). La herramienta funciona igual; el consultor con IA solo usa apuntes si ponés los tuyos en `obsidian-notes/`.
+## Qué usa el autor y no viene en el repo
+
+La herramienta corre sola, pero hay partes pensadas para el uso personal del autor. Si la usás tal cual la bajás, esto es lo que cambia:
+
+| Qué | Cómo lo usa el autor | Qué pasa si no lo tenés |
+|---|---|---|
+| **Booklet y tests originales del curso** (PDF) | Base para armar los ejercicios y las reglas. Son material del instituto, no se publican. | Nada: los ejercicios ya están en `data/`. |
+| **Apuntes en Obsidian** | La carpeta `obsidian-notes/` apunta (con enlaces simbólicos) a su vault, organizado por unidad. Las reglas de `data/rules.json` citan esos apuntes, y el consultor con IA los lee. | Las reglas se ven igual, pero sin el apunte asociado, y el consultor responde sin tu terminología. Podés crear `obsidian-notes/` con tus propios `.md`. |
+| **Historial de errores propios** (`data/history-seed.json`) | Sus errores reales en 5 tests, cargados como punto de partida para saber qué reglas reforzar. Es personal, no se publica. | Empezás con el historial vacío: la app detecta tus puntos débiles a medida que practicás. Podés crear tu propio `history-seed.json` (formato en el código de `init_db` en `app/server.py`). |
+| **Hugging Face** (IA) | Pantalla *Consultar* y glosario. Usa su token gratuito. | Todo lo demás funciona sin internet. Para *Consultar* necesitás tu propio token (ver la sección de IA más abajo). El cupo gratuito es limitado. |
+| **Glosario en Obsidian** | *Guardar en mi glosario* agrega entradas a un `.md` de su vault. | Sin vault, guarda en `data/glosario-pendiente.md`. |
+| **Syncthing + Termux** | Sincroniza PC y celular Android. | Opcional: sin eso, usá solo la PC o el exportar/importar manual. |
+
+Además, el contenido de las unidades 2 a 5 todavía no tiene explicación por opción (solo la Unit 1). Las explicaciones las redactó una IA y pueden tener errores.
 
 ## Correr
 
