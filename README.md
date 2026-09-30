@@ -15,7 +15,7 @@ Herramienta **local y gratuita** para practicar inglés de nivel intermedio (con
 Requisito: **Python 3.10 o superior** ([python.org](https://www.python.org/downloads/)). No hay nada más que instalar.
 
 ```bash
-git clone <URL-DEL-REPO>
+git clone https://github.com/matidiaz032/ingles-ipp-2026.git
 cd ingles-ipp-2026
 python app/server.py
 ```
