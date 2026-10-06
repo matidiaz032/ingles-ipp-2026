@@ -53,7 +53,7 @@ Abre http://127.0.0.1:8765 (elegí la unidad arriba). Para probar sin tocar tu h
 - `app/` — servidor + interfaz.
 
 ## Retomar donde lo dejaste
-Cada vez que corregís un ejercicio se guarda tu posición en la cola. En el inicio aparece **▶ Continuar donde lo dejaste** (ejercicio X de N); *Descartar* la borra. Se guarda en el navegador de cada dispositivo (no se sincroniza entre PC y celular) y las respuestas ya corregidas se registran siempre, aunque no toques *Terminar*.
+Cada vez que corregís un ejercicio se guarda tu posición en la cola. En el inicio aparece **▶ Continuar donde lo dejaste** (ejercicio X de N); *Descartar* la borra. La posición **se sincroniza entre PC y celular** junto con tu progreso (misma carpeta de sync; gana la más reciente): si avanzás en la PC, el celular te lo muestra al abrir el inicio. Las respuestas ya corregidas se registran siempre, aunque no toques *Terminar*. Para que llegue rápido, antes de cambiar de dispositivo apretá *Sincronizar ahora* en *Progreso* en los dos. Hace falta tener la sincronización automática configurada (si no, queda solo en ese dispositivo).
 
 ## Feedback por opción (por qué falla CADA distractor)
 Al corregir, cada ítem muestra: la **oración completa correcta** (con la respuesta en negrita), los **participios irregulares** (know → knew → **known**, y avisa de formas inventadas como *knowed*) y, si el ítem lo tiene, **por qué falla justo la opción que elegiste**, con etiquetas: *Forma*, *Tiempo*, *Válida, pero…* (gramaticalmente posible pero no es lo que pide el ejercicio), *Significado*. Una opción con dos errores los muestra por separado. Sin explicación propia, cae al mensaje genérico de siempre.

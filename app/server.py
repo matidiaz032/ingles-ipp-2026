@@ -164,6 +164,7 @@ def init_db():
         con.execute("""CREATE TABLE IF NOT EXISTS glossary(
             id TEXT PRIMARY KEY, term TEXT NOT NULL, term_norm TEXT NOT NULL, sentence TEXT, body TEXT NOT NULL,
             notes TEXT, ts TEXT NOT NULL, saved INTEGER NOT NULL DEFAULT 0, saved_ts TEXT)""")
+        con.execute("CREATE TABLE IF NOT EXISTS kv(key TEXT PRIMARY KEY, value TEXT NOT NULL, ts INTEGER NOT NULL)")
         seed_f = DATA / "history-seed.json"
         seed = json.loads(seed_f.read_text(encoding="utf-8")) if seed_f.exists() else []
         have = {r[0] for r in con.execute("SELECT DISTINCT source FROM attempts")}
@@ -412,6 +413,60 @@ def api_sim_history():
     return [dict(r) for r in rows]
 
 
+# ---------- retomar donde lo dejaste (se sincroniza entre dispositivos; gana el más reciente) ----------
+def get_resume():
+    with db() as con:
+        r = con.execute("SELECT value, ts FROM kv WHERE key='resume'").fetchone()
+    if not r:
+        return None
+    try:
+        v = json.loads(r["value"])
+    except ValueError:
+        return None
+    v["ts"] = r["ts"]
+    return v
+
+
+def _valid_resume(b):
+    if not isinstance(b, dict):
+        return None
+    try:
+        ts = int(b["ts"])
+        ids = b.get("ids") or []
+        if not isinstance(ids, list) or len(ids) > 3000 or not all(isinstance(x, str) and len(x) <= 80 for x in ids):
+            return None
+        i = int(b.get("i") or 0)
+        qs = str(b.get("qs") or "")[:600]
+    except (KeyError, TypeError, ValueError):
+        return None
+    return {"ids": ids, "i": max(0, i), "qs": qs, "ts": ts}
+
+
+def set_resume(b):
+    """Guarda solo si es más nuevo que lo que hay. ids vacío = descartado. Devuelve True si lo guardó."""
+    v = _valid_resume(b)
+    if not v:
+        return False
+    with _lock, db() as con:
+        cur = con.execute("SELECT ts FROM kv WHERE key='resume'").fetchone()
+        if cur and cur["ts"] >= v["ts"]:
+            return False
+        con.execute("INSERT OR REPLACE INTO kv(key,value,ts) VALUES('resume',?,?)",
+                    (json.dumps({"ids": v["ids"], "i": v["i"], "qs": v["qs"]}, ensure_ascii=False), v["ts"]))
+    return True
+
+
+def api_resume_get():
+    r = get_resume()
+    return r if r and r["ids"] and r["i"] < len(r["ids"]) else {}
+
+
+def api_resume_save(body):
+    if not _valid_resume(body):
+        return {"error": "Datos inválidos"}, 400
+    return {"saved": set_resume(body)}, 200
+
+
 # ---------- sincronización (exportar / importar) ----------
 EXPORT_VERSION = 1
 
@@ -425,7 +480,7 @@ def api_export():
                      score=r["score"], total=r["total"], tasks=r["tasks"], uid=r["uid"])
                 for r in con.execute("SELECT * FROM simulacros ORDER BY id")]
     return {"app": "ipp-english", "version": EXPORT_VERSION, "exported_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
-            "attempts": att, "simulacros": sims}
+            "attempts": att, "simulacros": sims, "resume": get_resume()}
 
 
 def api_import(body):
@@ -459,7 +514,9 @@ def api_import(body):
                 sims_added += cur.rowcount
             except (KeyError, TypeError, ValueError):
                 invalid += 1
-    return {"attempts_added": added, "attempts_duplicated": dup, "invalid": invalid, "simulacros_added": sims_added}, 200
+    resume_updated = set_resume(body.get("resume"))
+    return {"attempts_added": added, "attempts_duplicated": dup, "invalid": invalid, "simulacros_added": sims_added,
+            "resume_updated": resume_updated}, 200
 
 
 # ---------- sincronización automática por carpeta compartida ----------
@@ -666,6 +723,8 @@ class Handler(BaseHTTPRequestHandler):
             return self._json(api_glossary())
         if u.path == "/api/sync/status":
             return self._json(api_sync_status())
+        if u.path == "/api/resume":
+            return self._json(api_resume_get())
         if u.path == "/api/sim/history":
             return self._json(api_sim_history())
         if u.path == "/api/rules":
@@ -696,6 +755,9 @@ class Handler(BaseHTTPRequestHandler):
             return self._json(obj, code)
         if path == "/api/import":
             obj, code = api_import(body)
+            return self._json(obj, code)
+        if path == "/api/resume":
+            obj, code = api_resume_save(body)
             return self._json(obj, code)
         if path == "/api/sync/config":
             obj, code = api_sync_config(body)

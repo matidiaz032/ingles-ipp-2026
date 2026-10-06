@@ -11,16 +11,24 @@ const md = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
 const api = (u, opt) => fetch(u, opt).then(r => r.json());
 let session = null;
 let sim = null;
-// --- retomar donde lo dejaste (por navegador/dispositivo; se guarda al corregir cada ejercicio) ---
+// --- retomar donde lo dejaste: lo guarda el servidor de cada dispositivo y se sincroniza entre PC y celular
+// (gana el más reciente); localStorage queda de respaldo por si el servidor no responde ---
 const RESUME_KEY = 'resume';
 const qLabel = q => [q.get('unit') ? 'Unit ' + q.get('unit') : 'Todas las unidades', q.get('format') ? FORMATS[q.get('format')] : '',
   q.get('rule') ? 'una regla' : '', q.get('mode') === 'weak' ? 'práctica dirigida' : ''].filter(Boolean).join(' · ');
-const loadResume = () => { try { const r = JSON.parse(localStorage.getItem(RESUME_KEY) || 'null'); return r && r.ids && r.i < r.ids.length ? r : null; } catch { return null; } };
-const clearResume = () => { try { localStorage.removeItem(RESUME_KEY); } catch {} };
+const validResume = r => r && r.ids && r.ids.length && r.i < r.ids.length ? r : null;
+const localResume = () => { try { return validResume(JSON.parse(localStorage.getItem(RESUME_KEY) || 'null')); } catch { return null; } };
+const loadResume = async () => {
+  try { const r = await api('/api/resume'); return validResume(r); } catch { return localResume(); }
+};
+const postResume = r => fetch('/api/resume', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(r) }).catch(() => {});
+const clearResume = () => { try { localStorage.removeItem(RESUME_KEY); } catch {} return postResume({ ids: [], i: 0, qs: '', ts: Date.now() }); };
 const saveResume = nextI => { try {
   if (!session || session.sim) return;
   if (nextI >= session.ids.length) return clearResume();
-  localStorage.setItem(RESUME_KEY, JSON.stringify({ ids: session.ids, i: nextI, qs: session.q.toString(), ts: Date.now() }));
+  const r = { ids: session.ids, i: nextI, qs: session.q.toString(), ts: Date.now() };
+  try { localStorage.setItem(RESUME_KEY, JSON.stringify(r)); } catch {}
+  postResume(r);
 } catch {} };
 const UNITS = { '': 'Todas las unidades', '1': 'Unit 1 — Present tenses, comparatives, too/enough', '2': 'Unit 2 — Past tenses, used to, relative clauses', '3': 'Unit 3 — Future forms, future time clauses', '4': 'Unit 4 — Conditionals, wish / if only, connectors', '5': 'Unit 5 — Modal verbs, passive voice, semi-modals' };
 const getUnit = () => { try { return localStorage.getItem('unit') || ''; } catch { return ''; } };
@@ -40,7 +48,7 @@ window.addEventListener('hashchange', route);
 route();
 
 async function home() {
-  const [stats, exs] = await Promise.all([api('/api/stats'), api('/api/exercises')]);
+  const [stats, exs, resume] = await Promise.all([api('/api/stats'), api('/api/exercises'), loadResume()]);
   const unit = getUnit();
   const weak = stats.rules.filter(r => (r.status === 'weak' || r.status === 'watch') && (!unit || String(r.unit) === unit)).slice(0, 4);
   const inUnit = exs.filter(e => !unit || String(e.unit) === unit);
@@ -53,7 +61,7 @@ async function home() {
         <a class="btn" href="#/run?mode=weak&unit=${unit}">Práctica dirigida (mis reglas débiles)</a>
         <a class="btn secondary" href="#/run?mode=all&unit=${unit}">Todo lo de esta selección</a>
       </div></div>
-    ${(() => { const r = loadResume(); return r ? `<div class="card"><h2>▶ Continuar donde lo dejaste</h2>
+    ${(() => { const r = resume; return r ? `<div class="card"><h2>▶ Continuar donde lo dejaste</h2>
       <div class="mute">Ejercicio ${r.i + 1} de ${r.ids.length} · ${esc(qLabel(new URLSearchParams(r.qs)))}</div>
       <div class="row"><a class="btn" href="#/resume">Continuar</a><a class="btn secondary" href="#/" id="dropresume">Descartar</a></div></div>` : ''; })()}
     <div class="card"><h2>Simulacro Linguaskill Reading</h2>
@@ -71,7 +79,7 @@ async function home() {
     <div class="card"><h2>Por regla</h2>
       <select class="filter" id="rulesel"><option value="">Elegí una regla…</option>
       ${stats.rules.slice().sort((a, b) => a.group.localeCompare(b.group)).map(r => `<option value="${r.id}">${esc(r.group)} — ${esc(r.name)}</option>`).join('')}</select></div>`;
-  const dr = document.getElementById('dropresume'); if (dr) dr.onclick = () => { clearResume(); setTimeout(home, 0); };
+  const dr = document.getElementById('dropresume'); if (dr) dr.onclick = async () => { await clearResume(); home(); };
   document.getElementById('unitsel').onchange = e => { setUnit(e.target.value); home(); };
   document.getElementById('rulesel').onchange = e => e.target.value && (location.hash = '#/run?rule=' + e.target.value);
 }
@@ -85,7 +93,7 @@ async function startSession(q) {
 }
 
 async function resumeSession() {
-  const r = loadResume();
+  const r = await loadResume();
   if (!r) { location.hash = '#/'; return; }
   const exs = await api('/api/exercises');
   const byId = Object.fromEntries(exs.map(e => [e.id, e]));
