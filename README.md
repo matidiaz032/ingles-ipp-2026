@@ -52,6 +52,9 @@ Abre http://127.0.0.1:8765 (elegí la unidad arriba). Para probar sin tocar tu h
 - `data/history-seed.json` — errores de tus tests (Test 1: 4, Test 2: 15, Test 3: 6, Test 4: 5, Test 5: 4). Se cargan una sola vez por test (por `source`), sin pisar tu historial.
 - `app/` — servidor + interfaz.
 
+## Repaso final (todas las unidades)
+En el inicio, **⏱ Repaso final** arma unos 18 ejercicios cortos (~65 min) en los formatos de los tests del curso (discrete cloze, gap-fill, elegir la oración correcta, identificar el tiempo), mezclando las 5 unidades. Pone primero lo que menos practicaste y las reglas que más fallaste, y las unidades van intercaladas para que pases por todas aunque no llegues al final. **Diagnóstico** muestra, con lo respondido desde que empezaste, el porcentaje por unidad (de más floja a más firme) y las reglas falladas con un enlace para practicarlas.
+
 ## Retomar donde lo dejaste
 Cada vez que corregís un ejercicio se guarda tu posición en la cola. En el inicio aparece **▶ Continuar donde lo dejaste** (ejercicio X de N); *Descartar* la borra. La posición **se sincroniza entre PC y celular** junto con tu progreso (misma carpeta de sync; gana la más reciente): si avanzás en la PC, el celular te lo muestra al abrir el inicio. Las respuestas ya corregidas se registran siempre, aunque no toques *Terminar*. Para que llegue rápido, antes de cambiar de dispositivo apretá *Sincronizar ahora* en *Progreso* en los dos. Hace falta tener la sincronización automática configurada (si no, queda solo en ese dispositivo).
 

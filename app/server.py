@@ -4,6 +4,7 @@ Uso:  python app/server.py           → abre http://127.0.0.1:8765
 """
 import ai
 import feedback
+import collections
 import hashlib
 import json
 import os
@@ -285,6 +286,66 @@ def api_queue(qs):
         scored.append((w + random.random() * 0.8, ex["id"]))
     scored.sort(reverse=True)
     return [i for _, i in scored]
+
+
+# ---------- repaso final: pocas tareas de todas las unidades, priorizando lo menos practicado y lo más fallado ----------
+REPASO_FORMATS = ("discrete_cloze", "verb_gap", "sentence_choice", "tense_id")
+REPASO_ORDER = (2, 4, 5, 3, 1)            # orden de la ronda: si se acaba el tiempo, igual pasaste por todas
+
+
+def api_repaso_start():
+    with db() as con:
+        stats = rule_stats(con)
+        per_unit = collections.Counter(BY_ID[r["exercise_id"]]["unit"] for r in con.execute(
+            "SELECT exercise_id FROM attempts WHERE exercise_id IS NOT NULL"))
+        seen = {r["exercise_id"] for r in con.execute("SELECT DISTINCT exercise_id FROM attempts WHERE exercise_id IS NOT NULL")}
+    most = max(per_unit.values(), default=0)
+    picked = {}
+    for u in REPASO_ORDER:
+        quota = 2 if most and per_unit.get(u, 0) >= 0.6 * most else 4      # la unidad ya trabajada pesa menos
+        cands = [e for e in EXERCISES if e["unit"] == u and e["format"] in REPASO_FORMATS]
+        covered, fmts, out = set(), collections.Counter(), []
+        while cands and len(out) < quota:
+            def gain(e):
+                rs = {it["r"] for it in e["items"]}
+                g = sum(1 + 6 * stats[r]["score"] + (3 if stats[r]["status"] in ("weak", "watch") else 0) for r in rs - covered)
+                return g + (1.5 if e["id"] not in seen else 0) - 1.5 * fmts[e["format"]] + random.random() * 0.5
+            best = max(cands, key=gain)
+            cands.remove(best)
+            out.append(best["id"])
+            covered |= {it["r"] for it in best["items"]}
+            fmts[best["format"]] += 1
+        picked[u] = out
+    ids = [picked[u][k] for k in range(4) for u in REPASO_ORDER if k < len(picked[u])]
+    since = time.strftime("%Y-%m-%dT%H:%M:%S")
+    with _lock, db() as con:
+        con.execute("INSERT OR REPLACE INTO kv(key,value,ts) VALUES('repaso_since',?,?)", (since, int(time.time() * 1000)))
+    items = sum(len(BY_ID[i]["items"]) for i in ids)
+    return {"ids": ids, "since": since, "items": items, "minutes": round(items * 0.45),
+            "per_unit": {str(u): len(v) for u, v in picked.items()}}
+
+
+def api_repaso_report():
+    with db() as con:
+        r = con.execute("SELECT value FROM kv WHERE key='repaso_since'").fetchone()
+        since = r["value"] if r else time.strftime("%Y-%m-%dT00:00:00")
+        rows = con.execute("SELECT exercise_id, rule, correct, given FROM attempts WHERE exercise_id IS NOT NULL AND ts >= ? ORDER BY id",
+                           (since,)).fetchall()
+    units = {u: {"unit": u, "total": 0, "ok": 0} for u in sorted({e["unit"] for e in EXERCISES})}
+    rules = {}
+    for a in rows:
+        u = BY_ID[a["exercise_id"]]["unit"]
+        units[u]["total"] += 1
+        units[u]["ok"] += a["correct"]
+        d = rules.setdefault(a["rule"], {"id": a["rule"], "name": RULES[a["rule"]]["name"], "group": RULES[a["rule"]]["group"],
+                                         "unit": RULES[a["rule"]].get("unit"), "total": 0, "bad": 0, "given": []})
+        d["total"] += 1
+        if not a["correct"]:
+            d["bad"] += 1
+            if a["given"] and len(d["given"]) < 3:
+                d["given"].append(a["given"])
+    failed = sorted((d for d in rules.values() if d["bad"]), key=lambda d: (-d["bad"], -d["bad"] / d["total"]))
+    return {"since": since, "total": len(rows), "ok": sum(a["correct"] for a in rows), "units": list(units.values()), "rules": failed}
 
 
 def api_stats():
@@ -725,6 +786,10 @@ class Handler(BaseHTTPRequestHandler):
             return self._json(api_sync_status())
         if u.path == "/api/resume":
             return self._json(api_resume_get())
+        if u.path == "/api/repaso/start":
+            return self._json(api_repaso_start())
+        if u.path == "/api/repaso/report":
+            return self._json(api_repaso_report())
         if u.path == "/api/sim/history":
             return self._json(api_sim_history())
         if u.path == "/api/rules":

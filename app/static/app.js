@@ -15,7 +15,7 @@ let sim = null;
 // (gana el más reciente); localStorage queda de respaldo por si el servidor no responde ---
 const RESUME_KEY = 'resume';
 const qLabel = q => [q.get('unit') ? 'Unit ' + q.get('unit') : 'Todas las unidades', q.get('format') ? FORMATS[q.get('format')] : '',
-  q.get('rule') ? 'una regla' : '', q.get('mode') === 'weak' ? 'práctica dirigida' : ''].filter(Boolean).join(' · ');
+  q.get('rule') ? 'una regla' : '', q.get('mode') === 'weak' ? 'práctica dirigida' : '', q.get('mode') === 'repaso' ? 'repaso final' : ''].filter(Boolean).join(' · ');
 const validResume = r => r && r.ids && r.ids.length && r.i < r.ids.length ? r : null;
 const localResume = () => { try { return validResume(JSON.parse(localStorage.getItem(RESUME_KEY) || 'null')); } catch { return null; } };
 const loadResume = async () => {
@@ -38,6 +38,8 @@ async function route() {
   const [path, query] = (location.hash.slice(1) || '/').split('?');
   if (path !== '/sim/run' && sim && sim.timer) { clearInterval(sim.timer); sim.timer = null; }
   if (path === '/resume') return resumeSession();
+  if (path === '/repaso') return startRepaso();
+  if (path === '/repaso/report') return repasoReport();
   if (path === '/sim') return simSetup();
   if (path === '/sim/run') return sim ? simShow() : (location.hash = '#/sim');
   if (path === '/progress') return progress();
@@ -61,6 +63,9 @@ async function home() {
         <a class="btn" href="#/run?mode=weak&unit=${unit}">Práctica dirigida (mis reglas débiles)</a>
         <a class="btn secondary" href="#/run?mode=all&unit=${unit}">Todo lo de esta selección</a>
       </div></div>
+    <div class="card" style="border-color:var(--warn)"><h2>⏱ Repaso final (todas las unidades)</h2>
+      <div class="mute">Unos 20 ejercicios cortos en los formatos de tus tests, mezclando las 5 unidades y poniendo primero lo que menos practicaste y lo que más fallaste. Al final (o cuando quieras) ves en qué estás más flojo.</div>
+      <div class="row"><a class="btn" href="#/repaso">Empezar repaso</a><a class="btn secondary" href="#/repaso/report">Ver diagnóstico</a></div></div>
     ${(() => { const r = resume; return r ? `<div class="card"><h2>▶ Continuar donde lo dejaste</h2>
       <div class="mute">Ejercicio ${r.i + 1} de ${r.ids.length} · ${esc(qLabel(new URLSearchParams(r.qs)))}</div>
       <div class="row"><a class="btn" href="#/resume">Continuar</a><a class="btn secondary" href="#/" id="dropresume">Descartar</a></div></div>` : ''; })()}
@@ -90,6 +95,38 @@ async function startSession(q) {
   if (!ids.length) { $app.innerHTML = '<div class="card">No hay ejercicios para ese filtro todavía. <a href="#/">Volver</a></div>'; return; }
   session = { ids, exs: Object.fromEntries(exs.map(e => [e.id, e])), i: 0, ok: 0, total: 0, q };
   showExercise();
+}
+
+async function startRepaso() {
+  const [rp, exs] = await Promise.all([api('/api/repaso/start'), api('/api/exercises')]);
+  session = { ids: rp.ids, exs: Object.fromEntries(exs.map(e => [e.id, e])), i: 0, ok: 0, total: 0, q: new URLSearchParams('mode=repaso') };
+  $app.innerHTML = `<div class="card"><h1>Repaso final</h1>
+    <p>${rp.ids.length} ejercicios · ${rp.items} respuestas · unos <b>${rp.minutes} minutos</b>.</p>
+    <p class="mute">Ejercicios por unidad: ${Object.entries(rp.per_unit).sort().map(([u, n]) => `Unit ${u}: ${n}`).join(' · ')}. Van intercalados, así que aunque no llegues al final vas a haber pasado por todas.</p>
+    <p class="mute">No te quedes trabado: si no sabés una, respondé lo que te parezca y leé la explicación. En cualquier momento podés abrir <b>Diagnóstico</b>.</p>
+    <div class="row"><button id="go">Empezar →</button><a class="btn secondary" href="#/">Volver</a></div></div>`;
+  document.getElementById('go').onclick = () => { showExercise(); window.scrollTo(0, 0); };
+}
+
+async function repasoReport() {
+  const r = await api('/api/repaso/report');
+  const pct = (ok, t) => t ? Math.round(100 * ok / t) : 0;
+  const col = p => p >= 80 ? 'var(--ok)' : p >= 60 ? 'var(--warn)' : 'var(--bad)';
+  const units = r.units.slice().sort((a, b) => (a.total ? pct(a.ok, a.total) : 101) - (b.total ? pct(b.ok, b.total) : 101));
+  $app.innerHTML = `<div class="card"><h1>Diagnóstico del repaso</h1>
+    <div class="mute">Respuestas desde ${esc(r.since.replace('T', ' '))}: <b>${r.ok}/${r.total}</b>${r.total ? ' (' + pct(r.ok, r.total) + '%)' : ''}</div></div>
+    <div class="card"><h2>Por unidad (de más floja a más firme)</h2>
+      ${r.total ? `<table>${units.map(u => { const p = pct(u.ok, u.total); return `<tr><td>${esc(UNITS[String(u.unit)] || 'Unit ' + u.unit)}</td>
+        <td>${u.total ? `${u.ok}/${u.total} · <b>${p}%</b>` : '<span class="mute">sin responder todavía</span>'}</td>
+        <td><div class="bar"><i style="width:${p}%;background:${col(p)}"></i></div></td></tr>`; }).join('')}</table>` : '<div class="mute">Todavía no respondiste nada en este repaso.</div>'}</div>
+    <div class="card"><h2>Reglas que fallaste (repasá estas primero)</h2>
+      ${r.rules.length ? r.rules.map(d => `<div class="row" style="margin:8px 0;align-items:flex-start">
+        <span class="st ${d.bad >= 2 ? 'weak' : 'watch'}">${d.bad} de ${d.total}</span>
+        <span style="flex:1">${esc(d.name)}<div class="mute">${esc(d.group)}${d.given.length ? ' · pusiste: ' + d.given.map(esc).join(' / ') : ''}</div></span>
+        <a href="#/run?rule=${d.id}">practicar →</a></div>`).join('') : '<div class="mute">Ninguna por ahora.</div>'}</div>
+    <div class="row">${session && session.q.get('mode') === 'repaso' && session.i < session.ids.length - 1 ? '<button id="back">Seguir con el repaso →</button>' : '<a class="btn" href="#/repaso">Nuevo repaso</a>'}<a class="btn secondary" href="#/">Inicio</a></div>`;
+  const bk = document.getElementById('back');
+  if (bk) bk.onclick = () => { session.i++; history.replaceState(null, '', '#/run-repaso'); showExercise(); window.scrollTo(0, 0); };
 }
 
 async function resumeSession() {
@@ -196,7 +233,8 @@ async function check(ex) {
   document.getElementById('inlinefb').innerHTML = inlineFb.join('');
   const last = session.i === session.ids.length - 1;
   btn.parentElement.innerHTML = `<span class="score">${res.score}/${res.total}</span>
-    ${last ? '<a class="btn" href="#/progress">Ver progreso</a>' : '<button id="next">Siguiente ejercicio →</button>'}
+    ${last ? (session.q.get('mode') === 'repaso' ? '<a class="btn" href="#/repaso/report">Ver diagnóstico</a>' : '<a class="btn" href="#/progress">Ver progreso</a>') : '<button id="next">Siguiente ejercicio →</button>'}
+    ${!last && session.q.get('mode') === 'repaso' ? '<a class="btn secondary" href="#/repaso/report">Diagnóstico</a>' : ''}
     <a class="btn secondary" href="#/">Terminar</a>`;
   const next = document.getElementById('next');
   if (next) { next.onclick = () => { session.i++; showExercise(); window.scrollTo(0, 0); }; next.focus(); }
